@@ -1,3 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: #5B75D5;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+.valley{
+    width: 100vw;
+    height: 350px;
+}
+
+
+.dropdown {
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    color: #fafafa;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .events{
+    position: absolute;
+    top: 70%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+.card{
+    width: 70%;
+    margin: auto;
+    
+}
+
+.card-img-top{
+    height: 300px;
+    width: 600px;
+    margin: auto;
 }
