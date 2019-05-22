@@ -1,34 +1,23 @@
 .container-fluid {
-    background-color: purple;
-    height: 100vh;
+    background-color: #A0AB95;
+    height: 100%;
     width: 100%;
+    padding: 0% 0% 1% 0%;
 }
 
-.one {
+.one, .header {
     height: 300px;
-    background-repeat: no-repeat;
+    width: 100%;
 }
 
 .valley {
     height: 300px;
     width: 100%;
-}
-
-.title {
-    margin-left: 35%;
-    background-color: white;
-    z-index: 2;
-}
-
-.two {
-    background-color: purple;
+    margin-left: 1%;
 }
 
 .card {
-    background-color: yellow;
-    height: 100px;
-    width: 50pz;
-    margin-left: 35%;
-    margin-bottom: 1%;
-    margn-top: 1%;
+    margin: 1% 0% 0% 15%;
+
+    width: 70%;
 }
