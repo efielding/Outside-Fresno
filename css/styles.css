@@ -1,10 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 
 body{
     background-color: #5B75D5;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container {
@@ -51,14 +50,29 @@ body{
   }
 
 
-.card{
-    width: 70%;
-    margin: auto;
-    
+.card-columns{
+    margin: 60px;
 }
 
 .card-img-top{
     height: 300px;
-    width: 600px;
+    width: 363px;
     margin: auto;
 }
+
+
+/* mobile */
+@media screen and (max-width: 600px) {
+   
+    body{
+        width: 161vw;
+    }
+
+    .column {
+        width: 100%;
+      }
+
+    .valley{
+        width: 100%;
+    }
+  }
