@@ -1,71 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>hiking project</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/hiking.css">
+	<meta charset="UTF-8">
+	<title>hiking project</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+	<link rel="stylesheet" type="text/css" href="css/hiking.css">
 </head>
-
 <body>
 
-  <header>
-    <div class="container">
-    <img  class="valley" src="img/valley.jpg" alt="pictue of the central valley">
-    <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Outside Fresno
-        </a>
+	<!-- header w/ nav drop down -->
+	<img  class="valley" src="img/valley.jpg" alt="pictue of the central valley">
 
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="index.html">Home</a>
-        <a class="dropdown-item" href="#">Bike Routes</a>
-        <a class="dropdown-item" href="#">Parks</a>
-        </div>
-    </div>
+	
+<!-- Side navigation -->
+	<div class="sidenav">
+	  <a href="#">Home</a>
+	  <a href="#">Bike Paths</a>
+	  <a href="#">Parks</a>
+	  <a href="#">Events</a>
+	</div>
 
-    <h2 class="local-trails">Local Hiking Trails</h2>
-</div>
-</header>
 
-  <div class="inner">
-
-    <div class="card" style="width: 65%; height: 425px;">
+<div class="card-columns">
+  <div class="card bg-light">
+    <div class="card-body text-center">
       <img id = "trail-img"class="card-img-top " src="" alt="Card image cap">
        <h5 id = "trail-name"class="card-title">Card title</h5>
       <ul class="list-group list-group-flush">
         <li id = "trail-loc" class="list-group-item"></li>
-        <li id ="trail-desc" class="list-group-item"></li>
+        <li id ="trail-desc" class="list-group-item desc"></li>
         <a href="" id = "trail-url" class="btn btn-secondary">See More</a>
       </ul>
     </div>
-   
-    <div class="card" style="width: 65%; height: 425px;">
+  </div>
+  <div class="card bg-light">
+    <div class="card-body text-center">
       <img id="trail-img-1" class="card-img-top" src="" alt="Card image cap">
       <h5 id="trail-name-1" class="card-title">Card title</h5>
       <ul class="list-group list-group-flush">
         <li id="trail-loc-1" class="list-group-item"></li>
-        <li id="trail-desc-1" class="list-group-item"></li>
+        <li id="trail-desc-1" class="list-group-item desc"></li>
         <a href="" id = "trail-url-1" class="btn btn-secondary">See More</a>
       </ul>
     </div>
-
-    <div class="card" style="width: 65%; height: 425px;">
+  </div>
+  <div class="card bg-light">
+    <div class="card-body text-center">
       <img id="trail-img-2" class="card-img-top" src="" alt="Card image cap">
       <h5 id="trail-name-2" class="card-title">Card title</h5>
       <ul class="list-group list-group-flush">
         <li id="trail-loc-2" class="list-group-item"></li>
-        <li id="trail-desc-2" class="list-group-item"></li>
+        <li id="trail-desc-2" class="list-group-item desc"></li>
         <a href="" id = "trail-url-2" class="btn btn-secondary">See More</a>
       </ul>
     </div>
+  </div>
+  <div class="card bg-light">
+    <div class="card-body text-center">
+      <img id="trail-img-3" class="card-img-top" src="" alt="Card image cap">
+      <h5 id="trail-name-3" class="card-title">Card title</h5>
+      <ul class="list-group list-group-flush">
+        <li id="trail-loc-3" class="list-group-item"></li>
+        <li id="trail-desc-3" class="list-group-item desc"></li>
+        <a href="" id = "trail-url-3" class="btn btn-secondary">See More</a>
+      </ul>
+    </div>
+  </div> 
+  <div class="card bg-light">
+    <div class="card-body text-center">
+      <img id="trail-img-4" class="card-img-top" src="" alt="Card image cap">
+      <h5 id="trail-name-4" class="card-title">Card title</h5>
+      <ul class="list-group list-group-flush">
+        <li id="trail-loc-4" class="list-group-item"></li>
+        <li id="trail-desc-4" class="list-group-item desc"></li>
+        <a href="" id = "trail-url-4" class="btn btn-secondary">See More</a>
+      </ul>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <div class="card-body text-center">
+      <img id="trail-img-5" class="card-img-top" src="" alt="Card image cap">
+      <h5 id="trail-name-5" class="card-title">Card title</h5>
+      <ul class="list-group list-group-flush">
+        <li id="trail-loc-5" class="list-group-item"></li>
+        <li id="trail-desc-5" class="list-group-item desc"></li>
+        <a href="" id = "trail-url-5" class="btn btn-secondary">See More</a>
+      </ul>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <div class="card-body text-center">
+      <img id="trail-img-6" class="card-img-top" src="" alt="Card image cap">
+      <h5 id="trail-name-6" class="card-title">Card title</h5>
+      <ul class="list-group list-group-flush">
+        <li id="trail-loc-6" class="list-group-item"></li>
+        <li id="trail-desc-6" class="list-group-item desc"></li>
+        <a href="" id = "trail-url-6" class="btn btn-secondary">See More</a>
+      </ul>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <div class="card-body text-center">
+      <img id="trail-img-7" class="card-img-top" src="" alt="Card image cap">
+      <h5 id="trail-name-7" class="card-title">Card title</h5>
+      <ul class="list-group list-group-flush">
+        <li id="trail-loc-7" class="list-group-item"></li>
+        <li id="trail-desc-7" class="list-group-item desc"></li>
+        <a href="" id = "trail-url-7" class="btn btn-secondary">See More</a>
+      </ul>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <div class="card-body text-center">
+      <img id="trail-img-8" class="card-img-top" src="" alt="Card image cap">
+      <h5 id="trail-name-8" class="card-title">Card title</h5>
+      <ul class="list-group list-group-flush">
+        <li id="trail-loc-8" class="list-group-item"></li>
+        <li id="trail-desc-8" class="list-group-item desc"></li>
+        <a href="" id = "trail-url-8" class="btn btn-secondary">See More</a>
+      </ul>
+    </div>
+  </div>
+</div>
 
-    
-    <!-- <div class="footer"></div> -->
 
-    <script src="js/hiking.js"></script>
+
+
+	<!-- <div class="footer"></div> -->
+
+	<script src="js/hiking.js"></script>
 </body>
-
 </html>

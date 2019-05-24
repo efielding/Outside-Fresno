@@ -3,9 +3,10 @@
 	margin: 0;
 	padding: 0;
  }
- 
  body{
-	background-color:  #F2EB80;
+	background-color: #F2EB80;
+	width: 100vw;
+	height: 100vh;
  }
  
  .container {
@@ -37,7 +38,7 @@
 	border-radius: 5px;
   }
  
- .local-trails{
+  .inner{
 	position: absolute;
 	top: 70%;
 	left: 58%;
@@ -50,27 +51,52 @@
 	cursor: pointer;
 	border-radius: 5px;
   }
-  
-  .inner {
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  background-color: #F2EB80;
-  }
  
- .card{
-	margin: 15px;
-	justify-content: center;
-	border-radius: 15px;
-	 
+ 
+ .card-columns{
+	margin: 60px;
  }
  
  .card-img-top{
-	height: 200px;
-	width: 600px;
+	height: 300px;
+	width: 363px;
 	margin: auto;
  }
-
+ 
  .card-title {
-	 margin-left: 10px;
+	height: 80px;
+	padding-top: 10px;
  }
+ 
+ .desc {
+	height: 75px;
+ }
+ 
+ 
+ /* mobile */
+ @media screen (max-width: 700px) {
+	.card-columns {
+	   column-count: 1;
+	}
+ }
+ @media screen and (min-width: 701px) {
+ 
+	.body{
+		width: 161vw;
+	}
+ 
+	.column {
+		width: 100%;
+	  }
+ 
+	  .card-columns {
+	   column-count: 3;
+	  }
+ 
+	.valley{
+		width: 100%;
+	}
+  }
+ 
+ 
+ 
