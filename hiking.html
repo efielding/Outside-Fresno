@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>hiking project</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-	<link rel="stylesheet" type="text/css" href="css/hiking.css">
+  <meta charset="UTF-8">
+  <title>hiking project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/hiking.css">
 </head>
+
 <body>
 
-	<div class="nav">header</div>
+  <header>
+    <div class="container">
+    <img  class="valley" src="img/valley.jpg" alt="pictue of the central valley">
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Outside Fresno
+        </a>
 
-	<div class="inner">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="index.html">Home</a>
+        <a class="dropdown-item" href="#">Bike Routes</a>
+        <a class="dropdown-item" href="#">Parks</a>
+        </div>
+    </div>
 
-		<div class="left-column">left</div>
-
-<div class="card" style="width: 80%;">
-	<img id = "trail-img"class="card-img-top" src="" alt="Card image cap">
-	 <h5 id = "trail-name"class="card-title">Card title</h5>
-  <ul class="list-group list-group-flush">
-    <li id = "trail-loc" class="list-group-item"></li>
-    <li id ="trail-desc" class="list-group-item"></li>
-    <li id = "trail-url" class="list-group-item"></li>
-  </ul>
+    <h2 class="local-trails">Local Hiking Trails</h2>
 </div>
+</header>
 
-		<div class="right-column">right</div>
+  <div class="inner">
 
+    <div class="card" style="width: 65%; height: 425px;">
+      <img id = "trail-img"class="card-img-top " src="" alt="Card image cap">
+       <h5 id = "trail-name"class="card-title">Card title</h5>
+      <ul class="list-group list-group-flush">
+        <li id = "trail-loc" class="list-group-item"></li>
+        <li id ="trail-desc" class="list-group-item"></li>
+        <a href="" id = "trail-url" class="btn btn-secondary">See More</a>
+      </ul>
+    </div>
+   
+    <div class="card" style="width: 65%; height: 425px;">
+      <img id="trail-img-1" class="card-img-top" src="" alt="Card image cap">
+      <h5 id="trail-name-1" class="card-title">Card title</h5>
+      <ul class="list-group list-group-flush">
+        <li id="trail-loc-1" class="list-group-item"></li>
+        <li id="trail-desc-1" class="list-group-item"></li>
+        <a href="" id = "trail-url-1" class="btn btn-secondary">See More</a>
+      </ul>
+    </div>
 
-	<!-- <div class="footer"></div> -->
+    <div class="card" style="width: 65%; height: 425px;">
+      <img id="trail-img-2" class="card-img-top" src="" alt="Card image cap">
+      <h5 id="trail-name-2" class="card-title">Card title</h5>
+      <ul class="list-group list-group-flush">
+        <li id="trail-loc-2" class="list-group-item"></li>
+        <li id="trail-desc-2" class="list-group-item"></li>
+        <a href="" id = "trail-url-2" class="btn btn-secondary">See More</a>
+      </ul>
+    </div>
 
-	<script src="js/hiking.js"></script>
+    
+    <!-- <div class="footer"></div> -->
+
+    <script src="js/hiking.js"></script>
 </body>
+
 </html>
