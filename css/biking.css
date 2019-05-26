@@ -1,23 +1,76 @@
-.container-fluid {
+body{
     background-color: #A0AB95;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+ }
+ 
+ .container {
+    position: relative;
     width: 100%;
-    padding: 0% 0% 1% 0%;
-}
-
-.one, .header {
+    padding: 0px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+ 
+ .valley{
+    width: 100vw;
+    height: 350px;
+ }
+ 
+ 
+ .dropdown {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    color: #fafafa;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+ 
+  .events{
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+ 
+ 
+ .card-columns{
+    margin: 60px;
+ }
+ 
+ .card-img-top{
     height: 300px;
-    width: 100%;
-}
-
-.valley {
-    height: 300px;
-    width: 100%;
-    margin-left: 1%;
-}
-
-.card {
-    margin: 1% 0% 0% 15%;
-
-    width: 70%;
-}
+    width: 363px;
+    margin: auto;
+ }
+ 
+ 
+ /* mobile */
+ @media screen and (max-width: 600px) {
+ 
+    body{
+        width: 161vw;
+    }
+ 
+    .column {
+        width: 100%;
+      }
+ 
+    .valley{
+        width: 100%;
+    }
+  }

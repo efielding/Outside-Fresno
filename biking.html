@@ -14,51 +14,70 @@
 <body>
 
     <!-- HEADER -->
-    <div class="container-fluid">
-        <div class="row one">
-            <div class="header"><img class="valley" src="img/valley.jpg" alt="Picture of the valley"></div>
-        </div>
+    <header class="column">
+        <div class="container">
+            <img class="valley" src="img/valley.jpg" alt="pictue of the central valley">
 
-        <!-- START OF CONTENT -->
-        <!-- CARD ONE -->
-        <div class="card">
-            <img src="#" class="card-img-top" alt="#">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
-
-        <!-- CARD TWO -->
-        <div class="card">
-            <img src="#" class="card-img-top" alt="#">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
-
-        <!-- CARD THREE -->
-        <div class="card">
-            <img src="#" class="card-img-top" alt="#">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
-
-        <!-- CARD FOUR -->
-        <div class="card">
-                <img src="#" class="card-img-top" alt="#">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- DROP DOWN -->
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Outside Fresno
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="index.html">Home</a>
+                    <a class="dropdown-item" href="biking.html">Bike Routes</a>
+                    <a class="dropdown-item" href="parks.html">Parks</a>
+                    <a class="dropdown-item" href="hiking.html">Hiking Trails</a>
                 </div>
             </div>
-        <!-- END OF CONTENT -->
-        <!-- START OF FOOTER -->
+            <h2 class="events">Local Events</h2>
+        </div>
+    </header>
+
+    <!-- CARDS -->
+    <div class="card-columns">
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <img src="img/Fresno-3.jpg" class="card-img-top" alt="#">
+                <a href="http://cityofclovisrecreation.com/Org/Home.aspx?d=CAs6CaI8YVHxP40q%2f3ByRg%3d%3d"
+                    class="card-link" target="_blank"><br>Clovis Area Recreation</a>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <img src="img/Fresno-3.jpg" class="card-img-top" alt="#">
+                <a href="https://www.fresno.gov/parks/activities-recreational-programs/" class="card-link"
+                    target="_blank"><br>Fresno Parks and Recreation</a>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <img src="img/Fresno-3.jpg" class="card-img-top" alt="#">
+                <a href="https://www.downtownfresno.org/things-to-do/events-calendar" class="card-link"
+                    target="_blank"><br>Downtown Fresno Evetns</a>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <img src="img/Fresno-3.jpg" class="card-img-top" alt="#">
+                <a href="http://oldtownclovis.org/events/" class="card-link" target="_blank"><br>Old Town Clovis Events</a>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <img src="img/Fresno-3.jpg" class="card-img-top" alt="#">
+                <a href="https://bitwiseindustries.com/events/" class="card-link" target="_blank"><br>Bitwise Events</a>
+            </div>
+        </div>
+        <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img src="img/Fresno-3.jpg" class="card-img-top" alt="#">
+                    <a href="https://bitwiseindustries.com/events/" class="card-link" target="_blank"><br>Bitwise Events</a>
+                </div>
     </div>
 
+    <!-- JAVASCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -69,7 +88,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
