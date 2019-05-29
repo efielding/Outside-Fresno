@@ -1,6 +1,8 @@
 
 
 body{
+    background-color: #C9D57F;
+}
     background-color: #5B75D5;
     width: 100vw;
     height: 100vh;
@@ -87,3 +89,4 @@ body{
         width: 100%;
     }
   }
+
