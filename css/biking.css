@@ -4,12 +4,22 @@ body{
     height: 100vh;
  }
  
- .container {
+/* HEADER */
+
+ .header {
     position: relative;
     width: 100%;
     padding: 0px;
     margin-right: 0;
     margin-left: 0;
+    text-align: center;
+  }
+
+  .title {
+     position: absolute;
+     top: 20%;
+     left: 50%;
+     transform: translate(-50%, -50%);
   }
  
  .valley{
@@ -21,7 +31,7 @@ body{
  .dropdown {
     position: absolute;
     top: 50%;
-    left: 65%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #fafafa;
@@ -32,19 +42,13 @@ body{
     cursor: pointer;
     border-radius: 5px;
   }
- 
-  .events{
-    position: absolute;
-    top: 70%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #fafafa;
-    font-size: 16px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+
+  /* CONTENT */
+
+  .biking-intro {
+     width: 100%;
+     height: 150px;
+     margin-left: 4%;
   }
  
  
@@ -57,9 +61,23 @@ body{
     width: 363px;
     margin: auto;
  }
+
+ /* FOOTER */
+
+ footer {
+   width: 100%;
+   height: 100px;
+   margin-right: 0;
+   margin-left: 0;
+ }
+
+ .social-media {
+    margin-left: 45%;
+ }
+
+
  
- 
- /* mobile */
+ /* MEDIA QUERY */
  @media screen and (max-width: 600px) {
  
     body{
