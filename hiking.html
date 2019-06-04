@@ -4,21 +4,31 @@
 	<meta charset="UTF-8">
 	<title>hiking project</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-	<link rel="stylesheet" type="text/css" href="css/hiking.css">
+  <link rel="stylesheet" type="text/css" href="css/hiking.css">
+  <link rel="stylesheet" type="text/css" href="sidenav/sidenav.css">
 </head>
 <body>
 
+ <!-- container to hold the current weather data-->
+  <!-- <div class="weather-container">
+    <img id="icon">
+    <p id="temp"></p>
+    <p id="weather"> </p> -->
+    
 	<!-- header w/ nav drop down -->
 	<img  class="valley" src="img/valley.jpg" alt="pictue of the central valley">
 
-	
-<!-- Side navigation -->
-	<!-- <div class="sidenav">
-	  <a href="#">Home</a>
-	  <a href="#">Bike Paths</a>
-	  <a href="#">Parks</a>
-	  <a href="#">Events</a>
-	</div> -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Parks</a>
+    <a href="#">Bike Paths</a>
+    <a href="#">Events</a>
+  </div>
+  
+  <button class="openbtn" onclick="openNav()">&#9776;</button> 
+  
+  <div id="main">
 
 <!-- cards that hold the api data -->
 <div class="card-columns">
@@ -122,12 +132,13 @@
     </div>
   </div>
 </div>
-
+</div>
 
 
 
 	<!-- <div class="footer"></div> -->
 
-	<script src="js/hiking.js"></script>
+  <script src="js/hiking.js"></script>
+  <script src="sidenav/sidenav.js"></script>
 </body>
 </html>
