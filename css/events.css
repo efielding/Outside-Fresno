@@ -6,12 +6,15 @@ body{
     height: 100vh;
 }
 
-.container {
-    position: relative;
-    width: 100%;
+.column{
+    width: 100vw;
+    height: 54%;
     padding: 0px;
     margin-right: 0;
     margin-left: 0;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-around;
   }
 
 .valley{
@@ -22,8 +25,8 @@ body{
 
 .dropdown {
     position: absolute;
-    top: 50%;
-    left: 58%;
+    top: 25%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #fafafa;
@@ -44,6 +47,24 @@ body{
     border-right: .3em solid transparent;
     border-bottom: 0;
     border-left: .3em solid transparent;
+}
+
+/* home */
+
+.info{
+  display: flex;
+  justify-content: space-around;
+}
+/* events page */
+.air{
+  height: 375;
+  width: 250;
+  border: none;
+}
+
+.weather-container{
+  border: 1px solid black;
+  padding: 46px;
 }
 
   .events{
