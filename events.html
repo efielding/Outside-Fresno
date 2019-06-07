@@ -8,30 +8,44 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/events.css">
+  <link rel="stylesheet" href="sidenav/sidenav.css">
   <title>Outside Fresno</title>
 </head>
 
 <body>
   <header class="column">
-    <iframe class="air" src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
-      <!-- <h2 class="events">Local Events</h2> -->
+      <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Home</a>
+          <a href="#">Parks</a>
+          <a href="#">Bike Paths</a>
+          <a href="#">Events</a>
+        </div>
+        <!-- <button class="openbtn" onclick="openNav()">&#9776;</button>  -->
+
+
       <div class="dropdown">
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false"><img src="img/logo.png" alt=""></a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="index.html">Home</a>
-          <a class="dropdown-item" href="#">Bike Routes</a>
-          <a class="dropdown-item" href="#">Parks</a>
-          <a class="dropdown-item" href="#">Hiking Trails</a>
+          <a class="dropdown-item" href="index.html" target="_blank">Home</a>
+          <a class="dropdown-item" href="biking.html" target="_blank">Bike Routes</a>
+          <a class="dropdown-item" href="parks.html" target="_blank">Parks</a>
+          <a class="dropdown-item" href="hiking.html" target="_blank">Hiking Trails</a>
         </div>
       </div>
-      <div class="weather-container">
+      <!-- <div class="weather-container">
         <img id="icon" alt="">
         <p id="temp"></p>
         <p id="weather"></p>
       </div>
+
+      <iframe class="air" src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe> -->
+      <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquam distinctio nesciunt odio, illo delectus maxime. Sit esse dolor fugit labore consequuntur possimus, sint nobis temporibus quasi alias, expedita ipsam veritatis dignissimos ipsa fugiat quisquam a excepturi ad voluptates. Commodi deserunt dolor, nihil autem praesentium enim ex ratione quibusdam harum.</div>
   </header>
 
+
+  <h2 class="events">Local Events</h2>
 
   <div class="card-columns">
     <div class="card bg-light">
@@ -154,6 +168,20 @@
 
   </div>
 
+  <!-- footer -->
+  <footer>
+    <div class="social-media">
+    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
+        <span class="hidden-xs"></span></a>
+
+    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
+        <span class="hidden-xs"></span></a>
+
+    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
+        <span class="hidden-xs"></span></a>
+    </div>
+</footer>
+
 
 
 
@@ -169,6 +197,8 @@
     crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
   <script src="js/event.js"></script>
+  <script src="sidenav/sidenav.js"></script>
+  <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
 
 </body>
 
