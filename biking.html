@@ -9,6 +9,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/biking.css">
     <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
+    <link rel="stylesheet" href="sidenav/sidenav.js">
+    <link rel="stylesheet" href="js/biking.js">
     <title>Bike Routes</title>
 </head>
 
@@ -18,7 +20,6 @@
     <header class="column">
         <div class="header">
             <h1 class="title">Bike Routes</h1>
-            <img class="valley" src="img/valley.jpg" alt="pictue of the central valley">
 
             <!-- DROP DOWN HEADER -->
             <div class="dropdown">
@@ -31,10 +32,34 @@
                     <a class="dropdown-item" href="biking.html">Bike Routes</a>
                     <a class="dropdown-item" href="parks.html">Parks</a>
                     <a class="dropdown-item" href="hiking.html">Hiking Trails</a>
+                    <a class="dropdown-item" href="events.html">Events</a>
                 </div>
             </div>
         </div>
+
+            <!-- SIDE NAV -->
+
+    <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Parks</a>
+            <a href="#">Bike Paths</a>
+            <a href="#">Events</a>
+        </div>
+    
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    
+        <div id="main">
+    
+            <!-- put inside the 'main div' any content that you want to have 'slide over' when the sidenav is open -->
+        </div>
+
+        <!-- END OF SIDE NAV -->
+
+
     </header>
+
+
 
     <!-- INTRODUCTION -->
 
@@ -59,7 +84,8 @@
                     <h2>Clovis Old Town Trail</h2>
                 </a>
                 <h3>Clovis, CA</h3>
-                <p>DESCRIPTION</p>
+                <p><b>Terrain: Road<br>
+                Length: 5.8 miles</b></p>
             </div>
         </div>
         <div class="card bg-light">
@@ -70,7 +96,8 @@
                     <h2>Millerton Store Oab</h2>
                 </a>
                 <h3>Fresno, CA</h3>
-                <p>DESCRIPTION</p>
+                <p><b>Terrain: Road<br>
+                Length: 22.8 miles</b></p>
             </div>
         </div>
         <div class="card bg-light">
@@ -81,7 +108,8 @@
                     <h2>Friant Shell</h2>
                 </a>
                 <h3>Fresno, CA</h3>
-                <p>DESCRIPTION</p>
+                <p><b>Terrain: Road<br>
+                Length: 27.5 miles</b></p>
             </div>
         </div>
     </div>
@@ -96,7 +124,8 @@
                     <h2>Millerton Loop</h2>
                 </a>
                 <h3>Fresno, CA</h3>
-                <p>DESCRIPTION</p>
+                <p><b>Terrain: Road<br>
+                Length: 17.5 miles</b></p>
             </div>
         </div>
         <div class="card bg-light">
@@ -107,7 +136,8 @@
                     <h2>Bom Oab</h2>
                 </a>
                 <h3>Fresno, CA</h3>
-                <p>DESCRIPTION</p>
+                <p><b>Terrain: Road<br>
+                Length: 27.4 miles</b></p>
             </div>
         </div>
         <div class="card bg-light">
@@ -118,7 +148,8 @@
                     <h2>168 Oab</h2>
                 </a>
                 <h3>Fresno, CA</h3>
-                <p>DESCRITION</p>
+                <p><b>Terrain: Road<br>
+                Length: 27.3 miles</b></p>
             </div>
         </div>
     </div>
@@ -134,7 +165,8 @@
                     <h2>Belmont Time Trial</h2>
                 </a>
                 <h3>Fresno, CA</h3>
-                <p>DESCRIPTION</p>
+                <p><b>Terrain: Road<br>
+                Length: 5 miles</b></p>
             </div>
         </div>
 
