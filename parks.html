@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="sidenav/sidenav.css">
         <title>Parks</title>
     </head>
 
@@ -14,23 +15,21 @@
             <div class="header">
                 <h1 class>Parks</h1>
                 <img  class="valley" src="img/valley.jpg" alt="pictue of the central valley">
-                <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Outside Fresno
-                </a>
-             
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="index.html">Home</a>
-                <a class="dropdown-item" href="#">Bike Routes</a>
-                <a class="dropdown-item" href="#">Parks</a>
-                <a class="dropdown-item" href="#">Hiking Trails</a>
-                </div>
-                </div>
+                
             <h2 class="events">Local Events</h2>
             </div>
         </header>
 
-
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" target="blank">Home</a>
+                <a href="parks.html" target="blank">Parks</a>
+                <a href="biking.html" target="blank">Bike Paths</a>
+                <a href="events.html" target="blank">Events</a>
+            </div>
+        
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <div id="main">
 
         <div class="card-columns">
             <div class="card bg-light">
@@ -56,7 +55,7 @@
             <img src="parksimg/poi_gallery_image-image-ac5a386e-29fc-4fe5-993f-5bc64d9c9d20.jpg" class="card-img-top" alt="radio-park">
                 <h2 class="card-title">Radio Park</h2>
                 <p class="card-text">2233 N First St, Fresno, CA 93703</p>
-                <a href="#" class="btn btn-primary">More Infor for Radio Park</a>
+                <a href="#" class="btn btn-primary">More Info for Radio Park</a>
             </div>
             </div>
 
@@ -86,11 +85,12 @@
                 <a href="https://www.yelp.com/biz/woodward-park-fresno" class="btn btn-primary">More Info for Woodward Park</a>
             </div>
             </div>
+            </div>
         </div>
 
 
 
-
+        <script src="sidenav/sidenav.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
