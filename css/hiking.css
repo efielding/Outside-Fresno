@@ -74,9 +74,9 @@
  
  
  /* mobile */
- @media (max-width: 700px) {
+ @media (min-width: 576px) {
 	.card-columns {
-	   column-count: 2;
+	   column-count: 2!important;
 	}
 	.card-img-top{
 		height: 300px;
