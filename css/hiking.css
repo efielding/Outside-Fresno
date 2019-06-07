@@ -61,7 +61,7 @@
  
  
  /* mobile */
- @media (max-width: 700px) {
+ @media (min-width: 546px and max-width: 700px) {
 	.card-columns {
 	   column-count: 2;
 	}
