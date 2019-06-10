@@ -8,28 +8,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/events.css">
     <title>Outside Fresno</title>
 </head>
 
 <body>
-    <header class="column">
-        <div class="container">
-            <img class="valley" src="img/valley.jpg" alt="pictue of the central valley">
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/logo.png"
-                        alt=""></a>
+    <header class="header">
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/logo.png" alt=""></a>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="index.html">Home</a>
-                    <a class="dropdown-item" href="#">Bike Routes</a>
-                    <a class="dropdown-item" href="#">Parks</a>
-                    <a class="dropdown-item" href="#">Hiking Trails</a>
-                </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="events.html" target="_blank">Events</a>
+                <a class="dropdown-item" href="biking.html" target="_blank">Bike Routes</a>
+                <a class="dropdown-item" href="parks.html" target="_blank">Parks</a>
+                <a class="dropdown-item" href="hiking.html" target="_blank">Hiking Trails</a>
             </div>
-            <!-- <h2 class="events">Local Events</h2> -->
         </div>
+        <p>Outside Fesno is designed to be your one and only stop for things to do. </p>
+
+        <!-- <h2 class="events">Local Events</h2> -->
     </header>
 
 
@@ -65,8 +62,7 @@
     </div>
 
     <section>
-        <p>about our project</p>
-        <div class="info"> 
+        <div class="info">
             <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="current fresno temperature">
                 <div class="card-body">
@@ -74,17 +70,34 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <iframe height="375" src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO" width="250"></iframe>
+                <iframe class="air"
+                    src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
                 <div class="card-body">
                     <p class="card-text">Air index</p>
                 </div>
             </div>
         </div>
-        <a><button class="btn-block">Biking</button></a>
-        <a><button class="btn-block">Hiking</button></a>
-        <a><button class="btn-block">Parks</button></a>
-        <a><button class="btn-block">Events</button></a>
+        <a class="dropdown-item" href="biking.html" target="_blank"><button class="btn-block">Biking</button></a>
+        <a class="dropdown-item" href="hiking.html" target="_blank"><button class="btn-block">Hiking</button></a>
+        <a class="dropdown-item" href="parks.html" target="_blank"><button class="btn-block">Parks</button></a>
+        <a class="dropdown-item" href="events.html" target="_blank"><button class="btn-block">Events</button></a>
     </section>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
+                <span class="hidden-xs"></span></a>
+
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
+                <span class="hidden-xs"></span></a>
+
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
+                <span class="hidden-xs"></span></a>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -96,6 +109,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
 
 </body>
 

@@ -1,0 +1,34 @@
+body{
+    background-color: #F2EB80;
+}
+
+.header{
+    display: flex;
+    border-bottom: 25px solid #C6C9CD;
+    background-color: #BCC77F;
+}
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.air{
+    height: 375;
+    width: 250;
+    border: none;
+  }
+
+
+  /* footer */
+  footer {
+    width: 100%;
+    height: 100px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+ 
+  .social-media {
+     margin-left: 45%;
+  }
+ 
