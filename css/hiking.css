@@ -70,18 +70,18 @@
  
  /* mobile */
  @media (min-width: 576px){
-/* .card-columns {
+.card-columns {
 	   column-count: 2;
 	}
-	/* .desc {
+	.desc {
 		height: 100px;
-	} */
+	}
 	.card-img-top{
 		height: 100px;
 		margin: auto;
 	 }
 
-	 .desc {
+	.desc {
 		 height: 120px;
 	 }
 	}
