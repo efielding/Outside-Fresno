@@ -69,12 +69,14 @@
   }
  
  /* mobile */
- @media (min-width: 576px){
-.card-columns {
+ @media (min-width: 576px) {
+	.card-columns {
+
 	   column-count: 2;
 	}
 	.desc {
 		height: 100px;
+
 	}
 	.card-img-top{
 		height: 100px;
