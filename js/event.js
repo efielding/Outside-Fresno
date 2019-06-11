@@ -24,3 +24,10 @@ console.log(formattedTemp);
 document.getElementById('temp').innerHTML = formattedTemp + '°';}
 
 request.send();
+
+function openNav(){
+    document.getElementById("main").style.marginLeft = "250px";
+    console.log(openNav);
+}
+
+
