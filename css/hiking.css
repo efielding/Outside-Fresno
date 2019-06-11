@@ -10,7 +10,17 @@
  }
 
  .heading {
-	 background-color: #C9D57F;
+	background-color: #C9D57F;
+	border-bottom: 25px solid #c6c9cd;
+	width: 100vw;
+	height: 50%;
+	padding: 0px;
+	margin-right: 0;
+	margin-left: 0;
+	justify-content: space-around;
+	border-bottom: 25px solid #C6C9CD;
+	background-color: #BCC77F;
+	  
  }
  
  .logo {
@@ -20,8 +30,8 @@
  
  .dropdown {
 	position: absolute;
-	top: 50%;
-	left: 58%;
+	margin-top: 120px;
+	margin-left: 135px;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	background-color: #fafafa;
@@ -32,6 +42,28 @@
 	cursor: pointer;
 	border-radius: 5px;
   } 
+
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.dropdown-menu{
+  background-color: #545b62;
+  min-width: 15rem;
+  top: -2px;
+}
+
+.dropdown-item{
+  color:#fafafa;
+}
+
  
  .card-columns{
 	margin: 60px;
@@ -70,10 +102,6 @@
  
  /* mobile */
  @media (min-width: 576px) {
-	.card-columns {
-
-	   column-count: 2;
-	}
 	.desc {
 		height: 100px;
 
