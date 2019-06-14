@@ -105,6 +105,10 @@ body{
     margin: auto;
 }
 
+.card:hover{
+  box-shadow: 5px 10px 18px #4d4d4d;
+}
+
 
 /* mobile */
 @media screen and (max-width: 600px) {

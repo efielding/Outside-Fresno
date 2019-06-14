@@ -1,17 +1,53 @@
 body{
     background-color: #F2EB80;
 }
-
 .header{
+    width: 100vw;
+    height: 42vh;
+    padding: 0px;
+    margin-right: 0;
+    margin-left: 0;
     display: flex;
+    justify-content: space-around;
     border-bottom: 25px solid #C6C9CD;
     background-color: #BCC77F;
+  }
+
+/* nav start */
+.dropdown {
+    position: absolute;
+    top: 18%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    color: #fafafa;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+.dropdown-menu{
+  background-color: #fafafa;
+  min-width: 15rem;
+  top: 128%!important;
 }
 
-.info{
-    display: flex;
-    justify-content: space-evenly;
+.dropdown-item, h5{
+  text-align: center;
+  padding: 1.25rem 1.5rem;
 }
+
+#icon, #temp, #weather{
+  margin-left: 31%;
+}
+/* nav end */
+
+
+
 
 .air{
     height: 375;
