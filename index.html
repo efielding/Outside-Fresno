@@ -13,70 +13,43 @@
 
 <body>
     <header class="header">
-        <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/logo.png" alt=""></a>
+        <nav class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                    src="img/logo.png" alt="logo"></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
 
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="events.html" target="_blank">Events</a>
-                <a class="dropdown-item" href="biking.html" target="_blank">Bike Routes</a>
-                <a class="dropdown-item" href="parks.html" target="_blank">Parks</a>
-                <a class="dropdown-item" href="hiking.html" target="_blank">Hiking Trails</a>
+                <h5>Current Weather</h5>
+                <div class="weather-container">
+                    <img id="icon" alt="">
+                    <p id="temp"></p>
+                    <p id="weather"></p>
+                </div>
+
+                <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
+                <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
+                <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
+                <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
+                <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
+
+                <iframe class="air"
+                    src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
+
             </div>
+        </nav>
+        <div>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquam distinctio nesciunt
+                odio,
+                illo delectus maxime. Sit esse dolor fugit labore consequuntur possimus, sint nobis temporibus quasi
+                alias,
+                expedita ipsam veritatis dignissimos ipsa fugiat quisquam a excepturi ad voluptates. Commodi deserunt
+                dolor,
+                nihil autem praesentium enim ex ratione quibusdam harum.</p>
         </div>
-        <p>Outside Fesno is designed to be your one and only stop for things to do. </p>
-
-        <!-- <h2 class="events">Local Events</h2> -->
     </header>
 
 
-    <!-- Button to open the modal login form -->
-    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
-
-    <!-- The Modal -->
-    <div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close"
-            title="Close Modal">&times;</span>
-
-        <!-- Modal Content -->
-        <form class="modal-content animate" action="/action_page.php">
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                    class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-        </form>
-    </div>
-
     <section>
-        <div class="info">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="current fresno temperature">
-                <div class="card-body">
-                    <p class="card-text">Weather</p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <iframe class="air"
-                    src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
-                <div class="card-body">
-                    <p class="card-text">Air index</p>
-                </div>
-            </div>
-        </div>
         <a class="dropdown-item" href="biking.html" target="_blank"><button class="btn-block">Biking</button></a>
         <a class="dropdown-item" href="hiking.html" target="_blank"><button class="btn-block">Hiking</button></a>
         <a class="dropdown-item" href="parks.html" target="_blank"><button class="btn-block">Parks</button></a>
