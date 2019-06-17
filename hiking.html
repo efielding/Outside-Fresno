@@ -8,34 +8,45 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
   <link rel="stylesheet" type="text/css" href="css/hiking.css">
-  <link rel="stylesheet" type="text/css" href="sidenav/sidenav.css">
 </head>
 
 <body>
 
+  
   <!-- START HEADER -->
-  <div class="heading">
-  <!-- drop down menu -->
-  <div class="dropdown">
-    <a class="btn btn-secondary dropdown-toggle" onclick = "openNav()" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="false"><img src="img/logo.png" alt=""></a>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <a class="dropdown-item" href="index.html" target="_blank">Home</a>
-      <a class="dropdown-item" href="biking.html" target="_blank">Bike Routes</a>
-      <a class="dropdown-item" href="parks.html" target="_blank">Parks</a>
-      <a class="dropdown-item" href="hiking.html" target="_blank">Hiking Trails</a>
-      <!-- aqi iframe -->
-      <iframe class="air" src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
-      <!-- current weather container -->
-      <div class="weather-container">
-        <span>Current Weather</span>
-        <img id="icon" alt="">
-        <p id="temp"></p>
-        <p id="weather"></p>
-      </div> <!-- end current weather -->
-    </div> <!--end weather container-->
-  </div> <!--end dropdown--> 
-</div> <!--end heading-->
+  <header class="heading">
+    <nav class="dropdown show">
+      <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button" id="dropdownMenuLink"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/logo.png" alt="logo"></a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
+
+        
+        <div class="weather-container">
+          <h5>Current Weather</h5>
+          <img id="icon" alt="">
+          <p id="temp"></p>
+          <p id="weather"></p>
+        </div>
+
+        <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
+        <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
+        <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
+        <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
+        <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
+
+        <iframe class="air"
+          src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
+
+      </div>
+    </nav>
+    <div>
+      <p class="blurb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquam distinctio nesciunt odio,
+        illo delectus maxime. Sit esse dolor fugit labore consequuntur possimus, sint nobis temporibus quasi alias,
+        expedita ipsam veritatis dignissimos ipsa fugiat quisquam a excepturi ad voluptates. Commodi deserunt dolor,
+        nihil autem praesentium enim ex ratione quibusdam harum.</p>
+    </div>
+  </header>
+
 
   <!-- the main div holds the content that moves to the right when the nav bar is extended -->
   <div id="main">
@@ -167,6 +178,15 @@
       </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="js/hiking.js"></script>
 </body>
 
