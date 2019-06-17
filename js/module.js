@@ -11,4 +11,3 @@ formSubmit.addEventListener('click', function(event) {
     // grabbing name and calling div id to insert into div
     document.getElementById("test").innerHTML = localStorage.getItem("name");
 })
-
