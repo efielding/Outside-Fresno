@@ -12,7 +12,7 @@
 
 <body>
 
-  
+
   <!-- START HEADER -->
   <header class="heading">
     <nav class="dropdown show">
@@ -20,30 +20,31 @@
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/logo.png" alt="logo"></a>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
 
-        
+        <!-- the following content is inside the dropdown menu,and will only show when the dropdown is open -->
         <div class="weather-container">
+          <!--this container holds the current weather api data-->
           <h5>Current Weather</h5>
           <img id="icon" alt="">
           <p id="temp"></p>
           <p id="weather"></p>
         </div>
-
+        
         <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
         <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
         <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
         <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
         <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
-
+        <!--this iframe is the current fresno aqi-->
         <iframe class="air"
           src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
-
       </div>
+      <!--end of dropdwon content-->
     </nav>
-    <div>
-      <p class="blurb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquam distinctio nesciunt odio,
-        illo delectus maxime. Sit esse dolor fugit labore consequuntur possimus, sint nobis temporibus quasi alias,
-        expedita ipsam veritatis dignissimos ipsa fugiat quisquam a excepturi ad voluptates. Commodi deserunt dolor,
-        nihil autem praesentium enim ex ratione quibusdam harum.</p>
+    <!--this holds the return from the user iput 'name' and a <p> introducing the page-->
+    <div class="header_info">
+      <h1>Hiking Trails</h1>
+      <h2 id="user"></h2>
+      <h4 class="blurb">Where do you want to hike today? With so many hiking trails nearby you'll never hike the same trail twice. There is always something new to see and somewhere else to explore. Hiking improves your mood, relieves stress, helps you sleep better at night and increases your energy levels. Best of all, anyone can do it. So go take a hike!</h4>
     </div>
   </header>
 
@@ -55,7 +56,7 @@
     <div class="card-columns">
       <div class="card bg-light">
         <div class="card-body text-center">
-          <img id="trail-img" class="card-img-top " src="" alt="Card image cap">
+          <img id="trail-img" class="card-img-top" src="" alt="Card image cap">
           <h5 id="trail-name" class="card-title">Card title</h5>
           <ul class="list-group list-group-flush">
             <li id="trail-loc" class="list-group-item"></li>
@@ -164,18 +165,18 @@
   </div>
 
 
-   <!-- START OF FOOTER -->
-   <footer>
-      <div class="social-media">
+  <!-- START OF FOOTER -->
+  <footer>
+    <div class="social-media">
       <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
-          <span class="hidden-xs"></span></a>
+        <span class="hidden-xs"></span></a>
 
       <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
-          <span class="hidden-xs"></span></a>
+        <span class="hidden-xs"></span></a>
 
       <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
-          <span class="hidden-xs"></span></a>
-      </div>
+        <span class="hidden-xs"></span></a>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
