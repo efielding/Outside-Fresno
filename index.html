@@ -37,7 +37,60 @@
 
             </div>
         </nav>
+
     <!-- </header> -->
+
+
+        <!-- LOG IN -->
+        <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Log In</button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+    
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Log In</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                Name:<br>
+                                <input type="text" name="fullName" id="name-input"><br><br>
+                                Email:<br>
+                                <input type="text" email="emailinput" id="email-input">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" input
+                                type="submit" value="submit" id="submit-info">Submit</button>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+        <!-- DIV WHERE NAME CAN GO (IF ANOTHER DIV, MAKE SURE IT HAS ID OF "test") -->
+        <div class="div">
+            <div id="test"></div>
+        </div>
+        <!-- END OF LOG-IN -->
+
+        <div>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquam distinctio nesciunt
+                odio,
+                illo delectus maxime. Sit esse dolor fugit labore consequuntur possimus, sint nobis temporibus quasi
+                alias,
+                expedita ipsam veritatis dignissimos ipsa fugiat quisquam a excepturi ad voluptates. Commodi deserunt
+                dolor,
+                nihil autem praesentium enim ex ratione quibusdam harum.</p>
+        </div>
+    </header>
+
 
 
     <section>
@@ -66,6 +119,7 @@
         </div>
     </footer>
 
+    <script src="js/module.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -78,6 +132,9 @@
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
 
+
+
 </body>
+
 
 </html>
