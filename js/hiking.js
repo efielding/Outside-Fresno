@@ -1,3 +1,8 @@
+var user = localStorage.getItem("name");
+var welcome = 'Welcome '+ user + "!";
+document.getElementById("user").innerHTML = welcome;
+
+// function that moves all content in main div to the right when the menu is open
 function openNav(){
   document.getElementById("main").style.marginLeft = "250px";
 }
