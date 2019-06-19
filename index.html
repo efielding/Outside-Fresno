@@ -13,44 +13,17 @@
 </head>
 
 <body>
-    <!-- <header class="header"> -->
-        <nav class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button"
-                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                    src="img/logo.png" alt="logo"></a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
-
-                <h5>Current Weather</h5>
-                <div class="weather-container">
-                    <img id="icon" alt="">
-                    <p id="temp"></p>
-                    <p id="weather"></p>
-                </div>
-
-                <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
-                <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
-                <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
-                <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
-                <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
-
-                <iframe class="air"
-                    src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
-
-            </div>
-        </nav>
-
-    <!-- </header> -->
-
-
+    <header>
         <!-- LOG IN -->
         <div class="container">
             <!-- Trigger the modal with a button -->
-            <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Log In</button>
-    
+            <button type="button" class="btn btn-info btn-md btn-color log-in" data-toggle="modal" data-target="#myModal">Log
+                In</button>
+
             <!-- Modal -->
             <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
-    
+
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
@@ -66,31 +39,52 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal" input
-                                type="submit" value="submit" id="submit-info">Submit</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" input type="submit"
+                                value="submit" id="submit-info">Submit</button>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
         </div>
-    
+
         <!-- DIV WHERE NAME CAN GO (IF ANOTHER DIV, MAKE SURE IT HAS ID OF "test") -->
         <div class="div">
             <div id="test"></div>
         </div>
         <!-- END OF LOG-IN -->
+        <nav class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle menu" onclick="openNav()" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                    src="img/logo.png" alt="logo"></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
+                <div class="menu-info">
+                    <div class="weather-container">
+                        <h5>Current Weather</h5>
+                        <img id="icon" alt="">
+                        <p id="temp"></p>
+                        <p id="weather"></p>
+                    </div>
+                
+                    <iframe class="air" src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
+                </div>
+            </div>
+        </nav>
 
-        <div>
-            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquam distinctio nesciunt
-                odio,
-                illo delectus maxime. Sit esse dolor fugit labore consequuntur possimus, sint nobis temporibus quasi
-                alias,
-                expedita ipsam veritatis dignissimos ipsa fugiat quisquam a excepturi ad voluptates. Commodi deserunt
-                dolor,
-                nihil autem praesentium enim ex ratione quibusdam harum.</p>
-        </div>
     </header>
+
+
+
+    <div>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquam distinctio nesciunt
+            odio,
+            illo delectus maxime. Sit esse dolor fugit labore consequuntur possimus, sint nobis temporibus quasi
+            alias,
+            expedita ipsam veritatis dignissimos ipsa fugiat quisquam a excepturi ad voluptates. Commodi deserunt
+            dolor,
+            nihil autem praesentium enim ex ratione quibusdam harum.</p>
+    </div>
+
 
 
 
@@ -98,13 +92,19 @@
         <div class="pan-pic">
             <img src="img/valley.jpg" alt="" class="valley">
         </div>
-        <a class="dropdown-item" href="biking.html" target="_blank"><button class="btn-lg">Biking</button></a>
-        <a class="dropdown-item" href="hiking.html" target="_blank"><button class="btn-lg">Hiking</button></a>
-        <a class="dropdown-item" href="parks.html" target="_blank"><button class="btn-lg">Parks</button></a>
-        <a class="dropdown-item" href="events.html" target="_blank"><button class="btn-lg">Events</button></a>
+        <div class="buttons">
+            <a class="dropdown-item" href="biking.html" target="_blank"><button class="btn-lg"><img src="img/bike.png"
+                        alt=""></button></a>
+            <a class="dropdown-item" href="hiking.html" target="_blank"><button class="btn-lg"><img src="img/hiking.png"
+                        alt=""></button></a>
+            <a class="dropdown-item" href="parks.html" target="_blank"><button class="btn-lg"><img src="img/park.png"
+                        alt=""></button></a>
+            <a class="dropdown-item" href="events.html" target="_blank"><button class="btn-lg"><img src="img/event.png"
+                        alt=""></button></a>
+        </div>
     </section>
 
-    
+
 
     <!-- footer -->
     <footer>

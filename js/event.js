@@ -1,3 +1,9 @@
+var user = localStorage.getItem("name");
+var welcome = 'Welcome '+ user + "!";
+document.getElementById("user").innerHTML = welcome;
+
+
+
 var api = 'https://api.openweathermap.org/data/2.5/weather?q='; // api endpoint
 var city = 'Fresno';
 var apiKey = '&appid=fe9a422805a990c7b90f9de0efcc182b'; // api key assigned to account
