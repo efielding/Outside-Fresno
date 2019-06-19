@@ -35,7 +35,7 @@ header{
   display: flex;
   justify-content: center;
   top: 18%;
-  color: ;
+  /* color: var(--dkgrey); */
   font-size: 16px;
   padding: 10px;
   cursor: pointer;
@@ -43,8 +43,6 @@ header{
   border-bottom: 25px solid var(--ltgrey);
   background-color: var(--green);
 }
-
-
 
 .dropdown-menu{
   position: none;
