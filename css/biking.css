@@ -107,6 +107,9 @@ footer {
   margin-left: 45%;
 }
 
+.fab {
+  color: #6C757D;
+}
 @media screen and (max-width: 600px) {
   body{
     width: 161vw;
