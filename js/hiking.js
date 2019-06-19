@@ -1,10 +1,16 @@
 var user = localStorage.getItem("name");
 var welcome = 'Welcome '+ user + "!";
-document.getElementById("user").innerHTML = welcome;
+document.getElementById("test").innerHTML = welcome;
 
 // function that moves all content in main div to the right when the menu is open
 function openNav(){
   document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the navbar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  // document.getElementsByClassName("dropdown-menu show").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
 }
 
 // this is the code for the 'hiking project' api
