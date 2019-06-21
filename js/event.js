@@ -1,6 +1,6 @@
 var user = localStorage.getItem("name");
 var welcome = 'Welcome '+ user + "!";
-document.getElementById("user").innerHTML = welcome;
+document.getElementById("test").innerHTML = welcome;
 
 
 

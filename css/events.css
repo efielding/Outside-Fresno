@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
 
+
+:root { 
+  --green: #BCC77F;
+  --ltgrey: #C6C9CD;
+  --white: #fafafa;
+  --dkgrey: #6C757D;
+  --ltgreen: #F2EB80;
+  --main-font: 'Open Sans', sans-serif;
+  --header: 'Roboto', sans-serif;
+}
 
 body{
     background-color: #a0ab95;
     width: 100vw;
     height: 100vh;
+    font-family: var(--main-font);
 }
 .lorem{
   color: #fafafa;
