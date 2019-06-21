@@ -4,15 +4,10 @@ function openNav(){
   console.log(openNav);
 }
 
-// Get the modal
-var modal = document.getElementById('nav');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (!event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// display name
+var user = localStorage.getItem("name");
+var welcome = 'Welcome '+ user + "!";
+document.getElementById("test").innerHTML = welcome;
 
 // weather 
 // variables for each element of api call and api key

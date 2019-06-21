@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+
 :root { 
   --green: #BCC77F;
   --ltgrey: #C6C9CD;
   --white: #fafafa;
   --dkgrey: #6C757D;
   --ltgreen: #F2EB80;
+  --main-font: 'Open Sans', sans-serif;
+  --header: 'Roboto', sans-serif;
 }
 
 
 
 body{
     background-color: var(--ltgreen);
+    font-family: var(--main-font);
 }
 
 header{
@@ -35,7 +40,6 @@ header{
   display: flex;
   justify-content: center;
   top: 18%;
-  color: ;
   font-size: 16px;
   padding: 10px;
   cursor: pointer;
@@ -64,6 +68,10 @@ header{
   padding: 1.25rem 1.5rem;
   color: var(--ltgrey);
 
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
 }
 
 #icon, #temp, #weather{
@@ -97,6 +105,10 @@ header{
 .buttons{
   width: 100%;
   display: flex;
+}
+
+.g-hover:hover{
+  box-shadow: 5px 10px 18px var(--green);
 }
   /* footer */
   footer {
