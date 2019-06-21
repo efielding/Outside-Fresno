@@ -40,6 +40,7 @@ header{
   display: flex;
   justify-content: center;
   top: 18%;
+  /* color: var(--dkgrey); */
   font-size: 16px;
   padding: 10px;
   cursor: pointer;
