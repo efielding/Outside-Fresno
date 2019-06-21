@@ -87,6 +87,10 @@ iframe {
   text-align: center;
 }
 
+.dropdown-item:hover {
+	color: yellowgreen;
+}
+
 a:hover{
 	color: yellowgreen;
 }
@@ -101,11 +105,15 @@ a:active {
 }
 h1 {
 	margin: 25px 0 0 320px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
 	margin-left: 320px;
 	padding-top: 25px;
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .blurb {
@@ -113,6 +121,7 @@ h2 {
 	width: 800px;
 	padding: 50px;
 	margin-left: 50px;
+	color: white;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -126,9 +135,6 @@ h2 {
 	margin: 60px;
  }
  
- .card {
-	 
- }
  .card:hover{
 	box-shadow: 5px 10px 18px #4d4d4d;
   }
@@ -162,6 +168,10 @@ h2 {
  
   .social-media {
 	 margin-left: 45%;
+  }
+
+  .fab {
+	  color: #6c757d;
   }
  
  /* mobile */
