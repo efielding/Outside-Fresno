@@ -10,10 +10,11 @@
  }
 
  .heading {
+	 display: flex;
 	background-color: #C9D57F;
 	border-bottom: 25px solid #c6c9cd;
 	width: 100vw;
-	height: 50%;
+	height: 40%;
 	padding: 0px;
 	margin-right: 0;
 	margin-left: 0;
@@ -30,8 +31,8 @@
  
  .dropdown {
 	position: absolute;
-	margin-top: 120px;
-	margin-left: 135px;
+	top: 18%;
+    left: 10%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	background-color: #fafafa;
@@ -44,31 +45,21 @@
 	
   } 
 
+  .dropdown-menu{
+	background-color: #fafafa;
+	min-width: 15rem;
+	top: 125%!important;
+  }
+
   .closebtn {
 	position: absolute;
 	top: 0;
 	right: 25px;
+	
 	font-size: 36px;
-	margin-left: 50px;
+	margin-left: 5px 0 5px 50px;
 	color: darkgray;
   }
-
-  /* .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: .255em;
-    vertical-align: .255em;
-    
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-bottom: 0;
-    border-left: .3em solid transparent;
-} */
-
-.dropdown-menu{
-  background-color: white;
-  min-width: 15rem;
-  top: -2px;
-}
 
 .weather-container {
 	text-align: center;
@@ -96,34 +87,57 @@ iframe {
   text-align: center;
 }
 
+.dropdown-item:hover {
+	color: yellowgreen;
+}
+
 a:hover{
 	color: yellowgreen;
 }
+
+a:active { 
+	background-color: yellowgreen;
+  }
+
+.header_info {
+	display: flex;
+	flex-direction: column;
+}
 h1 {
-	text-align: center;
+	margin: 25px 0 0 320px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
 	margin-left: 320px;
 	padding-top: 25px;
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .blurb {
+	align-self: flex-end;
+	width: 800px;
 	padding: 50px;
-	margin-left: 300px;
+	margin-left: 50px;
+	color: white;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
 	transition: margin-left .5s; /* If you want a transition effect */
 	padding: 20px;
-	
-  }
+}
  
   /* Style cards */
  .card-columns{
 	margin: 60px;
  }
+ 
+ .card:hover{
+	box-shadow: 5px 10px 18px #4d4d4d;
+  }
  
  .card-img-top{
 	height: 300px;
@@ -154,6 +168,10 @@ h2 {
  
   .social-media {
 	 margin-left: 45%;
+  }
+
+  .fab {
+	  color: #6c757d;
   }
  
  /* mobile */
