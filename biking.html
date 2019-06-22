@@ -17,44 +17,47 @@
 
 <body>
 
-      <!-- START HEADER -->
-  <header class="heading">
-    <nav class="dropdown show">
-      <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button" id="dropdownMenuLink"
-        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/logo.png" alt="logo"></a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
+    <!-- START HEADER -->
+    <header class="heading">
+        <nav class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                    src="img/logo.png" alt="logo"></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
 
-        <!-- the following content is inside the dropdown menu,and will only show when the dropdown is open -->
-        <div class="weather-container">
-          <!--this container holds the current weather api data-->
-          <h5>Current Weather</h5>
-          <img id="icon" alt="">
-          <p id="temp"></p>
-          <p id="weather"></p>
+                <!-- the following content is inside the dropdown menu,and will only show when the dropdown is open -->
+                <div class="weather-container">
+                    <!--this container holds the current weather api data-->
+                    <h5>Current Weather</h5>
+                    <img id="icon" alt="">
+                    <p id="temp"></p>
+                    <p id="weather"></p>
+                </div>
+                <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
+                <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
+                <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
+                <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
+                <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
+                <!--this iframe is the current fresno aqi-->
+                <iframe class="air"
+                    src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
+            </div>
+            <!--end of dropdwon content-->
+        </nav>
+        <!--this holds the return from the user iput 'name' and a <p> introducing the page-->
+        <div class="header_info">
+            <h1>Bike Trails</h1>
+            <h2 id="test"></h2>
         </div>
-        <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
-        <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
-        <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
-        <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
-        <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
-        <!--this iframe is the current fresno aqi-->
-        <iframe class="air"
-          src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
-      </div>
-      <!--end of dropdwon content-->
-    </nav>
-    <!--this holds the return from the user iput 'name' and a <p> introducing the page-->
-    <div class="header_info">
-      <h1>Bike Trails</h1>
-      <h2 id="test"></h2>
-    </div>
-    <h4 class="blurb">Whether dirt or gravel roads, there are many trails throughout Fresno County and below is a list of Fresno's most popular biking trails.<br>
-        Biking Organizations: <a href="https://www.fresnocycling.com/">Fresno Cycling Club</a>, <a
-            href="https://fresnobike.org/about">Fresno County Bicycle Coalition</a>, <a
-            href="https://www.meetup.com/clovis-cycle-paths/">Clovis Cycling Meetup Group</a></p></h4>
+        <h4 class="blurb">Whether dirt or gravel roads, there are many trails throughout Fresno County and below is a
+            list of Fresno's most popular biking trails.<br>
+            Biking Organizations: <a href="https://www.fresnocycling.com/">Fresno Cycling Club</a>, <a
+                href="https://fresnobike.org/about">Fresno County Bicycle Coalition</a>, <a
+                href="https://www.meetup.com/clovis-cycle-paths/">Clovis Cycling Meetup Group</a></p>
+        </h4>
 
-  </header>
+    </header>
 
 
     <!-- CYCLING TRAILS -->
@@ -62,131 +65,156 @@
     <!-- COLUMN 1 -->
     <div id="main">
         <div class="card-columns">
-        <div class="card bg-light">
-            <div class="card-body text-center">
-                <img src="img/biking1.jpg" class="card-img-top img-fluid mx-auto d-block" alt="image of person on bike">
-                <a href="https://www.traillink.com/trail/clovis-old-town-trail/" class="card-link" target="_blank"><br>
-                    <h2 class="bike-title">Clovis Old Town Trail</h2>
-                </a>
-                <h3>Clovis, CA</h3>
-                        Length: 5.8 miles</b>
-            </div>
-        </div>
-        <div class="card bg-light">
-            <div class="card-body text-center">
-                <img src="img/biking2.jpg" class="card-img-top img-fluid mx-auto d-block" alt="Image of person on a bike">
-                <a href="https://www.strava.com/local/us/fresno/cycling/routes/1392" class="card-link"
-                    target="_blank"><br>
-                    <h2>Millerton (Out and Back)</h2>
-                </a>
-                <h3>Clovis, CA</h3>
-                        Length: 22.8 miles</b>
-            </div>
-        </div>
-        <div class="card bg-light">
-            <div class="card-body text-center">
-                <img src="img/biking3.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
-                <a href="https://www.strava.com/local/us/fresno/cycling/routes/1393" class="card-link"
-                    target="_blank"><br>
-                    <h2>Rolling Hills to Friant</h2>
-                </a>
-                <h3>Madera, CA - Friant, CA</h3>
-                        Length: 27.5 miles
-            </div>
-        </div>
-    </div>
 
-    <!-- COLUMN 2 -->
-    <div class="card-columns">
-        <div class="card bg-light">
-            <div class="card-body text-center">
-                <img src="img/biking4.jpg" class="card-img-top img-fluid mx-auto d-block" alt="Image of a person on a bike">
-                <a href="https://www.strava.com/local/us/fresno/cycling/routes/1399" class="card-link"
-                    target="_blank"><br>
-                    <h2>Millerton Loop</h2>
-                </a>
-                <h3>Friant, CA</h3>
-                        Length: 17.5 miles
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/biking1.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Clovis Old Town Trail</h5>
+                    <ul>
+                        <li class="list-group-item">Clovis, CA</li>
+                        <li class="list-group-item desc">Length: 5.8 miles</li>
+                        <a href="https://www.traillink.com/trail/clovis-old-town-trail/" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="card bg-light">
-            <div class="card-body text-center">
-                <img src="img/biking5.jpg" class="card-img-top img-fluid mx-auto d-block" alt="Image of a person on a bike">
-                <a href="https://www.strava.com/local/us/fresno/cycling/routes/1397" class="card-link"
-                    target="_blank"><br>
-                    <h2>Friant to Millerton Lake</h2>
-                </a>
-                <h3>Friant, CA - Millerton Lake</h3>
-                        Length: 27.4 miles
-            </div>
-        </div>
-        <div class="card bg-light">
-            <div class="card-body text-center">
-                <img src="img/biking6.jpg" class="card-img-top img-fluid mx-auto d-block" alt="Image of a person on a bike">
-                <a href="https://www.strava.com/local/us/fresno/cycling/routes/1398" class="card-link"
-                    target="_blank"><br>
-                    <h2>Auberry Road (Out and Back)</h2>
-                </a>
-                <h3>Clovis, CA</h3>
-                        Length: 27.3 miles
-            </div>
-        </div>
-    </div>
 
-    <!-- COLUMN 3 -->
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/biking2.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Millerton (Out and Back)</h5>
+                    <ul>
+                        <li class="list-group-item">Clovis, CA</li>
+                        <li class="list-group-item desc">Length: 22.8miles </li>
+                        <a href="https://www.strava.com/local/us/fresno/cycling/routes/1392" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                    </ul>
+                </div>
+            </div>
 
-    <div class="card-columns">
-        <div class="card bg-light">
-            <div class="card-body text-center">
-                <img src="img/biking7.jpg" class="card-img-top img-fluid mx-auto d-block" alt="Image of a person on a bike">
-                <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&z=14&mid=19KsDtEr7wdziUD19oetkbsbTmuk&ll=36.751280517240204%2C-119.51131350000003"
-                    class="card-link" target="_blank"><br>
-                    <h2>Belmont Time Trial</h2>
-                </a>
-                <h3>Belmont, CA</h3>
-                        Length: 5 miles
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/biking3.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Rolling Hills to Friant</h5>
+                    <ul>
+                        <li class="list-group-item">Madera, CA - Friant, CA</li>
+                        <li class="list-group-item desc">Length: 27.5miles </li>
+                        <a href="https://www.strava.com/local/us/fresno/cycling/routes/1393" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="card bg-light">
-            <div class="card-body text-center">
-                <img src="img/biking10.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
-                <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&ll=37.204902%2C-119.23187300000001&spn=0.140826%2C0.417137&z=12&mid=1uuACGge5EYkTRTJjEmvNfmqD6xE"
-                    class="card-link" target="_blank"><br>
-                    <h2>Shaver Lake to Huntington</h2>
-                </a>
-                <h3>Shaver Lake, CA</h3>
-                Length: 17.8 miless
+        <!-- COLUMN 2 -->
+        <div class="card-columns">
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/biking4.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Millerton Loop</h5>
+                    <ul>
+                        <li class="list-group-item">Friant, CA</li>
+                        <li class="list-group-item desc">Length: 17.5miles </li>
+                        <a href="https://www.strava.com/local/us/fresno/cycling/routes/1399" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/biking5.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Friant to Millerton Lake</h5>
+                    <ul>
+                        <li class="list-group-item">Friant, CA - Millerton Lake</li>
+                        <li class="list-group-item desc">Length: 27.4miles </li>
+                        <a href="https://www.strava.com/local/us/fresno/cycling/routes/1397" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/biking6.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Auberry Road (Out and Back)</h5>
+                    <ul>
+                        <li class="list-group-item">Clovis, CA</li>
+                        <li class="list-group-item desc">Length: 27.3miles </li>
+                        <a href="https://www.strava.com/local/us/fresno/cycling/routes/1398" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="card bg-light">
-            <div class="card-body text-center">
-                <img src="img/biking9.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
-                <a href="https://www.google.com/maps/d/viewer?msa=0&ll=36.94180946404267%2C-119.510651&spn=0.30184%2C0.834274&mid=1Zgk7zdqsbas1IVyRAAPoA7d3ApU&z=10"
-                    class="card-link" target="_blank"><br>
-                    <h2>Auberry - Pine Flat Loop</h2>
-                </a>
-                <h3>Gordon, CA</h3>
-                Length: 88.90 miles
+        <!-- COLUMN 3 -->
+
+        <div class="card-columns">
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/biking7.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Belmont Time Trial</h5>
+                    <ul>
+                        <li class="list-group-item">Belmont, CA</li>
+                        <li class="list-group-item desc">Length: 5 miles </li>
+                        <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&z=14&mid=19KsDtEr7wdziUD19oetkbsbTmuk&ll=36.751280517240204%2C-119.51131350000003"
+                            class="btn btn-secondary" target="_blank">See More</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/biking9.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Shaver Lake to Huntington</h5>
+                    <ul>
+                        <li class="list-group-item">Shaver Lake, CA</li>
+                        <li class="list-group-item desc">Length: 17.8 miles </li>
+                        <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&ll=37.204902%2C-119.23187300000001&spn=0.140826%2C0.417137&z=12&mid=1uuACGge5EYkTRTJjEmvNfmqD6xE"
+                            class="btn btn-secondary" target="_blank">See More</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/biking10.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Auberry - Pine Flat Loop</h5>
+                    <ul>
+                        <li class="list-group-item">Gordon, CA</li>
+                        <li class="list-group-item desc">Length: 88.90 miles </li>
+                        <a href="https://www.google.com/maps/d/viewer?msa=0&ll=36.94180946404267%2C-119.510651&spn=0.30184%2C0.834274&mid=1Zgk7zdqsbas1IVyRAAPoA7d3ApU&z=10"
+                            class="btn btn-secondary" target="_blank">See More</a>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</main>
+        </main>
 
-    <!-- START OF FOOTER -->
-    <footer>
-        <div class="social-media">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
-                <span class="hidden-xs"></span></a>
+        <!-- START OF FOOTER -->
+        <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
 
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
-                <span class="hidden-xs"></span></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
 
-            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
-                <span class="hidden-xs"></span></a>
-        </div>
-    </footer>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+            </div>
+        </footer>
 
     </div>
 
@@ -208,7 +236,7 @@
 
 <!-- OLD NAV -->
 
-    <!-- 
+<!-- 
 
     <header>
         <nav class="dropdown">
