@@ -4,11 +4,10 @@
 }
 
 
-body {
-    background-color: #C9D57F;
-    width: 100vw;
-	height: 100vh;
-}
+body{
+	background-color: #A0AB95;;
+	font-family: var(--main-font);
+  }
 
 
 .container {
