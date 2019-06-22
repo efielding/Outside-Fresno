@@ -162,6 +162,15 @@ h1 {
 	width: 100%;
 }
 
+.watch-list {
+	margin-top: 5px;
+	color: white;
+}
+
+a.watch-list {
+	color: white;
+}
+
 .list-group-item {
 	border: none;
     border-top: 1px solid lightgray;
