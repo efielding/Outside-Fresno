@@ -9,53 +9,52 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/events.css">
   <link rel="stylesheet" href="sidenav/sidenav.css">
-  <title>Outside Fresno</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Events</title>
 </head>
 
 <body>
-  <header class="column">
-    <nav class="dropdown">
-      <a class="btn btn-secondary dropdown-toggle white-border" onclick="openNav()" href="#" role="button" id="dropdownMenuLink"
-        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/logo.png" alt="logo"></a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
 
-        <h5>Current Weather</h5>
-        <div class="weather-container">
-          <img id="icon" alt="">
-          <p id="temp"></p>
-          <p id="weather"></p>
+    <!-- START HEADER -->
+    <header class="heading">
+        <nav class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                    src="img/logo.png" alt="logo"></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
+
+                <!-- the following content is inside the dropdown menu,and will only show when the dropdown is open -->
+                <div class="weather-container">
+                    <!--this container holds the current weather api data-->
+                    <h5>Current Weather</h5>
+                    <img id="icon" alt="">
+                    <p id="temp"></p>
+                    <p id="weather"></p>
+                </div>
+                <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
+                <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
+                <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
+                <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
+                <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
+                <!--this iframe is the current fresno aqi-->
+                <iframe class="air"
+                    src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
+            </div>
+            <!--end of dropdwon content-->
+        </nav>
+        <div class="header_info">
+            <h1>Events</h1>
+            <h2 id="test"></h2>
         </div>
+        <h4 class="blurb">Check out some local events happening in our community! We watch for events that encourage a healthy lifestyle and family fun. Check back to our page for future events!
+        </h4>
 
-        <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
-        <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
-        <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
-        <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
-        <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
-
-        <iframe class="air"
-          src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
-
-      </div>
-    </nav>
-
-    <!-- DIV WHERE NAME CAN GO (IF ANOTHER DIV, MAKE SURE IT HAS ID OF "test") -->
-
-    <div class="div">
-      <h2 class="header"> Events</h2>
-      <h2 class="header" id="test"></h2>
-    </div>
-    <div>
-      <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquam distinctio nesciunt odio,
-        illo delectus maxime. Sit esse dolor fugit labore consequuntur possimus, sint nobis temporibus quasi alias,
-        expedita ipsam veritatis dignissimos ipsa fugiat quisquam a excepturi ad voluptates. Commodi deserunt dolor,
-        nihil autem praesentium enim ex ratione quibusdam harum.</p>
-    </div>
-  </header>
-
-
+    </header>
 
   <main id="main">
     <div class="card-columns">
+
       <div class="card bg-light">
         <div class="card-body text-center">
           <img src="img/copskids.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
@@ -73,7 +72,7 @@
           <p>Registration for the Cops & Kids Sports Camp will open on Monday, April 29, 2019, at 10:00 A.M. Spots are
             limited and this camp fills up extremely quickly. </p>
         </div>
-      </div>
+      </div> 
       <div class="card bg-light">
         <div class="card-body text-center">
           <img src="img/fresno-rec.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
