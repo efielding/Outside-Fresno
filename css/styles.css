@@ -17,9 +17,8 @@ body{
     font-family: var(--main-font);
 }
 
-header{
+.header{
   background-color: var(--green);
-
 }
 /* nav start */
 
