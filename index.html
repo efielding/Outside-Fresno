@@ -14,46 +14,9 @@
 
 <body>
     <header>
-        <!-- LOG IN -->
-        <div class="container">
-            <!-- Trigger the modal with a button -->
-            <button type="button" class="btn btn-info btn-md btn-color log-in" data-toggle="modal" data-target="#myModal">Log
-                In</button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Log In</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                Name:<br>
-                                <input type="text" name="fullName" id="name-input"><br><br>
-                                Email:<br>
-                                <input type="text" email="emailinput" id="email-input">
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal" input type="submit"
-                                value="submit" id="submit-info">Submit</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- DIV WHERE NAME CAN GO (IF ANOTHER DIV, MAKE SURE IT HAS ID OF "test") -->
-        <div class="div">
-            <div id="test"></div>
-        </div>
-        <!-- END OF LOG-IN -->
-        <nav class="dropdown">
+        
+        <!-- START OF NAV -->
+        <nav class="dropright">
             <a class="btn btn-secondary dropdown-toggle menu" onclick="openNav()" href="#" role="button"
                 id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
                     src="img/logo.png" alt="logo"></a>
@@ -65,28 +28,60 @@
                         <p id="temp"></p>
                         <p id="weather"></p>
                     </div>
-                
                     <iframe class="air" src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
                 </div>
             </div>
         </nav>
+        <!-- END OF NAV -->
 
+                <!-- LOG IN -->
+                <div class="container">
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-md btn-color log-in" data-toggle="modal" data-target="#myModal">Log
+                            In</button>
+            
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+            
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Log In</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            Name:<br>
+                                            <input type="text" name="fullName" id="name-input"><br><br>
+                                            Email:<br>
+                                            <input type="text" email="emailinput" id="email-input">
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal" input type="submit"
+                                            value="submit" id="submit-info">Submit</button>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DIV WHERE NAME CAN GO (IF ANOTHER DIV, MAKE SURE IT HAS ID OF "test") -->
+                    <div>
+                        <div id="test"><h1></h1></div>
+                    </div>
+                    <!-- END OF LOG-IN -->
     </header>
 
-
+    <!-- START OF INTRODUCTION -->
 
     <div>
-        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquam distinctio nesciunt
-            odio,
-            illo delectus maxime. Sit esse dolor fugit labore consequuntur possimus, sint nobis temporibus quasi
-            alias,
-            expedita ipsam veritatis dignissimos ipsa fugiat quisquam a excepturi ad voluptates. Commodi deserunt
-            dolor,
-            nihil autem praesentium enim ex ratione quibusdam harum.</p>
+        <h2 class="welcome-intro">Welcome to Outside Fresno! Our goal with this website is to encourage our local community to be active and make it easy to do by having a one-stop-shop on popular trails, parks, and local events!</p>
     </div>
+    <!-- END OF INTRODUCTION -->
 
-
-
+    <!-- PAGE BUTTONS -->
 
     <section>
         <div class="pan-pic">
@@ -103,10 +98,9 @@
                         alt=""></button></a>
         </div>
     </section>
+    <!-- END OF PAGE BUTTONS -->
 
-
-
-    <!-- footer -->
+    <!-- START OF FOOTER -->
     <footer>
         <div class="social-media">
             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
@@ -119,6 +113,9 @@
                 <span class="hidden-xs"></span></a>
         </div>
     </footer>
+
+    <!-- END OF FOOTER -->
+    <!-- JAVASCRIPT LINKING -->
 
     <script src="js/module.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -133,9 +130,5 @@
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
 
-
-
 </body>
-
-
 </html>
