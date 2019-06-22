@@ -3,6 +3,7 @@
 
 :root { 
   --green: #BCC77F;
+  --dkgreen: #a0ab95;
   --ltgrey: #C6C9CD;
   --white: #fafafa;
   --dkgrey: #6C757D;
@@ -12,11 +13,14 @@
 }
 
 body{
-    background-color: #a0ab95;
-    width: 100vw;
-    height: 100vh;
-    font-family: var(--main-font);
+  background-color: var(--ltgreen);
+  font-family: var(--main-font);
 }
+
+.header{
+background-color: var(--green);
+}
+
 .lorem{
   color: #fafafa;
   width: 550px;
@@ -34,6 +38,15 @@ body{
     justify-content: space-around;
     border-bottom: 25px solid #C6C9CD;
     background-color: #BCC77F;
+  }
+
+  h2{
+    color: var(--white);
+    margin-top: 23px;
+  }
+
+  .white-border{
+    border: 5px solid white;
   }
 
 /* nav start */
