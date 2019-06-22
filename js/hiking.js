@@ -3,14 +3,17 @@ var welcome = 'Welcome '+ user + "!";
 document.getElementById("test").innerHTML = welcome;
 
 // function that moves all content in main div to the right when the menu is open
+// then shows the menu
 function openNav(){
   document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("menu").classList.toggle("show");
 }
 
-/* Set the width of the navbar to 0 and the left margin of the page content to 0 */
+// Sets the left margin of the main div content to 0 
+// then hides the menu
 function closeNav() {
-  // document.getElementsByClassName("dropdown-menu show").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("menu").classList.toggle("show");
 }
 
 // this is the code for the 'hiking project' api
