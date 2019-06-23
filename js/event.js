@@ -1,5 +1,5 @@
 var user = localStorage.getItem("name");
-var welcome = 'Welcome ' + user + "!";
+var welcome = 'Welcome, ' + user + "!";
 document.getElementById("test").innerHTML = welcome;
 
 // function that moves all content in main div to the right when the menu is open
