@@ -132,6 +132,10 @@ header {
   margin-top: 5%;
 }
 
+.name-container {
+  margin-left: 30%;
+}
+
 /* Welcome */
 
 .welcome-intro {

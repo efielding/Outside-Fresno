@@ -17,7 +17,7 @@ function closeNav() {
 
 // LOG IN
 var user = localStorage.getItem("name");
-var welcome = 'Welcome ' + user + "!";
+var welcome = 'Welcome, ' + user + "!";
 document.getElementById("test").innerHTML = welcome;
 
 // END OF LOG IN
@@ -26,13 +26,12 @@ document.getElementById("test").innerHTML = welcome;
 
 var savedList = document.getElementById("save");
 savedList.addEventListener('click', function() {
-  if (savedList.innerHTML == "Save to Watchlist") {
-    savedList.innerHTML = "Saved";
+  if (this.innerHTML == "Save to Watchlist") {
+    this.innerHTML = "Saved";
   } else {
-    savedList.innerHTML = "Save to Watchlist";
+    this.innerHTML = "Save to Watchlist";
   }
 })
-
 
 // API FOR WEATHER
 

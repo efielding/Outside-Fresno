@@ -6,7 +6,7 @@ function openNav(){
 
 // display name
 var user = localStorage.getItem("name");
-var welcome = 'Welcome '+ user + "!";
+var welcome = 'Welcome, '+ user + "!";
 document.getElementById("test").innerHTML = welcome;
 
 // weather 
