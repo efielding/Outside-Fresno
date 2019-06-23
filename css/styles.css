@@ -136,6 +136,7 @@ header {
 
 .welcome-intro {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -170,6 +171,7 @@ footer {
   height: 100px;
   margin-right: 0;
   margin-left: 0;
+  padding-top: 30px;
 }
 
 .social-media {
