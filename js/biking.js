@@ -1,12 +1,16 @@
 // MAIN NAV
-// Function that moves all content in main div to the right when the menu is open
+// function that moves all content in main div to the right when the menu is open
+// then shows the menu
 function openNav(){
   document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("menu").classList.toggle("show");
 }
 
-// Set the width of the navbar to 0 and the left margin of the page content to 0 
+// Sets the left margin of the main div content to 0 
+// then hides the menu
 function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("menu").classList.toggle("show");
 }
 
 // END OF MAIN NAV
@@ -17,6 +21,18 @@ var welcome = 'Welcome ' + user + "!";
 document.getElementById("test").innerHTML = welcome;
 
 // END OF LOG IN
+
+// START OF WATCH LIST
+
+var savedList = document.getElementById("save");
+savedList.addEventListener('click', function() {
+  if (savedList.innerHTML == "Save to Watchlist") {
+    savedList.innerHTML = "Saved";
+  } else {
+    savedList.innerHTML = "Save to Watchlist";
+  }
+})
+
 
 // API FOR WEATHER
 
