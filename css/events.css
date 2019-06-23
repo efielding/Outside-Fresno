@@ -185,6 +185,14 @@ h1 {
     margin: auto;
 }
 
+.btn-secondary {
+	width: 100%;
+}
+
+.watch-list {
+	margin-top: 5px;
+	color: white;
+}
 
 /* mobile */
 @media screen and (max-width: 600px) {

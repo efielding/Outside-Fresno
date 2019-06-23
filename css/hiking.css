@@ -156,6 +156,11 @@ h2 {
 	height: 85px;
  }
  
+ .watch-list {
+	margin-top: 5px;
+	color: white;
+}
+
  /* FOOTER */
 
  footer {
