@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/recipes.css">
+    <link rel="stylesheet" href="js/recipes.js">
+    <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>Healthy Recipes</title>
+</head>
+
+<body>
+
+    <!-- START HEADER -->
+    <header class="heading">
+        <nav class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                    src="img/logo.png" alt="logo"></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
+
+                <!-- the following content is inside the dropdown menu,and will only show when the dropdown is open -->
+                <div class="weather-container">
+                    <!--this container holds the current weather api data-->
+                    <h5>Current Weather</h5>
+                    <img id="icon" alt="">
+                    <p id="temp"></p>
+                    <p id="weather"></p>
+                </div>
+                <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
+                <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
+                <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
+                <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
+                <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
+                <a class="dropdown-item" href="recipes.html" target="_blank"></a>
+                <!--this iframe is the current fresno aqi-->
+                <iframe class="air"
+                    src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
+            </div>
+            <!--end of dropdwon content-->
+        </nav>
+        <!--this holds the return from the user iput 'name' and a <p> introducing the page-->
+        <div class="header_info">
+            <h1>Healthy Recipes</h1>
+            <h2 id="test"></h2>
+        </div>
+        <h4 class="blurb">Try a new healthy recipe this week by looking at some of our favorite meals down below! We have breakfast, lunch, and dinner options.
+        </h4>
+
+    </header>
+
+
+    <!-- CYCLING TRAILS -->
+
+    <!-- COLUMN 1 -->
+    <div id="main">
+        <div class="card-columns">
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/pancake1.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Banana Pancakes</h5>
+                    <ul>
+                        <li class="list-group-item">1 banana, 1 egg, and oil for cooking</li>
+                        <li class="list-group-item desc">Mash the 1 banana until it is smooth as possible (a few lumps is okay). Add desired flavoring if available (vanilla extract, cinnamon, nutmeg, etc). Mix in egg with banana. Cook in a meduim heat pan and cook until golden brown, about a minute on each side. Enjoy!</li>
+                        <!-- <a href="https://www.thekitchn.com/how-to-make-2-ingredient-banana-pancakes-cooking-lessons-from-the-kitchn-218658" class="btn btn-secondary"
+                            target="_blank">See More</a> -->
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/oats.jpg"
+                        alt="image of overnight oats">
+                    <h5 class="card-title bike-title">Overnight Oats</h5>
+                    <ul>
+                        <li class="list-group-item">Oatmeal (any kind), milk (any kind), toppings</li>
+                        <li class="list-group-item desc">The trick with this recipe is to make the night before so it's ready in the morning. Perfect for a busy day! Cover 1/2 cup of oats into 1 cup milk and refridgerate overnight. Top with fruit, peanut butter, chocolate, or mix with protein powder for a well-balanced meal.</li>
+                        <!-- <a href="" class="btn btn-secondary"
+                            target="_blank">See More</a> -->
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/toast.jpg"
+                        alt="image of person on bike">
+                    <h5 class="card-title bike-title">Avocado and poached eggs Toast</h5>
+                    <ul>
+                        <li class="list-group-item">Toast, avocado, eggs</li>
+                        <li class="list-group-item desc">A simple and savory breakfast. Toast bread and place cut or mashed avocado on top of toast. Poach eggs by placing eggs into a pot of near boiling water (at least 4" deep) w/a half TSP of vinegar. Cook eggs for 3-4 minutes. Place poached egg on top of avocado toast. </li>
+                        <!-- <a href="https://downshiftology.com/recipes/poached-eggs/" class="btn btn-secondary"
+                            target="_blank">See More</a> -->
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="card-columns">
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/salad.jpg"
+                        alt="image of salad">
+                    <h5 class="card-title bike-title">Balanced Salad</h5>
+                    <ul>
+                        <li class="list-group-item">Greens, sweet potato, seeds, fruit, protein, vegetables</li>
+                        <li class="list-group-item desc">How to create a filling salad! Start with your carbs by using cut up potatoes or legumes. Follow up with your greens of choice (spinach, chard, cooked kale, argula, etc). Pick your protein of chicken, tofu, even beef or bacon! Top with pumpkin seeds, almonds, cashews etc for a crunch and fruit for some sweetness. Cookies veggies are also great!</li>
+                        <!-- <a href="https://www.strava.com/local/us/fresno/cycling/routes/1399" class="btn btn-secondary"
+                            target="_blank">See More</a> -->
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/wrap1.jpg"
+                        alt="image of sandwich wrap">
+                    <h5 class="card-title bike-title">Spinach and Hummus Wrap</h5>
+                    <ul>
+                        <li class="list-group-item">tortilla, spinach, hummus, bell pepper, chicken or lunch meat</li>
+                        <li class="list-group-item desc">Start by cutting up bell peppers into slices, make sure they will fit into the tortilla. Spread a layer of hummus onto the tortilla and place spinach, bell pepper, and chicken or lunch meat on tortilla. Wrap. Done! </li>
+                        <!-- <a href="" class="btn btn-secondary"
+                            target="_blank">See More</a> -->
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/icecream1.jpg"
+                        alt="image of banana ice ream">
+                    <h5 class="card-title bike-title">Banana Nice Cream</h5>
+                    <ul>
+                        <li class="list-group-item">Frozen banana and milk or water</li>
+                        <li class="list-group-item desc">Peel and cut up bananas into slices and place into freezer until completely hardened. Take the frozen bananas and place into a blender with a splash of milk or water. Blend until smooth. A healthy alternative to ice cream! </li>
+                        <!-- <a href="https://www.strava.com/local/us/fresno/cycling/routes/1398" class="btn btn-secondary"
+                            target="_blank">See More</a> -->
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMN 3 -->
+
+        <div class="card-columns">
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/sweetp.jpg"
+                        alt="image of sweet potato">
+                    <h5 class="card-title bike-title">Stuffed Sweet Potato</h5>
+                    <ul>
+                        <li class="list-group-item">sweet potato, chickpeas, parsley for garnish</li>
+                        <li class="list-group-item desc">Set oven to 350 degrees. Cut sweet potato in halves and cover in oil and seasonings (salt, pepper, paprika, garlic powder). Season chickpeas as well. Place sweet potato and chickpeas in oven-safe pan and cook for around 20-25 minutes. Mash center of sweet potatoe a bit and place chickpeas on top of sweet potato. Garnish with parsley and ranch, if desired.</li>
+                        <!-- <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&z=14&mid=19KsDtEr7wdziUD19oetkbsbTmuk&ll=36.751280517240204%2C-119.51131350000003"
+                            class="btn btn-secondary" target="_blank">See More</a> -->
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/kale.jpg"
+                        alt="image of kale chips">
+                    <h5 class="card-title bike-title">Kale Chips</h5>
+                    <ul>
+                        <li class="list-group-item">Kale leaves, oil, nutritional yeast (for cheesy flavor)</li>
+                        <li class="list-group-item desc">Set oven to 350 degrees. Cut kale leaves into small bite sized pieces (no stem). Make sure kale pieces are dry. Lightly coat in oil and add seasoning of choice (garlic powder/salt/nutritional yeast). Bake for 10-15 minutes.</li>
+                        <!-- <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&ll=37.204902%2C-119.23187300000001&spn=0.140826%2C0.417137&z=12&mid=1uuACGge5EYkTRTJjEmvNfmqD6xE"
+                            class="btn btn-secondary" target="_blank">See More</a> -->
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/froyo.jpg"
+                        alt="image of frozen yogurt popsicles">
+                    <h5 class="card-title bike-title">Frozen Yogurt Popsicles</h5>
+                    <ul>
+                        <li class="list-group-item">Frozen yogurt, fruit</li>
+                        <li class="list-group-item desc">Take greek yogurt and place into popsicle molds. Cut up fruit if desired and place into popsicle molds with greek yogurt. Freeze overnight.</li>
+                        <!-- <a href="https://www.google.com/maps/d/viewer?msa=0&ll=36.94180946404267%2C-119.510651&spn=0.30184%2C0.834274&mid=1Zgk7zdqsbas1IVyRAAPoA7d3ApU&z=10"
+                            class="btn btn-secondary" target="_blank">See More</a> -->
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </main>
+
+        <!-- START OF FOOTER -->
+        <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/recipes.js"></script>
+</body>
+
+</html>

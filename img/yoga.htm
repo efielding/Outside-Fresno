@@ -1,0 +1,1627 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/inc_tinymcesetup_3819044133.css"  /><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/inc_tinymcesetup_2919851222.js"></script><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/mindbody-basic-cm_3956838960.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/jquery.tooltip_705946641.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/base/jquery.ui.all_1979017966.css"  /><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/jquery-1.8.2_1715037125.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/plugins/jquery.cookie-1.0_2562213837.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/plugins/jquery.mb_1819505035.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/plugins/jquery.libasync_3434475200.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/bundles/jqueryPartialJS1.bundle_344574083.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/plugins/jquery.tooltip_4206342243.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/bundles/jqueryPartialJS2.bundle_2570144071.js"></script>
+
+
+<script type="text/javascript">
+// filePath must be absolute with leading slash
+function contentUrl(filePath) {
+    
+    return "https://static.mindbodyonline.com/a" + filePath;    
+	
+}
+
+(function ($) {
+	//$.fn.extend({
+	$.contentUrl = function (filePath) {
+		//contentUrl: function (filePath) {
+	    
+        return "https://static.mindbodyonline.com/a" + filePath;    
+	    
+	};
+})(jQuery);
+
+$(function() {
+
+	
+		// init tooltips
+		$("img[title],span[title],select[title],input[title],legend[title]").tooltip({
+			track: true,
+			showURL: false,
+			fade: 250
+		});
+		
+
+	$('fieldset.collapsible').setCollapseEvents();
+
+});
+</script>
+
+
+<html>
+<head><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"169e250927","applicationID":"31153614","transactionName":"NVBRNRZZXUdYARILDgwaZhMNF3JnaU0LAwgMakAJC0gdVUoS","queueTime":0,"applicationTime":926,"agent":"","atts":"GRdSQ15DEVpLTBIQCBJ8V0NeGgoMCVBeJyIgcAJUUX4AcAFAGx8="}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAIDV1FACwIBUVJUBgU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(23),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(24),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){M++,j=y.hash,this[u]=x.now()}function o(){M--,y.hash!==j&&i(0,!0);var t=x.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=x.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,l="cb"+s,p="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,x=t("loader");if(w[v]&&x.xhrWrappable){var g=t(10),b=t(11),E=t(8),R=t(6),O=t(13),C=t(7),P=t(14),T=t(9),L=t("ee"),S=L.get("tracer");t(16),x.features.spa=!0;var j,M=0;L.on(u,r),L.on(l,r),L.on(d,o),L.on(p,o),L.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),P.buffer([u,"new-xhr","send-xhr"+s]),C.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",l,p,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),T.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(P,"send-xhr"+s),a(L,"xhr-resolved"),a(L,"xhr-done"),a(C,m+s),a(C,m+"-done"),a(T,"new-jsonp"),a(T,"jsonp-end"),a(T,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",x=t("loader");x.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=x.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,x.now()])}),a.on(m,function(t,e,n){this.bstStart=x.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,x.now(),this.bstType])}),s.on(m,function(){this.bstStart=x.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,x.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=x.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(26)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(23);e.exports=o;var a=window,s="fetch-",c=s+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,l=a.fetch,p="prototype";u&&d&&l&&(i(f,function(t,e){r(u[p],e,c),r(d[p],e,c)}),r(a,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(26)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],l),c.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var l={};f.inPlace(u.parent,[u.key],"cb-",l),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t(26)(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,p=["appendChild","insertBefore","replaceChild"];f.inPlace(HTMLElement.prototype,p,"dom-"),f.inPlace(HTMLHeadElement.prototype,p,"dom-"),f.inPlace(HTMLBodyElement.prototype,p,"dom-"),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(26)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(26),a=t("ee").get("promise"),s=i(a),c=t(23),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(26)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(26)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){x.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(26)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,g),g.prototype=p.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(){var t=window.NREUM,e=t.info.accountID||null,n=t.info.agentID||null,r=t.info.trustKey||null,i="btoa"in window&&"function"==typeof window.btoa;if(!e||!n||!i)return null;var a={v:[0,1],d:{ty:"Browser",ac:e,ap:n,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&e!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(21);e.exports={generateTraceHeader:r}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(l[r],this.listener,!1);e.aborted||(n.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):a(this,t),n.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return v(r)}function i(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}function a(t,e){t.params.status=e.status;var n=o(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(17),u=t(15).generateTraceHeader,d=t("ee"),l=["load","error","abort","timeout"],p=l.length,h=t("id"),m=t(20),v=t(19),w=window.XMLHttpRequest;s.features.xhr=!0,t(14),d.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){a(e,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=!!NREUM.init.distributed_tracing.enabled),n&&this.sameOrigin){var r=u();r&&e.setRequestHeader("newrelic",r)}}),d.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=v(r);i&&(n.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{d.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<p;a++)e.addEventListener(l[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),d.on("xhr-load-added",function(t,e){var n=""+h(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,e){var n=""+h(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],e)}),d.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],e)}),d.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,e){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,e],e)})}},{}],17:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],18:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(23),s=t(24),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],19:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],20:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],21:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}e.exports={generateUuid:r,generateCatId:o}},{}],22:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],23:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],24:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],25:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],26:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(24),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){l([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!l.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[x[n]];return d&&d.push([g,n,r,a]),a}}function p(t,e){y[t]=m(t).concat(e)}function h(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",x[n]=e,e in u||(u[e]=[])})}var y={},x={},g={on:p,addEventListener:p,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(23),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+b.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(23),u=t("ee"),d=t(22),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1123.min.js"},g=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:g,userAgent:d};t(18),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(25)},{}]},{},["loader",2,16,5,3,4]);</script>
+    
+        <title>Fulton Yoga Collective Online</title>
+    
+
+<meta http-equiv="Content-Type" content="text/html"/>
+<meta name="viewport" content="width=1190" />
+<!-- MB google analytics code-->
+<!-- Get user role -->
+
+
+
+<script type="text/javascript">
+    window.amplitude = null;
+    window.defaultAmplitudeEventProperties = {
+        StudioID: '791257',
+        Vertical: 'OS',
+        UserRole: '',
+        SiteAge: '1-3 years',
+        Tier: '',
+        SiteCreationDate: '',
+        RegionID: '0',
+        TrainerID: '',
+        LoginID: '',
+        ClientID: ''
+    };
+
+    $(function () {
+        // This function will append javascript to the end of the body that
+        // will set an amplitudeReady flag to true once all other scripts have loaded 
+        // (since it is appended to the end). We can then be more certain that all 
+        // other scripts have loaded before firing off amplitude events.
+        var amplitudeReady = document.createElement("script");
+        amplitudeReady.type = "text/javascript";
+        amplitudeReady.text = "var mb = mb || {}; mb.amplitudeReady = true;";
+        $("body").append(amplitudeReady);
+
+        if (implementationSwitchIsEnabled("CCG_Bug499561_FixAmplitudeTracking")) {
+            // Fetch the last knockout data-bound element on the page
+            var lastDataBoundElement = $('#main-content [data-bind]:not(.LightBox)').last();
+            // If there is a data-bound element, wait for bindings to be applied before logging the pageview event
+            if (lastDataBoundElement.length > 0) {
+                var checkDataBindInterval = setInterval(function () {
+                    if (typeof (ko) != "undefined") {
+                        if (!!ko.dataFor(lastDataBoundElement[0])) {
+                            clearInterval(checkDataBindInterval);
+                            logPageviewEvent();
+                        }
+                    }
+
+                    // Refetch the last data-bind element on the page
+                    lastDataBoundElement = $('#main-content [data-bind]:not(.LightBox)').last();
+
+                    if (lastDataBoundElement.length == 0) {
+                        clearInterval(checkDataBindInterval);
+                        logPageviewEvent();
+                    }
+                }, 100);
+            } else {
+                logPageviewEvent();
+            }
+        }
+        else {
+            // Fetch the last knockout data-bound element on the page
+            var lastDataBoundElement = $('#main-content [data-bind]').last();
+            // if there is a data-bound element, wait for bindings to be applied before logging the pageview event
+            if (lastDataBoundElement.length > 0) {
+                var checkDataBindInterval = setInterval(function () {
+                    if (typeof (ko) != "undefined") {
+                        if (!!ko.dataFor(lastDataBoundElement[0])) {
+                            clearInterval(checkDataBindInterval);
+                            logPageviewEvent();
+                        }
+                    }
+
+                    //refetch the last data-bind element on the page
+                    lastDataBoundElement = $('#main-content [data-bind]').last();
+
+                    if (lastDataBoundElement.length == 0) {
+                        clearInterval(checkDataBindInterval);
+                        logPageviewEvent();
+                    }
+                }, 100);
+            } else {
+                logPageviewEvent();
+            }
+        }
+    });
+
+    var _gaq = _gaq || [];
+
+    
+	//consumer mode tracking
+		_gaq.push(['_setAccount', 'UA-31442-18']);
+    
+        //_gaq.push(['_setDomainName', 'mindbodyonline.com']);
+	_gaq.push(['_setCustomVar', 1, 'Vertical', 'OS', 2]);
+    
+		_gaq.push(['_setCustomVar', 2, 'Account Age', '1-3 years', 2]);
+    
+	_gaq.push(['_setCustomVar', 4, 'StudioID', '791257', 2]);
+    
+        _gaq.push(['_setCustomVar', 5, 'MB_SOLO', 'MB_SOLO_Disabled', 2]);
+    
+        _gaq.push(['_setCustomVar', 5, 'MB_GROW', 'MB_GROW_Enabled', 2]);
+    
+        _gaq.push(['_setCustomVar', 5, 'MB_PRO', 'MB_PRO_Disabled', 2]);
+    
+        _gaq.push(['_setCustomVar', 5, 'MB_ACCELERATE', 'MB_ACCELERATE_Disabled', 2]);
+    
+    _gaq.push(['_trackPageview']);
+
+    //Re Adding GA
+    _gaq.push(['b._setAccount', 'UA-31442-3']);
+    _gaq.push(['b._setDomainName', 'mindbodyonline.com']);
+    _gaq.push(['b._setCustomVar', 1, 'Vertical', 'OS', 2]);
+    _gaq.push(['b._trackPageview']);
+	
+    // fraction of seconds delay to track events, which avoids the async aborted errors in firebug console
+    function recordOutboundLink(linkAction, eventCategory, eventAction, eventLabel) {
+        recordLink(eventCategory, eventAction, eventLabel);
+        _gaq.push(['_trackEvent', eventCategory, eventAction, eventLabel]);
+
+        setTimeout(linkAction, 200);
+    }
+
+    function recordLink(eventCategory, eventAction, eventLabel) {
+        var properties = {
+            EventLabel: eventLabel,
+            EventAction: eventAction
+        };
+        logEvent(eventCategory, properties);
+        _gaq.push(['_trackEvent', eventCategory, eventAction, eventLabel]);
+    
+        //added for QA debugging: in console setting window.DebugMode = true prior to firing recordLink() will log the event label.
+        //mostly for QA to prove that tracking is installed in the dev enviornment.
+        if (window.DebugMode && window.DebugMode == true) {
+            console.log(eventLabel);
+        }
+    }
+
+    function logPageviewEvent(properties) {
+        var pageviewProperties = {
+            PagePath: window.location.pathname.toLowerCase(),
+            ScreenHeight: screen.height,
+            ScreenWidth: screen.width,
+            WindowInnerHeight: window.innerHeight,
+            WindowInnerWidth: window.innerWidth,
+            UserAgent: navigator.userAgent
+        };
+
+        // Fetch all of the parameters for any special elements we want to track the view of
+        var visibleElementsProperty = $('.amplitude-view-event:visible').map(function() {
+            return $(this).data('amplitudeviewparams');
+        });
+
+        // Add the element view parameters as a Type on the pageview event
+        if(visibleElementsProperty.length > 0) {
+            $.extend(pageviewProperties, {VisibleElements: visibleElementsProperty.get().join()});
+        }
+
+         // CCG_DynamicPricing_1_5 end if
+
+        $.extend(pageviewProperties, properties);
+
+        logEvent("Pageview", pageviewProperties);
+    }
+
+    function logEvent(identifier, properties) {
+        if (typeof (mb) == 'undefined' || !mb.amplitudeReady)
+        {
+            setTimeout(function() {
+                logEvent(identifier, properties);
+            }, 100);
+            return;
+        }
+        
+        var eventProperties = $.extend({}, window.defaultAmplitudeEventProperties, properties);
+        
+        if (window.implementationSwitchIsEnabled("Upgrade_Amplitude_Web")) {
+            if (window.amplitude == null) {
+                if (window.require) {
+                    require(["https://cdn.amplitude.com/libs/amplitude-4.2.1-min.gz.js"],
+                        function(amplitude) {
+                            // Once amplitude is loaded bind it to the window and initialize it.
+                            window.amplitude = amplitude;
+
+                            
+                                window.amplitude.getInstance().init('c13fc4b6af51e4f152a6988a74ec6dfa');
+                            
+                                window.amplitude.getInstance().logEvent(identifier, eventProperties);
+                        });
+                } else {
+                    (function (e, t) {
+                        var n = e.amplitude || { _q: [], _iq: {} };
+                        var r = t.createElement("script");
+                        r.type = "text/javascript";
+                        r.async = true;
+                        r.src = "https://cdn.amplitude.com/libs/amplitude-4.2.1-min.gz.js";
+                        r.onload = function () {
+                            if (e.amplitude.runQueuedFunctions) {
+                                e.amplitude.runQueuedFunctions()
+                            } else {
+                                console.log("[Amplitude] Error: could not load SDK")
+                            }
+                        };
+                        var i = t.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(r, i);
+                        function s(e, t) {
+                            e.prototype[t] = function () {
+                                this._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+                                return this;
+                            }
+                        }
+                        var o = function () {
+                            this._q = [];
+                            return this;
+                        };
+                        var a = ["add", "append", "clearAll", "prepend", "set", "setOnce", "unset"];
+                        for (var u = 0; u < a.length; u++){
+                            s(o, a[u]);
+                        }
+                        n.Identify = o;
+                        var c = function () {
+                            this._q = [];
+                            return this;
+                        };
+                        var l = ["setProductId", "setQuantity", "setPrice", "setRevenueType", "setEventProperties"];
+                        for (var p = 0; p < l.length; p++){
+                            s(c, l[p]);
+                        }
+                        n.Revenue = c;
+                        var d = ["init", "logEvent", "logRevenue", "setUserId", "setUserProperties", "setOptOut",
+                          "setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify",
+                          "clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp",
+                            "logEventWithGroups", "setSessionId", "resetSessionId"];
+                        function v(e) {
+                            function t(t) {
+                            e[t] = function () {
+                                    e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+                                }
+                            }
+                            for (var n = 0; n < d.length; n++){
+                                t(d[n]);
+                            }
+                        }
+                        v(n);
+                        n.getInstance = function (e) {
+                            e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase();
+                            if (!n._iq.hasOwnProperty(e)) {
+                                n._iq[e] = { _q: [] };
+                                v(n._iq[e]);
+                            }
+                            return n._iq[e];
+                        };
+                        e.amplitude = n;
+                    })(window, document);
+                    
+                        window.amplitude.getInstance().init('c13fc4b6af51e4f152a6988a74ec6dfa');
+                    
+                    window.amplitude.getInstance().logEvent(identifier, eventProperties);
+                }
+            } else {
+                window.amplitude.getInstance().logEvent(identifier, eventProperties);
+            }
+        } else {
+            if (window.amplitude == null) {
+                if (window.require) {
+                    require(["https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-2.12.1-min.gz.js"],
+                        function(amplitude) {
+                            // Once amplitude is loaded bind it to the window and initialize it.
+                            window.amplitude = amplitude;
+
+                            
+                                window.amplitude.init('c13fc4b6af51e4f152a6988a74ec6dfa');
+                            
+                            window.amplitude.logEvent(identifier, eventProperties);
+                        });
+                } else {
+                    (function(e, t) {
+                        var n = e.amplitude || { _q: [] };
+                        var r = t.createElement("script");
+                        r.type = "text/javascript";
+                        r.async = true;
+                        r.src = "https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-2.12.1-min.gz.js";
+                        r.onload = function() {
+                            if (typeof e.amplitude.runQueuedFunctions === "function") {
+                                e.amplitude.runQueuedFunctions();
+                            }
+                        };
+                        var s = t.getElementsByTagName("script")[0];
+                        s.parentNode.insertBefore(r, s);
+
+                        function i(e, t) {
+                            e.prototype[t] = function() {
+                                this._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+                                return this;
+                            };
+                        }
+
+                        var o = function() {
+                            this._q = [];
+                            return this;
+                        };
+                        var a = ["add", "append", "clearAll", "prepend", "set", "setOnce", "unset"];
+                        for (var u = 0; u < a.length; u++) {
+                            i(o, a[u]);
+                        }
+                        n.Identify = o;
+                        var c = function() {
+                            this._q = [];
+                            return this;
+                        };
+                        var p = ["setProductId", "setQuantity", "setPrice", "setRevenueType", "setEventProperties"];
+                        for (var l = 0; l < p.length; l++) {
+                            i(c, p[l]);
+                        }
+                        n.Revenue = c;
+                        var d = [
+                            "init", "logEvent", "logRevenue", "setUserId", "setUserProperties", "setOptOut",
+                            "setVersionName",
+                            "setDomain", "setDeviceId", "setGlobalUserProperties", "identify", "clearUserProperties",
+                            "setGroup",
+                            "logRevenueV2", "regenerateDeviceId"
+                        ];
+
+                        function v(e) {
+                            function t(t) {
+                                e[t] = function() {
+                                    e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+                                };
+                            }
+
+                            for (var n = 0; n < d.length; n++) {
+                                t(d[n]);
+                            }
+                        }
+
+                        v(n);
+                        e.amplitude = n;
+                    })(window, document);
+                    
+                        window.amplitude.init('c13fc4b6af51e4f152a6988a74ec6dfa');
+                    
+                    window.amplitude.logEvent(identifier, eventProperties);
+                }
+            } else {
+                window.amplitude.logEvent(identifier, eventProperties);
+            }
+        }
+        
+    }
+
+    function bindAmplitudeEvent() {
+        
+            var onClick = function() {
+                var $this = $(this),
+                    identifier = $this.data("amplitudeeventname"),
+                    properties = $this.data("amplitudeeventparams");
+
+                if (identifier != undefined) {
+                    logEvent(identifier, properties);
+                }
+            };
+
+            $('body')
+                .off('.amplitudeEvent')
+                .on('click.amplitudeEvent', '.amplitude-event', onClick);
+        
+    }
+
+</script>
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/reset_245008592.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/site_3663970033.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/grid_331391043.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/calendar_1955694519.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/menu_1809625645.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/lightbox_2328248560.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/print_309623290.css" media="print" /><link rel="stylesheet" href="/studios/FultonYogaCollective/css/site.591390315.css?v=1" type="text/css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/buttons_1089153177.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/bootstrap/font-awesome_1536070490.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/cm_site_3884905603.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/modernButtons_3327416688.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/collapsible_653699119.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/bootstrap/lato_1682443163.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/mbpopover_2158091939.css"  />
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/siteIe_748360463.css"  />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/siteLteIe7_3888018429.css"  />
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/jquery.tooltip_705946641.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/base/jquery.ui.all_1979017966.css"  />
+
+
+<script type="text/javascript">
+// filePath must be absolute with leading slash
+function contentUrl(filePath) {
+    
+    return "https://static.mindbodyonline.com/a" + filePath;    
+	
+}
+
+(function ($) {
+	//$.fn.extend({
+	$.contentUrl = function (filePath) {
+		//contentUrl: function (filePath) {
+	    
+        return "https://static.mindbodyonline.com/a" + filePath;    
+	    
+	};
+})(jQuery);
+
+$(function() {
+
+	
+		// init tooltips
+		$("img[title],span[title],select[title],input[title],legend[title]").tooltip({
+			track: true,
+			showURL: false,
+			fade: 250
+		});
+		
+
+	$('fieldset.collapsible').setCollapseEvents();
+
+});
+</script>
+
+<script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/inc_tabs_1003932094.js"></script><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/cm_tabs_536484795.css"  />
+<script type="text/javascript">
+    function implementationSwitchIsEnabled(implementationSwitch) {
+        if (implementationSwitch == 'AppointmentMultipleCancel' || implementationSwitch == 'BookMultipleAppointmentConfirmationAutoEmail' || implementationSwitch == 'Salon_AATServiceSearchStaticLink' || implementationSwitch == 'PDA_API_GoogleAnalyticsTracking' || implementationSwitch == 'PDA_WaitlistSourceID' || implementationSwitch == 'SalonFiltersStyling' || implementationSwitch == 'ConnectSplashNotificationV2Android' || implementationSwitch == 'ExpressAndroidSplash' || implementationSwitch == 'ConnectSplashNotificationV2' || implementationSwitch == 'SalonRefreshApptSchedule' || implementationSwitch == 'SalonAppointmentChangeNotificationEmail' || implementationSwitch == 'Bug61721AutoEmailAndAustralianTime' || implementationSwitch == 'ClientReferralLink' || implementationSwitch == 'PDA_ConnectFooter' || implementationSwitch == 'EnableAntiForgeryValidationChunk1' || implementationSwitch == 'MAP_ElavonApplicationLightbox' || implementationSwitch == 'PDA_Hotfix_CrossRegTool' || implementationSwitch == 'PDS_AddAPILoginsForFMAHealcode' || implementationSwitch == 'Mobile_Bug_21487_ContractIncorrectlySellingNextSessionCountAutoPay' || implementationSwitch == 'Mobile_Task62672_HathwaySelect' || implementationSwitch == 'PDS_APIAuthorizeSourceWithStudios' || implementationSwitch == 'APIPOS_Bug96595_AdminLoginsMbSites' || implementationSwitch == 'APIPositive_53009_OverLappingResourcesOnUndoCancel' || implementationSwitch == 'PDA_Bronzalicious_MobileEmailOptIn' || implementationSwitch == 'PDS_AutoOptOutFMAClientsFromABTest1037' || implementationSwitch == 'Salon_DragAndDropAppointmentInCartFix_122616' || implementationSwitch == 'APIPositive_95202_FacebookLoginKeyConflict' || implementationSwitch == 'AndroidConnectBookedWithConnectLogo' || implementationSwitch == 'APIPositive_125828_SoapActivityUpdateDataType' || implementationSwitch == 'SwitchAdminEntryLogSource' || implementationSwitch == 'PDS_NoShowChangeForMBReach' || implementationSwitch == 'PDS_EarlyConnectOptIn' || implementationSwitch == 'PDS_MBReachForecast' || implementationSwitch == 'PDS_NoShowRptServiceCatSelection' || implementationSwitch == 'CYBERSEC_91033_AuthorizePhotoChanges' || implementationSwitch == 'PDA_ExpressProductsandServices' || implementationSwitch == 'CYBERSEC_105126_staffowner' || implementationSwitch == 'PDS_LiabilityWaiverReset' || implementationSwitch == 'Salon_SchedulingSwitchOverREST' || implementationSwitch == 'MAP_UseCustomLightboxForNotification' || implementationSwitch == 'MAP_BatchCloseErrorForPOSIntegration' || implementationSwitch == 'MAP_Bug152619' || implementationSwitch == 'TXPPOSAPI' || implementationSwitch == 'PDS_ReturnReportExcludeEasyUpgrades' || implementationSwitch == 'NewTimeZoneOffset' || implementationSwitch == 'Bug_70469_SearchOutsideUS' || implementationSwitch == 'API_ResendVerificationModifications' || implementationSwitch == 'MAP_RefundHideCCForTXP' || implementationSwitch == 'ApiPos_160339_CrossRegionImportRedo' || implementationSwitch == 'MAP_PullCCProcessorFromTransactionInPOS' || implementationSwitch == 'Salon_M_PrebookingButton_ACR' || implementationSwitch == 'Salon_W_RefactorWorkflows' || implementationSwitch == 'Salon_W_RefactorAppointmentHTML' || implementationSwitch == 'FTU_HipaaSiteCreationFixForSoloSites' || implementationSwitch == 'Salon_W_AutoFocusOnValidation_171642' || implementationSwitch == 'Salon_W_RevealICDCodesInEditMode_175713' || implementationSwitch == 'Salon_W_AppointmentPrototypeRefactor' || implementationSwitch == 'Salon_W_AvailabilityPrototypeRefactor' || implementationSwitch == 'APIPos_171692_CrossRegionalAdd' || implementationSwitch == 'PrevotyIsOn' || implementationSwitch == 'Salon_W_UpdateAppointmentPayrateInNightlyScript' || implementationSwitch == 'MAP_TXPBlindCreditUseStoredCard' || implementationSwitch == 'MAP_WriteBlindCreditBillingInfo' || implementationSwitch == 'Salon_W_VisitHistoryAnalytics' || implementationSwitch == 'MAP_iDEALsupportForConsumerMode' || implementationSwitch == 'Salon_W_VisitHistoryAnalyticsR2' || implementationSwitch == 'MAP_AddPreAuthTipForTXP' || implementationSwitch == 'FTU_FixAddCustomTaskValidation' || implementationSwitch == 'DCA_DisableDefaultPhoneNumberType_Phase2' || implementationSwitch == 'FTU_ChangeHomeTabDefaultFromSetupChecklist' || implementationSwitch == 'MBX_ReportScrollingSafari71' || implementationSwitch == 'FTU_ShowSetupChecklistDefaultPageSwitchForSolo' || implementationSwitch == 'RemoveConsAllowSearchingByTimeOption' || implementationSwitch == 'FTU_AddMapCustomSystemTask' || implementationSwitch == 'FTU_ExternalOwnerFirstLogin' || implementationSwitch == 'PDS_unMaskClientTechTool' || implementationSwitch == 'Salon_W_ApplyPaymentFix_195473' || implementationSwitch == 'FTU_UseConnectEarlyOptIn' || implementationSwitch == 'Buzz_SplashPageLeadAssignment' || implementationSwitch == 'UseNewLibraryForLanguageBehindTheScenes' || implementationSwitch == 'FTU_ServicesAndPricingDataTracking' || implementationSwitch == 'MAP_iDealSupportForContracts' || implementationSwitch == 'FTU_GoogleAnalyticsLinkTargetTest' || implementationSwitch == 'BadApples_UndoClassCancellationHideClassColumnReset' || implementationSwitch == 'MAP_OnboardingApplicationPermissions' || implementationSwitch == 'Salon_AppointmentQPos' || implementationSwitch == 'Cybersec_227356_PrintPDFRFIFix' || implementationSwitch == 'Salon_W_EditUnavailabilityWithPermission_211536' || implementationSwitch == 'MAP_SofortAndGiroPayForConsumerMode' || implementationSwitch == 'MAP_ForceCvvConsumerModeForNewPos' || implementationSwitch == 'Buzz_CommentOutMAPOpportunityCode' || implementationSwitch == 'FTU_CheckServicesAndPricingPermission' || implementationSwitch == 'MAP_RefactorIdealBankCall' || implementationSwitch == 'MAP_UpdateAutoPayDateCheckForAUS' || implementationSwitch == 'FTU_ActiveOwnerOnSiteCreation' || implementationSwitch == 'Salon_AppointmentQPos_Checkout' || implementationSwitch == 'RI_232051_ClientSearchOptimization' || implementationSwitch == 'RI_229654_IE9ClientProfile' || implementationSwitch == 'MAP_ReportFixesForEURedirects' || implementationSwitch == 'Buzz_ReachDashboardSQLEnhancement' || implementationSwitch == 'FTU_OneMonthPricingOptionDuration' || implementationSwitch == 'FTU_serviceCatSelectOptionLightbox' || implementationSwitch == 'MAP_Bug250162_AddLoggingForIdeal' || implementationSwitch == 'SendBookingConfirmationThroughNotifications' || implementationSwitch == 'MAP_Bug245530' || implementationSwitch == 'FTU_UpdateSessionForResourcesResv' || implementationSwitch == 'BUN_FixObjectRefExceptionInAddClientAccountDebit' || implementationSwitch == 'FTU_ClassesV2EarlyAccess' || implementationSwitch == 'MAP_LogOnBoardingApiNotifications' || implementationSwitch == 'BUN_SendReservationConfirmationThroughNotifications' || implementationSwitch == 'Buzz_ShortReceiptReplacePhrase' || implementationSwitch == 'Salon_W_ApplyPaymentToAddons_261911' || implementationSwitch == 'FTU_HideClassSectionForAppointmentsModule' || implementationSwitch == 'Salon_AppointmentQPos_Prebook' || implementationSwitch == 'BJD_XRegEmailCollision' || implementationSwitch == 'BUN_SendReservationRecurringViaNotifications' || implementationSwitch == 'MAP_NewOnboardingDocUploadMgmt' || implementationSwitch == 'Architects_CryptoCom_ClassicASP_Web' || implementationSwitch == 'Architects_CryptoCom_ClassicASP_Admin' || implementationSwitch == 'Architects_CryptoCom_DOTNET' || implementationSwitch == 'FTU_FirstLoginTechToolUpdate' || implementationSwitch == 'MAP_SetupMerchantAccountFromNotification' || implementationSwitch == 'Architects_CryptoCom_MBFramework' || implementationSwitch == 'FTU_ServicesAndPricingClassesV2AllTiers' || implementationSwitch == 'MAP_StoreAdyenTimestamp' || implementationSwitch == 'DCA_MBNetworkDashboard' || implementationSwitch == 'ApiPositiveEnsureSubscriberUserTokenIsSetInWeb' || implementationSwitch == 'Buzz_Bug155539_EmptyNickNameReplacePhrase' || implementationSwitch == 'MAP_LogReportAvailableNotification' || implementationSwitch == 'Mobile_ConnectRebrandConsumerModeNotification' || implementationSwitch == 'Buzz_MBUForUltimate' || implementationSwitch == 'FTU_emailRedesign' || implementationSwitch == 'Buzz_LocationMBAccountNumber' || implementationSwitch == 'MAP_OnboardingApplicationPermissions2' || implementationSwitch == 'MAP_RBC_DailyACHPortChangeForFTP' || implementationSwitch == 'RI_GooglePlaceActionFormHeadAndFoot' || implementationSwitch == 'POS_AppointmentCheckOutQuickNote' || implementationSwitch == 'MAP_AddElavonToCore' || implementationSwitch == 'BUN_SetLanguageTemplateIds' || implementationSwitch == 'DCA_ExcludeZeroDollarMarketplaceOffers' || implementationSwitch == 'POS_ConvertApplicationRootToBundle' || implementationSwitch == 'Buzz_MBBilling' || implementationSwitch == 'TPH_SwitchExclusionExpiration' || implementationSwitch == 'MBI_ReportLocationDropdown' || implementationSwitch == 'FTU_ServicesAndPricingV2FullRollout' || implementationSwitch == 'MAP_AddElavonACHToCore' || implementationSwitch == 'DCA_ClientAcquisitionSalesSqlFix' || implementationSwitch == 'MAP_ElavonHandleNegativeTips' || implementationSwitch == 'MAP_PaysafeSEPA' || implementationSwitch == 'TPH_SwitchConnectionForAdminEntryLogs' || implementationSwitch == 'DCA_UseSalesReportQueryForDashboard' || implementationSwitch == 'ApiPositiveResyncSubscriberWhenGSOSettingsChange' || implementationSwitch == 'MAP_PaysafeMandatesAdyenJank' || implementationSwitch == 'MAP_PaysafePAP' || implementationSwitch == 'FTU_InternationalWelcomeEmails' || implementationSwitch == 'ApiPositiveAccountPaymentChangeEventSync' || implementationSwitch == 'ApiPositivePackageChangeEventSync' || implementationSwitch == 'FTU_AddPaymentProcessingCustomSystemTask' || implementationSwitch == 'Buzz_TimeoutPendingSyncs' || implementationSwitch == 'DCA_Bug292168_ReassignToNewSoloOwner' || implementationSwitch == 'DCA_CltAcqHandleSoapApiSources' || implementationSwitch == 'BUN_SiteContextCaching' || implementationSwitch == 'PDS_audienceCreationPerformanceImprovement' || implementationSwitch == 'BUN_WriteEmpID' || implementationSwitch == 'BUN_TreasureTwilioNumbers' || implementationSwitch == 'XM_Bug307892_DisappearingMembershipIcon' || implementationSwitch == 'ApiPositiveSoapEventSync' || implementationSwitch == 'DCA_IntroOfferPermissionOnCADashboard' || implementationSwitch == 'BUN_ReportOptimization_1' || implementationSwitch == 'MAP_PaysafePAP_ReturnACHScript' || implementationSwitch == 'BUN_ReportOptimization_2' || implementationSwitch == 'Workplace_ReadThruCacheForMobileAppVersion' || implementationSwitch == 'BUN_UseAmplitudeForEventTracking' || implementationSwitch == 'XM_YieldPhaseOne3rdPartySetup' || implementationSwitch == 'MBI_ReportNewFeature' || implementationSwitch == 'BUN_TrackAttendanceWithAndNoRevenueReports' || implementationSwitch == 'MAP_EUInvoice' || implementationSwitch == 'BUN_UseAggregatedDataForConnV1GetClasses' || implementationSwitch == 'BUN_TriggerDataReaggregationForConnV1GetClasses' || implementationSwitch == 'POS_EnableBundledFileUse' || implementationSwitch == 'MAP_Bug368927' || implementationSwitch == 'MAP_CopyChange_PAP2EFT' || implementationSwitch == 'MAP_AdyenHmacUpdate' || implementationSwitch == 'ApiPositiveChangeEventSyncAppointmentSessionTypeAssociations' || implementationSwitch == 'MAP_Bug369978_DailyRetAchOpPap' || implementationSwitch == 'XM_IntroOfferContracts' || implementationSwitch == 'BUN_ReportOptimization_4' || implementationSwitch == 'POS_UseApplicationFilesInsteadOfBundle' || implementationSwitch == 'MAP_AllowExpiredCards' || implementationSwitch == 'BUN_SendReservationCancellationThroughNotifications' || implementationSwitch == 'MAP_EzidebitIncreaseTimeout' || implementationSwitch == 'DCA_3rdPartyOpts' || implementationSwitch == 'MAP_Bug383088' || implementationSwitch == 'Bugs_FixMissingMembershipIcons_121914' || implementationSwitch == 'MAP_Bug386132' || implementationSwitch == 'DCA_EndpointToJsonWithSessionFix' || implementationSwitch == 'FTU_SPv2CSS' || implementationSwitch == 'MAP_EziDebitExpiredCardsConsumerProfile' || implementationSwitch == 'FTU_CheckStaffSchedulesForTipsy' || implementationSwitch == 'MAP_Bug391338' || implementationSwitch == 'DCA_Bug351359_FixZeroSales' || implementationSwitch == 'RI_215377_ConstantContactClientIndexes' || implementationSwitch == 'MAP_ACHScriptExcludePMN' || implementationSwitch == 'RI_397355_FacebookApiUpgrade' || implementationSwitch == 'RI_393596_EditableFacebookTokenFix' || implementationSwitch == 'RI_394021_FBSomethingSomething' || implementationSwitch == 'BUN_UseAmplitudeForEventTracking_Rd2' || implementationSwitch == 'BUN_AddMissingPhrases5' || implementationSwitch == 'FOTH_addSameAsAutoEmailAdressCheckBox' || implementationSwitch == 'RI_Bugs_BalanceStatementExport_403736' || implementationSwitch == 'FOTG_MoveApptTypeName' || implementationSwitch == 'FOTG_SwapColumsApptStaffPage' || implementationSwitch == 'FOTG_ShowFullCatAndApptNames' || implementationSwitch == 'FOTG_addStaffDirect' || implementationSwitch == 'RI_Bugs_AppointmentServicePricingDynamicLoad_394449' || implementationSwitch == 'APIPositive_ContractSortOrderSync' || implementationSwitch == 'Bugs_DataFixerAdminTool' || implementationSwitch == 'RI_402449_StickyFB' || implementationSwitch == 'BClub_XeroCanada' || implementationSwitch == 'RI_Bugs_SiteCreationTemplateServiceLevel_398795' || implementationSwitch == 'RI_Bugs_AutoPayScriptFailWhenNoGenopts_409874' || implementationSwitch == 'RI_Bugs_FallbackTzOffsetForScripts_327165' || implementationSwitch == 'DCA_PartnerIcon' || implementationSwitch == 'MBI_MultiselectDDL_DefaultValue' || implementationSwitch == 'BUN_FixForMasterClientConflicts' || implementationSwitch == 'FOTG_MoveSetScheduleWindowsSiteSetupTask' || implementationSwitch == 'FOTG_IntroOfferFields' || implementationSwitch == 'POS_AddAmplitudeDefaultProperties' || implementationSwitch == 'FOTG_AddProductNotesTipsy' || implementationSwitch == 'APIPositive_PricingOptionSortOrderSync' || implementationSwitch == 'FOTG_AddTipsyForDefaultLocation' || implementationSwitch == 'POS_ApplyPaymentPermissionFix' || implementationSwitch == 'POS_BundleMainAppointments' || implementationSwitch == 'RI_Bugs_SoloTrainerModuleChangeFix_394202' || implementationSwitch == 'RI_Bugs_PreReqMissingWhenBoook_324229' || implementationSwitch == 'RI_Bugs_ProRateProperPayDateDisplay_395553' || implementationSwitch == 'RI_Bugs_PriceOverwritesOnlinePrice_250859' || implementationSwitch == 'RI_Bugs_SiteCreationSyncHttps_367080' || implementationSwitch == 'RI_Bugs_ProductNotesSave_321381' || implementationSwitch == 'RI_Bugs_IntroMultiSession_369338' || implementationSwitch == 'BUN_FireChangeEventsForAffiliateAPI' || implementationSwitch == 'RI_Bugs_SaleNoMailTo_364058' || implementationSwitch == 'RI_Bugs_ReviewAppointmentName_412591' || implementationSwitch == 'RI_Bugs_DeleteTicketOnPrint_181189' || implementationSwitch == 'RI_Bugs_UnpaidEnrollments_366453' || implementationSwitch == 'XM_ResourcePerConsumerRequiredAppt' || implementationSwitch == 'DCA_LatoUpdate' || implementationSwitch == 'DCA_ExclusionListToolUpdates' || implementationSwitch == 'FOTG_AddSubNavToReferralPages' || implementationSwitch == 'FOTG_UpdateReplacePhraseTextForPasswordLink' || implementationSwitch == 'FOTG_fixWrappingColumns' || implementationSwitch == 'FOTG_UpdateRecurringAppointmentBacklink' || implementationSwitch == 'RI_Bugs_AutoEmailSetupLinkCase_422460' || implementationSwitch == 'FOTG_hideSupplierSettings' || implementationSwitch == 'MBI_FillPricingOptionForMultipleServiceCategories' || implementationSwitch == 'RI_Bugs_StaffSelfTask_339208' || implementationSwitch == 'RI_Bugs_IntoBuyFor_362350' || implementationSwitch == 'FOTG_AddMergeClientLinkToClientToolsMenu' || implementationSwitch == 'FOTG_UpdateContractNotificationForNoResultAndNoContracts' || implementationSwitch == 'RI_Bugs_RemovedBug21Email_197488' || implementationSwitch == 'RI_Bugs_SOAPOverlappingAppointments_426545' || implementationSwitch == 'RI_Bugs_NoCacheTimeZoneForScripts_357905' || implementationSwitch == 'DCA_PAasToS' || implementationSwitch == 'RI_Bugs_AccountDetailsThirdPartyRegion_415955' || implementationSwitch == 'DCA_PjaxAmplitude' || implementationSwitch == 'DCA_SyncGeneralOptions' || implementationSwitch == 'BUN_PortAppointmentCancellationNotifications' || implementationSwitch == 'DCA_Bug432350' || implementationSwitch == 'BUN_AutoOpenUrgentSiteNotifications' || implementationSwitch == 'RI_Bugs_RemoveGsFindCorruptClientAccounts_436715' || implementationSwitch == 'DCA_FOTGEmptyContractText' || implementationSwitch == 'DCA_FOTGBug336160' || implementationSwitch == 'RI_Bugs_GenerateRandomGCNotUnique_421555' || implementationSwitch == 'DCA_FOTGBackToLocateDupeClients' || implementationSwitch == 'DCA_FOTGPriceCreditHelpText' || implementationSwitch == 'DCA_FOTGCopyStaffPermissionGroup' || implementationSwitch == 'RI_Bugs_AppointmentTypesNotShowingConsumerMode_281170' || implementationSwitch == 'DCA_ClientIndexCopy' || implementationSwitch == 'DCA_UpdateToolsMenuAfterAgreement' || implementationSwitch == 'DCA_FOTGStayStayGoAway' || implementationSwitch == 'RI_Bugs_RemoveDoubleAddAvailability_429480' || implementationSwitch == 'RI_Bugs_GiftCardNotAddedBadData_439598' || implementationSwitch == 'DCA_FOTGAEHSuite' || implementationSwitch == 'POS_GiftCardUpdates' || implementationSwitch == 'DCA_FOTGEnrollLinks' || implementationSwitch == 'DCA_FOTGStaffNotInstructor' || implementationSwitch == 'BUN_UpdateConstantContantEmailHtml' || implementationSwitch == 'MAPI_Bundling' || implementationSwitch == 'BUN_PortClassEventCancellationNoti' || implementationSwitch == 'RI_Bugs_ConnectRollingMonthSeriesBookable_357958' || implementationSwitch == 'ApiPos_PublishChangeEventForProductVariantUpdates' || implementationSwitch == 'MBI_Bug449554_XRegionFilterPhrases' || implementationSwitch == 'XM_NoCacheBadSession' || implementationSwitch == 'MBI_Bug450932_ToolTipZoom' || implementationSwitch == 'MBI_Bug451309_PricingOptionPhrase' || implementationSwitch == 'MAP_fixSimpleLightBoxAllowClose' || implementationSwitch == 'XM_Bug451044_Extra_Hotwords' || implementationSwitch == 'MAPI_Logic' || implementationSwitch == 'RI_Bugs_RemoveStateReqConnect_433409' || implementationSwitch == 'DCA_AgreementWordCharacters' || implementationSwitch == 'SF_CacheUserAgreementRepoForBaa' || implementationSwitch == 'SF_OptimizeUserAgreementSql' || implementationSwitch == 'DCA_ShowHistoricalEngageStats' || implementationSwitch == 'BUN_FruitInTheHand' || implementationSwitch == 'XM_PagePhraseFooterSiteID' || implementationSwitch == 'XM_Bug458170' || implementationSwitch == 'RI_Bugs_CorpDashboardGiftCardDupeLocation_445855' || implementationSwitch == 'RI_Bugs_GetClassesRelatedPrograms_446272' || implementationSwitch == 'BUN_UpdateTwilioSMSCopy' || implementationSwitch == 'XM_LaunchPagePageview' || implementationSwitch == 'RI_Bugs_VbSqlParam_452976' || implementationSwitch == 'Bugs_283905_PricingOptionNotAdjustedAfterContractSuspension' || implementationSwitch == 'GDayPI_PublishAffiliateAPIEventing_Bookings' || implementationSwitch == 'GDayPI_PublishAffiliateAPIEventing_PurchasesAndMergeConsumer' || implementationSwitch == 'GDayPI_PublishAffiliateAPIEventing_Passes' || implementationSwitch == 'GDayPI_PublishAffiliateAPIEventing_ClassCancellation' || implementationSwitch == 'GDayPI_PublishAffiliateAPIEventing_ClassSchedule' || implementationSwitch == 'GDayPI_PublishAffiliateAPIEventing_Subscribers' || implementationSwitch == 'MAP_AddSessionFarmFlushForAutopay' || implementationSwitch == 'BUN_AllowFullPageHtmlDocsInEmails' || implementationSwitch == 'RI_Bugs_AdminAccountBalanceFixV2_461467' || implementationSwitch == 'RI_Bugs_ConsumerAppointmentsOptimize_460513' || implementationSwitch == 'RI_Bugs_FacebookApi28_469924' || implementationSwitch == 'MAP_MBInvoicesFrontEnd' || implementationSwitch == 'MBI_ClientArrivals_ExportReportPermission' || implementationSwitch == 'MBI_SQLSidebar' || implementationSwitch == 'MAP_InvoiceCreateSiteUpdate' || implementationSwitch == 'MBI_AddBookingMethod_ReserveWithGoogle' || implementationSwitch == 'MBI_AmplitudeTracking' || implementationSwitch == 'MAP_BalanceAccountAfterReturnedCheckFee' || implementationSwitch == 'RI_Bugs_DymoWebService_416276' || implementationSwitch == 'MBI_Bug441746_PDFZebraStripe' || implementationSwitch == 'MBI_Bug467584_SaveReportValidation' || implementationSwitch == 'MBI_ModernizedReportJSMerge' || implementationSwitch == 'MAP_InvoicePDFPageNumberFix' || implementationSwitch == 'BUN_Fix311960_ApptConfConsumerMode' || implementationSwitch == 'RI_Bugs_ConsumerAppointmentLoading_446879' || implementationSwitch == 'XM_RemoveSecurityVerification' || implementationSwitch == 'MBI_ReportsHelpIconLinks' || implementationSwitch == 'MAP_bug475032_datePickerNotShowing' || implementationSwitch == 'MAP_bug480717_datePickerBrokenOnPopulateion' || implementationSwitch == 'GDayPI_462494Rest' || implementationSwitch == 'GDayPI_462496Rest' || implementationSwitch == 'GDayPI_462482Rest' || implementationSwitch == 'XM_UpdateCopyRightOnLaunchPage' || implementationSwitch == 'XM_MBOneHelp' || implementationSwitch == 'GDayPI_ClassVisitCourses' || implementationSwitch == 'XM_UnDeprecateFirstAvailableApptOption' || implementationSwitch == 'MAP_Bug483322_AutopayError' || implementationSwitch == 'MAP_Bug_442587' || implementationSwitch == 'GDayPI_ClassVisitEventMissing' || implementationSwitch == 'DTT_BatchFixes_04_17' || implementationSwitch == 'Autobot_AdminDBRefreshTool' || implementationSwitch == 'MBI_Bug485053_ShowLabelTextFromFiltersPage' || implementationSwitch == 'GDayPI_ClassAvailability482517' || implementationSwitch == 'GDayPI_SingleClassVisitQuery' || implementationSwitch == 'DTT_Multiple_LoadReport' || implementationSwitch == 'MBI_Bug479966_AddToFavorites' || implementationSwitch == 'MBI_Bug474501_ClientArrivalsServerError' || implementationSwitch == 'MAP_OldInvoicesFallback' || implementationSwitch == 'MBI_Bug480602_VRDateSorting' || implementationSwitch == 'MBN_UpdateGoogleBanner' || implementationSwitch == 'MAP_InvoiceBug486660' || implementationSwitch == 'FTU_AutoPayOnBatchQueue' || implementationSwitch == 'MB_InvoiceBug484421' || implementationSwitch == 'MBI_ModernizReports_ExcelFormatting' || implementationSwitch == 'POS_UsedBundledVersionedJs' || implementationSwitch == 'RETAIL_EnableRetail2017' || implementationSwitch == 'FEE_SlowLoad_R1_1' || implementationSwitch == 'Autobot_AdminDBRefreshTool_IncrementDays' || implementationSwitch == 'BUN_TinyMCEOptions' || implementationSwitch == 'INT_Bug_473886' || implementationSwitch == 'BUN_SchedulingRestrictionsPhrases' || implementationSwitch == 'MBI_Bug491482_OwnerRoleLocationAccess' || implementationSwitch == 'BUN_PurchLogo' || implementationSwitch == 'FEE_ExpressInterstitial' || implementationSwitch == 'MBI_Bug496347_LocationAllowUsersPermission' || implementationSwitch == 'MBI_Bugs397900_ExcelPdfTimeClockReport' || implementationSwitch == 'CCG_DynamicPricing_1_5' || implementationSwitch == 'CCG_Bug318553_RestrictedStaffLocations' || implementationSwitch == 'CCG_Bug390760_AppointmentScheduleNotLoading' || implementationSwitch == 'CCG_FacebookUpgradeToV28' || implementationSwitch == 'INT_Bug_498704' || implementationSwitch == 'ConnectApi_457379_AppCancellationsDeletedBy' || implementationSwitch == 'CCG_Bug477418_ImproperSupportCenterArticles' || implementationSwitch == 'ExternalServices_Bug88359_ClassBookingRewards' || implementationSwitch == 'INT_BUG_437285' || implementationSwitch == 'CCG_NetworkSourcesCaching' || implementationSwitch == 'INT_AchReturn' || implementationSwitch == 'CCG_Bug407784_StaffPerformanceReportHiccup' || implementationSwitch == 'CCG_HackStrCheckIfIntRefactor' || implementationSwitch == 'BUN_ApptChangeTimeValue' || implementationSwitch == 'ApiPos_PublishEventForEachRelatedServiceCat' || implementationSwitch == 'INT_MarketingPlatformSubs' || implementationSwitch == 'MBI_MarketingBanner' || implementationSwitch == 'CCG_CacheLogoFileCheck' || implementationSwitch == 'BUN_EmailSaveTransition' || implementationSwitch == 'CCG_Bug430294_ZeroDollarPONotShowingInSalesReport' || implementationSwitch == 'MBI_GoogleTagManager' || implementationSwitch == 'Enterprise_RetailProducts' || implementationSwitch == 'BUN_AddLocaleToFrameworkISite' || implementationSwitch == 'BUN_TeacherSubNotifyMigrate' || implementationSwitch == 'POS_AddPreBookToApptSideBar' || implementationSwitch == 'CCG_Bug433999_CrossRegionalVisits' || implementationSwitch == 'SKI_VersionedWidgets' || implementationSwitch == 'CCG_RedirectCookies' || implementationSwitch == 'BUN_AppointmentRequestMigrate' || implementationSwitch == 'INT_ValutecSOAP' || implementationSwitch == 'INT_FreeMBUOnDemand' || implementationSwitch == 'CCG_DP_Categories' || implementationSwitch == 'CCG_RemoveRedirectExceptions' || implementationSwitch == 'BUN_WaitlistNotificationAttachment' || implementationSwitch == 'FEE_Reskin_AptOptions' || implementationSwitch == 'FEE_Performance_RemoveDuplicateJS' || implementationSwitch == 'CCG_StripeIntegration' || implementationSwitch == 'CCG_DynamicPricingMigration' || implementationSwitch == 'BUN_DisableSomeMobileMessages' || implementationSwitch == 'Widgets_UseVersionLoader' || implementationSwitch == 'CCG_Bug541270_IncorrectBDayEditFormat' || implementationSwitch == 'CCG_Bug519801_PreventNullCountryCodeUpdate' || implementationSwitch == 'BUN_ShowEmailThatIsSent' || implementationSwitch == 'Admin_CreateSiteOwnerEmail' || implementationSwitch == 'POS_Add_PreBook_Widgets_Check' || implementationSwitch == 'POS_Fix_Moment_Format_Issues' || implementationSwitch == 'CCG_DP_Categories_BugFixes' || implementationSwitch == 'CCG_DPrice_VProp' || implementationSwitch == 'BUN_DeactivateReleasesSmsNumber' || implementationSwitch == 'INT_HideXeroIntegration' || implementationSwitch == 'RETAIL_EnsureOldRetailIsAvailable' || implementationSwitch == 'BUN_SmsNumberManagement' || implementationSwitch == 'CCG_Webhooks' || implementationSwitch == 'CCG_ConsumerFields_CategoryOrdering' || implementationSwitch == 'INT_EffortlessSupport' || implementationSwitch == 'RR_DealsInLocationsToElastic' || implementationSwitch == 'CCG_Cat_Suggest' || implementationSwitch == 'Stripe_CoreVoidsRefunds' || implementationSwitch == 'FEE_Remove_GetSatisfaction' || implementationSwitch == 'SKI_AutoEmailGroupingDropdown' || implementationSwitch == 'CCG_Bug227466_FixPricingTabSave' || implementationSwitch == 'CCG_Bug222298_FixPricingEdit' || implementationSwitch == 'DTT_533887_CachePermissions' || implementationSwitch == 'RI_538170_ClassCatalogDynamoRead' || implementationSwitch == 'CCG_RemoveRedirectExceptions_All' || implementationSwitch == 'CCG_Loc_Amenity' || implementationSwitch == 'CCG_HideDSPOs' || implementationSwitch == 'CCG_Bug296987_M2MContractAutoEmail' || implementationSwitch == 'CCG_Webhooks_Release_2' || implementationSwitch == 'CCG_Webhooks_Autopays' || implementationSwitch == 'FEE_FrenchLawPOSSFix' || implementationSwitch == 'CCG_Webhooks_Release_3' || implementationSwitch == 'INT_EffortlessSupportLocalization' || implementationSwitch == 'CCG_Webhooks_DateRange' || implementationSwitch == 'PublicApi_EditRestrictedCountries' || implementationSwitch == 'CCG_Bug375137_ExcludePendingAppointments' || implementationSwitch == 'CCG_Bug474166_BookingMethod' || implementationSwitch == 'INT_2018PurchaseCatalog' || implementationSwitch == 'FEE_DynamicPricingOnboarding' || implementationSwitch == 'CCG_Webhooks_Event_Stragglers' || implementationSwitch == 'BUN_ProtocolInEmailLink' || implementationSwitch == 'Bug_453426_BusinessModePurchaseReceiptNotRenderingHTMLCorrectly' || implementationSwitch == 'FEE_FixReskin_SettingsTours' || implementationSwitch == 'CCG_Bug495455_InsertTblLiabilityRecordIfMissing' || implementationSwitch == 'SKI_RolePermissionEnableRetailProducts' || implementationSwitch == 'CCG_Bug498879_InvRptFixExAge' || implementationSwitch == 'CCG_Webhooks_Event_Stragglers_2' || implementationSwitch == 'CCG_Bug499214_LocationChangeCausesHiccup' || implementationSwitch == 'INT_EffortlessSupportWrittenWorkflow' || implementationSwitch == 'INT_MBUODCookiePath' || implementationSwitch == 'CCG_Webhooks_Bug_Fixes_1' || implementationSwitch == 'CCG_Bug498582_FixFormulaNextButton' || implementationSwitch == 'DTT_305418' || implementationSwitch == 'CCG_Webhooks_Appointment_Booking' || implementationSwitch == 'CCG_Webhooks_Staff_Events' || implementationSwitch == 'CCG_EssentialBugFixes' || implementationSwitch == 'MBI_ItemName_SettledTransactionExport' || implementationSwitch == 'CCG_Webhooks_NewRelicTracking' || implementationSwitch == 'MBI_BatchNo_SalesReportExport' || implementationSwitch == 'CCG_Bug483778_ProductBarcodes' || implementationSwitch == 'SKI_502294RedirectErrorWithPostData' || implementationSwitch == 'CCG_Webhooks_Maint_Script_Bug_Fix' || implementationSwitch == 'ccg_bug216325_OnAdminNullSatisfactionModel' || implementationSwitch == 'DTT_555674_PrintPdfToFile' || implementationSwitch == 'CCG_Bug525225_SoftwareUpdateLink' || implementationSwitch == 'ccg_bug452916_fixDiscountRetSalesRpt' || implementationSwitch == 'SKI_550755CorpLoginCheckForDeleted' || implementationSwitch == 'SKI_ExcelExportIdsFix' || implementationSwitch == 'CCG_Bug507367_InvoiceLightboxDisplaysIncorrectInfo' || implementationSwitch == 'SKI_553099BasicToProCheckIn' || implementationSwitch == 'CCG_Temp_LocImg' || implementationSwitch == 'INT_NewForceVerticals' || implementationSwitch == 'CCG_BUG408572_CMFamilyEmailTimeOut' || implementationSwitch == 'CCG_Bug499561_FixAmplitudeTracking' || implementationSwitch == 'BUN_AnniversaryEmailLeverageContactLogs' || implementationSwitch == 'Privacy_TwilioMessageService' || implementationSwitch == 'CCG_Bug516764PricingOptionM2MContract' || implementationSwitch == 'CCG_Webhooks_ASP_Event_Origin' || implementationSwitch == 'CCG_EmailBulkMigrationResults' || implementationSwitch == 'FEE_XssFixes' || implementationSwitch == 'FEE_EffortlessSupport_Bug558912' || implementationSwitch == 'SKI_GoogleApiServicesQuotaUser' || implementationSwitch == 'SKI_LessRestrictPackageServiceFilter' || implementationSwitch == 'SKI_GoogleApiServicesUnsuccessfulBackOffHandler' || implementationSwitch == 'FEE_RefundAmountAlert_457380' || implementationSwitch == 'CCG_Bug320538_M2MContractAutopaySchedule' || implementationSwitch == 'CCG_Bug559962StaffScheduleUnavailabilityWhitespaceCheck' || implementationSwitch == 'CCG_Webhooks_Bug_Fixes_2' || implementationSwitch == 'INT_PurchaseTemplateUpdates' || implementationSwitch == 'CCG_Bug387457_AppointmentScheduleWindow' || implementationSwitch == 'CCG_Webhooks_Event_Stragglers_3' || implementationSwitch == 'CCG_Bug545766_ContactLogOverdue' || implementationSwitch == 'CCG_Bug348252_CopyAppointmentPayRateType' || implementationSwitch == 'CCG_Bug370911_PricingFilteringServiceCategories' || implementationSwitch == 'CCG_Bug533032_InvoiceAutoEmail' || implementationSwitch == 'CCG_Bug503250_AddressMultipleTabIssuesAtRetail' || implementationSwitch == 'CCG_Bug559901_EnrollmentCardOnContractsForEssential' || implementationSwitch == 'SiteDescriptionRemoveInvalidXmlChars_Bug562063' || implementationSwitch == 'CCG_Bug513376_TeacherSubstitionPayrollReport' || implementationSwitch == 'InternalSoapApi_562572_AllowEmptyDateWithClassID' || implementationSwitch == 'CCG_Bug546269_ShowAutopayMethodWhenNecessary' || implementationSwitch == 'SKI_334489FacebookAppHtmlFix' || implementationSwitch == 'RI_DynamoCadReads' || implementationSwitch == 'FEE_UpdateThirdPartyPromptCopy' || implementationSwitch == 'CCG_Bug558579_ServiceTagMergeSql' || implementationSwitch == 'CCG_Bug509781InventoryQtyForPastDates' || implementationSwitch == 'FEE_MBApp5ImageSwap' || implementationSwitch == 'FEE_UnsafeHeadersFix_559165' || implementationSwitch == 'CCG_Bug561239_ClassCancellationWithCrossRegionalVisits' || implementationSwitch == 'InternalSoap_563084_IncludeAllowUnpaidsAndFree' || implementationSwitch == 'CCG_Bug514976_CrossRegionalSelfSignIn' || implementationSwitch == 'FEE_EnhanceStaffProfileImage' || implementationSwitch == 'CCG_Bug503540_ScheduleAtAGlanceSqlOptimization' || implementationSwitch == 'MBMasterOptimizations_DataProvider_564078' || implementationSwitch == 'CCG_Bug500609_ReturnedItemInAccount' || implementationSwitch == 'SKI_563473DBTransferTooLarge' || implementationSwitch == 'Payouts_Phase2' || implementationSwitch == 'CCG_Bug562199_AccountBalanceUnpaidVisitsCount' || implementationSwitch == 'CCG_Bug494663_SetUpPasswordRequirement' || implementationSwitch == 'CCG_Webhooks_Bug_Fixes_3' || implementationSwitch == 'CCG_Bug509438_SalesReportTipsCashBase' || implementationSwitch == 'CCG_Bug494557_LinkTabNavigation' || implementationSwitch == 'Privacy_SendMessageLogicAndFooterBuilder' || implementationSwitch == 'MAPLog_SaveAuthTransDetails555312' || implementationSwitch == 'CCG_OptimizeLaunchSearch' || implementationSwitch == 'DataServices_CryptoV2' || implementationSwitch == 'CCG_Bug561881_GoogleAnalyticsEcommerceTracking' || implementationSwitch == 'CCG_Bug492290_AddressIncorrectTotalSession' || implementationSwitch == 'InternalSoapApi_563090_GetAmenities' || implementationSwitch == 'ClassInstanceSqlOptimization_518424' || implementationSwitch == 'CCG_Webhooks_Client_Updated_Misfires_Fix' || implementationSwitch == 'CCG_Bug338973_ContactLogEmailForWaitlistToClass' || implementationSwitch == 'CCG_Bug525334_FindNextClassOptimization' || implementationSwitch == 'SKI_569666SummaryCatDiscount' || implementationSwitch == 'SKI_562186SummaryIndexClientReport' || implementationSwitch == 'SKI_MBUAdminZero' || implementationSwitch == 'Admin_565806_UpdateBillingScriptForBookingFees' || implementationSwitch == 'Privacy_Connect_AddFooter' || implementationSwitch == 'GDPR_DataSubjectRights' || implementationSwitch == 'SKI_567030DupeRSSIDPrevention' || implementationSwitch == 'SKI_PurchaseStorePostSaleIdInSession' || implementationSwitch == 'CCG_Bug488046_ReceivePaymentsFix' || implementationSwitch == 'CCG_Webhooks_Scripts_Event_Origin' || implementationSwitch == 'CCG_Bug523110_ContinousErrorOnInvalidPrice' || implementationSwitch == 'DTT_565257_AuditLog' || implementationSwitch == 'Privacy_Sms_Unsubscribe_Link' || implementationSwitch == 'GDPR_AddUnsubscribeLinkToMBEmailFooter' || implementationSwitch == 'CCG_Bug512535_DynamicPricing_Cheaters' || implementationSwitch == 'Privacy_App_Preference_Logging' || implementationSwitch == 'GDPR_Bug_Fixes' || implementationSwitch == 'Privacy_Bug_Fixes' || implementationSwitch == 'FEE_KLO_ManagerToolsAddMarketplaceLink' || implementationSwitch == 'GDPR_AmplitudeTracking' || implementationSwitch == 'GDPR_FEE_BugFixes' || implementationSwitch == 'GDPR_MBUserPreferences_Logging' || implementationSwitch == 'Privacy_RemoveNotificationPreferencesFromTaggedClientTool' || implementationSwitch == 'GDPRPrivacy_BugFixes' || implementationSwitch == 'Connect_Privacy_Update' || implementationSwitch == 'FEE_SadRobotError_AddPagePhrases' || implementationSwitch == 'CCG_Bug536305_HandleLargeVistRefNo' || implementationSwitch == 'Privacy_CommunicationPrefTwilioFixes' || implementationSwitch == 'FEE_DynamicPricingOnboarding_576820' || implementationSwitch == 'ExternalServices_533942_ConnectUserSyncVisitsQueryOptimization' || implementationSwitch == 'Privacy_IncompleteAddressFooterBugFixScripts' || implementationSwitch == 'GDPR_UpdateDataOptions' || implementationSwitch == 'Privacy_Update_Mail_From' || implementationSwitch == 'FEE_SubscriptionOptionUI_580592' || implementationSwitch == 'FEE_AddWalkMeScriptSiteWide' || implementationSwitch == 'ExternalServices_57594_ConnectClassesFreeToEnrollFlag' || implementationSwitch == 'CCG_LocationOwner' || implementationSwitch == 'SKI_576593TaxOnCashBasis' || implementationSwitch == 'Privacy_FixRecurringAptText' || implementationSwitch == 'ExternalServices_Bug579110_CancelVisitWithYeildManagmentPricingOption' || implementationSwitch == 'DevPortal_ApiKeyDocumentation' || implementationSwitch == 'Privacy_Connect_Contact_Log' || implementationSwitch == 'CCG_Bug562763_FixRetailSalesReport' || implementationSwitch == 'Privacy_AddFooterToMarketingEmailPreview' || implementationSwitch == 'SKI_579136SalesFilteringServicesProducts' || implementationSwitch == 'Privacy_ClientWelcome_Account' || implementationSwitch == 'GDPR_DataOptionsUsers_AmplitudeTracking' || implementationSwitch == 'GDPR_FixEmailValidation' || implementationSwitch == 'CCG_PeerCommunityLink' || implementationSwitch == 'InternalSoap_GetClassesLocationAmenities_583702' || implementationSwitch == 'SKI_555756FixFindSiteLinks' || implementationSwitch == 'SKI_563197FixFindSiteDeleted' || implementationSwitch == 'Privacy_ClientAlertToHideEmailPreferencesFix' || implementationSwitch == 'Privacy_Connect_X_Regional_Logging' || implementationSwitch == 'Privacy_ASP_Logging_Refactor' || implementationSwitch == 'Privacy_PreferencesPageIncompleteAddress' || implementationSwitch == 'FEE_RemoveClientReferral' || implementationSwitch == 'Transactions_Report' || implementationSwitch == 'Privacy_ApptBookingConfTextFix' || implementationSwitch == 'MAP_KLO_576986_EziStatusVerify' || implementationSwitch == 'CCG_Bug576814_SavedTickets' || implementationSwitch == 'PublicApi_586988_ContactMethodReturns1' || implementationSwitch == 'Privacy_FooterToUseActiveLocation' || implementationSwitch == 'CCG_Bug562217_ReplyToAddress' || implementationSwitch == 'GDPR_EncodeEmailAddress' || implementationSwitch == 'ConnectApi_569020_AgreementsQuerySqlOptimizations' || implementationSwitch == 'Privacy_ShowTextCheckboxViaGSOSetting' || implementationSwitch == 'DTT_Admin_Oidc' || implementationSwitch == 'Privacy_RestApiOwnerLogin' || implementationSwitch == 'Privacy_Update_SMS_Copy' || implementationSwitch == 'Privacy_MaintainSubscriptionSettingsAdvAdd' || implementationSwitch == 'DTT_AdminSiteLogin' || implementationSwitch == 'PublicAPI_512435_PricingOptionPriority' || implementationSwitch == 'CCG_Bug584834_FixMultipleSessionsResources' || implementationSwitch == 'GIT_589536_EntryLogs' || implementationSwitch == 'DTT_AdminHashIterations' || implementationSwitch == 'CCG_Bug577971_ShowFooterInMobile' || implementationSwitch == 'FEE_APIDocLinkFix' || implementationSwitch == 'DevPortal_GettingStartedRewrite' || implementationSwitch == 'MAP_Bug79474_AddedRollbackLogicOnExceptionDuringPurchase' || implementationSwitch == 'ConnectApi_593990_DeprecateGiftCardLayoutImage' || implementationSwitch == 'FEE_TermsAndConditionsHeaderLinkChange' || implementationSwitch == 'Zebra_StripePrimaryProcessorGodScreen_Clients' || implementationSwitch == 'Zebra_PaymentsApiPaymentProcessing_PublicApi' || implementationSwitch == 'MGMT_Bug341531_PreventDuplicateRecords' || implementationSwitch == 'PublicApi_592046_GetClassVisitsFixForGDPR' || implementationSwitch == 'FEE_MBSoftwareFooterUpdate' || implementationSwitch == 'PublicApi_592007_FixConsumerOptOut' || implementationSwitch == 'GIT_595367_FindSiteV2_DeletedSiteColorFix' || implementationSwitch == 'MAP_596791_MastercardSeries2_Clients' || implementationSwitch == 'DevPortal_586311_FAQDocumentationUpdate' || implementationSwitch == 'PublicApi_588930_TeacherSubExcludeLinks' || implementationSwitch == 'MGMT_EnableScheduleAmplitude' || implementationSwitch == 'DTT_588922_adm_rpt_ipay_export' || implementationSwitch == 'Scripts_592040_RemoveClientUpdatedEventHooks' || implementationSwitch == 'SKI_RemoveProductsSpecialAccess' || implementationSwitch == 'TransactionReport_AmplitudeBugFix_596419' || implementationSwitch == 'PW_LaunchPageIncreaseLinkVisibility' || implementationSwitch == 'ID_Bug_592014' || implementationSwitch == 'DevPortal_598719_V6Documentation' || implementationSwitch == 'ProdWellness_596033_MarketingCampaignManager' || implementationSwitch == 'GIT_597569_DeprecateChangePasswordV1' || implementationSwitch == 'MGMT_Bug498964_MaxSchPerWeekUpdate' || implementationSwitch == 'GIT_598046_RemoveServiceErrorLogsLink' || implementationSwitch == 'PW_LaunchPageMarketingBannerUpdates' || implementationSwitch == 'MGMT_ClassSchdAddTimes' || implementationSwitch == 'DTT_599849_WsPartialRefactor' || implementationSwitch == 'TP_DismissPayoutsActionBanner' || implementationSwitch == 'Payments_CCProcessorSetupCache' || implementationSwitch == 'PW_PeerCommunityLinkUpdate' || implementationSwitch == 'InternalSoap_GetClassesLocationRatings_602464' || implementationSwitch == 'PW_SmokeTests' || implementationSwitch == 'DevPortal_601343_EnforceAccountVerification' || implementationSwitch == 'PublicApi_602971_FixOptInFields' || implementationSwitch == 'RI_SKI_601369_CRMembershipIconWrite' || implementationSwitch == 'PublicApi_604563_NoTipItemFoundException' || implementationSwitch == 'RAI_TransactionReport_CalendarFix_604800' || implementationSwitch == 'PublicApi_600670_LymberRemoveDemoSites' || implementationSwitch == 'PublicApi_606107_UseApiKeysWithHardCodedPermissions' || implementationSwitch == 'DTT_Auth_VerifyFacebookToken' || implementationSwitch == 'TP_UpdateCMSplashScreenAsset' || implementationSwitch == 'RAI_QualarooScript_AspInclude' || implementationSwitch == 'GIT_599395_RefactorOptOutToCSharp' || implementationSwitch == 'ExternalServices_605218_WebhooksGDPREventHooks' || implementationSwitch == 'RI_SKI_606253_CRMembershipIconRead' || implementationSwitch == 'GIT_607443_SwitchVersionsFindSite' || implementationSwitch == 'DTT_Auth_DeleteFBConn' || implementationSwitch == 'DTT_607979_Photo' || implementationSwitch == 'PublicApi_608386_UpdateClientNewNotificationPreferences' || implementationSwitch == 'ConnectApi_603049_UserVisitsDateFilterFix' || implementationSwitch == 'MAP_600296_MastercardSeries2_PublicAPI' || implementationSwitch == 'MGMT_AddScheduleReactMigration' || implementationSwitch == 'Search_ConsumerUpdated' || implementationSwitch == 'PW_Wkhtml2PDF' || implementationSwitch == 'PW_595159OPSTechToolUpdateSalesDetails' || implementationSwitch == 'DTT_610905_ConstantContact' || implementationSwitch == 'PublicApi_609551_RefactoringGetClientServices' || implementationSwitch == 'RAI_EarnedRevenueWithReturns' || implementationSwitch == 'RI_SoapRssidUpdate_610862' || implementationSwitch == 'RestApi_608383_UpdateNotificationPreferencesApiKey' || implementationSwitch == 'PublicApi_589509_FixDuplicateBookableItemsMultiCapacity' || implementationSwitch == 'PublicApi_610030_FixForGetSitesWithLargeResultSet' || implementationSwitch == 'PublicApi_610030_FixSiteRepositoryForMissingSubscriberData' || implementationSwitch == 'PublicApi_610030_FixSiteDataMapperWithNullEnvParams' || implementationSwitch == 'TP_Bug605621_WrongClassCancellationMessage' || implementationSwitch == 'PublicApi_584637_LogAppointmentBookings' || implementationSwitch == 'SKI_612020_AddUserRolesFailsWhenMoreThan1000' || implementationSwitch == 'ID_Bug370591_FixPartialAccountCreation' || implementationSwitch == 'GIT_592390_UpdateQueryAllSitesV2Validation' || implementationSwitch == 'Privacy_Email_SetPreferences_Link' || implementationSwitch == 'Search_RealTimeIndexing' || implementationSwitch == 'RI_SKI_SOAP_CRWaitList' || implementationSwitch == 'Upgrade_Amplitude_Web' || implementationSwitch == 'MGMT_AddClassScheduleQualaroo' || implementationSwitch == 'PW_576593SalesSummaryCashTaxFix' || implementationSwitch == 'GIT_614884_AddErrorMessagingToQueryAllSites' || implementationSwitch == 'PublicApi_614740_BatchClientServiceQueries' || implementationSwitch == 'PublicApi_591423_WrongNumDeducted' || implementationSwitch == 'DTT_617940' || implementationSwitch == 'DTT_618070_Session2' || implementationSwitch == 'TP_BusinessInfo_Update' || implementationSwitch == 'RAI_EarnedRevenueWithReturns_Summary' || implementationSwitch == 'MGMT_StaffServiceForBulkIsScheduled' || implementationSwitch == 'TP_UpdateMBLiveToaster' || implementationSwitch == 'PaymentsApi_599710_ConsumerModeSupport' || implementationSwitch == 'GIT_SupportForNewSubscriptionLevels' || implementationSwitch == 'MGMT_BUG_615108_GiftCard' || implementationSwitch == 'PublicApi_618516_UpdateClientCrossRegionalDupRssidFix' || implementationSwitch == 'Scripts_Add_Mastercard_2BIN' || implementationSwitch == 'DTT_503543_rpt_ar_sites' || implementationSwitch == 'Privacy_ASP_Logging_Refactor_2' || implementationSwitch == 'DTT_503536_rpt_api_activity_logs_detail' || implementationSwitch == 'DTT_503515_pt_ABTest' || implementationSwitch == 'ConnectApi_599133_UnableToPurchase' || implementationSwitch == 'GIT_AddNewSubscriptionLevelsCreateSiteV2FrontEnd' || implementationSwitch == 'GIT_AddNewSubscriptionLevelsCreateSiteV1FrontEnd' || implementationSwitch == 'PW_621205SalesCashSummaryTaxDoublesFix' || implementationSwitch == 'GIT_AddNewSubscriptionLevelsTransmogFrontEnd' || implementationSwitch == 'PublicApi_569948_ChangePasswordShouldBeSetForNewClient' || implementationSwitch == 'TP_PIO_Alert' || implementationSwitch == 'DTT_361013_GC' || implementationSwitch == 'RAI_AddQualarooSitewide' || implementationSwitch == 'IPD_SupportForNewPricingLevels' || implementationSwitch == 'RAI_IntroOfferAlert_For3Days' || implementationSwitch == 'Identity_Bug510735_AcctBalToolFix' || implementationSwitch == 'Privacy_ASP_Logging_Refactor_3' || implementationSwitch == 'GIT_NewSubscriptionLevelWrite' || implementationSwitch == 'PublicApi_622626_GetSitesAllSitesAccess' || implementationSwitch == 'ClientsStaff_623623_AddAcctDetailsAmplitude' || implementationSwitch == 'RAI_Bug614837_FailedAutopayAlert' || implementationSwitch == 'TP_US_TakeoverModal' || implementationSwitch == 'CS_Search_PhoneFormatting' || implementationSwitch == 'DTT_592585_PdfRenderReplacement' || implementationSwitch == 'RAI_IntroOfferAlert_LateCancelVisit' || implementationSwitch == 'PW_ScriptsWkhtml2PDF' || implementationSwitch == 'PW_Wkhtml2PDFInEmailer' || implementationSwitch == 'PublicApi_625791_OptimizeGetClients' || implementationSwitch == 'RAI_DashboardAlerts_SetupChecklistBug' || implementationSwitch == 'Enterprise_CorpDashboardReportDateCopyUpdate' || implementationSwitch == 'CS_StaffPermissionGroup_Validation' || implementationSwitch == 'GIT_DeprecateFindSiteV1' || implementationSwitch == 'CS_DeprecateGooglePlusAPI' || implementationSwitch == 'DTT_603400_AccountDetails' || implementationSwitch == 'RAI_MembershipReportAddAmplitude' || implementationSwitch == 'ExternalServices_StartShoppingContextErrors_626496' || implementationSwitch == 'IJ_FixValutec_Void' || implementationSwitch == 'ExternalServices_GetClientsSqlOptimization_617630' || implementationSwitch == 'PublicApi_625793_SoapSerializationErrorLogging' || implementationSwitch == 'ID_Bug608161_UpdateEmailIndexesForHomeStudio' || implementationSwitch == 'ConnectApi_624866_DeleteClassVisitValidation' || implementationSwitch == 'GIT_QuerySiteReadOnlyWsMasterAndMbPurchase' || implementationSwitch == 'MAP_624875_SEPARefundMessaging' || implementationSwitch == 'RAI_DashboardAlerts_AmplitudeClickConversion_623686' || implementationSwitch == 'IJ_Bug591285_EarlyExpiringPOForMarch' || implementationSwitch == 'GIT_616993_FindSiteMutipleOwnersFix' || implementationSwitch == 'DTT_545857_adm_clt_alert_p' || implementationSwitch == 'DTT_565815_adm_cls_sch_print' || implementationSwitch == 'GIT_615164_UpdateEntryLogTracing' || implementationSwitch == 'GIT_608510_Transmogrify_OneActiveOwnerCheck' || implementationSwitch == 'Connect_BookCancelVisitNotificationsV2Errors_629299' || implementationSwitch == 'ConnectV2_592264_UpdateImageVersionWsMaster' || implementationSwitch == 'ConnectApi_623139_RequestCancellationSupport' || implementationSwitch == 'PublicApi_624587_PublicV5NewRelicAttributes' || implementationSwitch == 'CS_DataRequestEmails' || implementationSwitch == 'Identity_594932_FindUniversalUserCache' || implementationSwitch == 'RAI_QualarooSeparateTargetingProperties' || implementationSwitch == 'GIT_EnableNewRelicLogging' || implementationSwitch == 'Identity_617740_CreateWithAgreement' || implementationSwitch == 'RAI_IncludeInactiveMembership' || implementationSwitch == 'RAI_Bug618301_NoReturnBufferIssue' || implementationSwitch == 'IJ_Payouts_Form_Update' || implementationSwitch == 'RAI_PayrollExportWithNoRegRate' || implementationSwitch == 'AddNewRelicLoggingToPaymentsApi' || implementationSwitch == 'CS_NotificationsForExpiredPO' || implementationSwitch == 'PublicApi_618285_FixMobileImageUrl' || implementationSwitch == 'RAI_IntroOfferAlert_ReactivatedRecordRedDot' || implementationSwitch == 'ConnectApi_613520_EmailValidationWithRegex' || implementationSwitch == 'GIT_ClientAccountBalnceUpdates' || implementationSwitch == 'GIT_630199_UpdateGeneralOptionsInConnect' || implementationSwitch == 'GIT_630199_UpdateGeneralOptionsInRest' || implementationSwitch == 'Identity_628548_VerificationSyncEndpoints' || implementationSwitch == 'Connect_623149_GetClassesReviewSummaries' || implementationSwitch == 'ConnectApi_615750_FetchVisitsThrottle' || implementationSwitch == 'ConnectApi_631764_UseIRestClientForIdentityServer' || implementationSwitch == 'PW_ViewMerchantAccountPermission' || implementationSwitch == 'CS_SearchUpdates_FebWk4' || implementationSwitch == 'GIT_632349_NotificationOverrideCreateSiteV1' || implementationSwitch == 'RAI_ComparePastDates_Total' || implementationSwitch == 'RAI_SalesReport_Export_AddClientId' || implementationSwitch == 'RAI_SalesReport_Export_ChangeFileName' || implementationSwitch == 'GIT_624056_LogToKibana' || implementationSwitch == 'ConnectApi_606106_GenderValidationMoreStringent' || implementationSwitch == 'RAI_Client_SalesReport_Export_AddClientId' || implementationSwitch == 'SKI_NoCard637614' || implementationSwitch == 'Connect_RemoveUpdateUserBillingInfo_635305' || implementationSwitch == 'RAI_AddHelpSuiteLink_PayrollExportSetupReport' || implementationSwitch == 'CS_AttemptToFixTeacherSubNotification' || implementationSwitch == 'SKI_630170ReportSortingFixes' || implementationSwitch == 'RAI_613546_FixAutopayFilter' || implementationSwitch == 'ConnectApi_306913_JoiningOnTblClassSch' || implementationSwitch == 'DTT_AdminFixSiteInfoRepo' || implementationSwitch == 'RAI_Corporate_SalesReport_ExcelLoadingError' || implementationSwitch == 'ConnectApi_615750_V1ErrorResponseNoStackTrace' || implementationSwitch == 'ConnectApi_636989_CryptoUpdate' || implementationSwitch == 'CS_AddTwilioToRedactor' || implementationSwitch == 'RAI_SalesSummary_MiscAmount' || implementationSwitch == 'ConnectApi_640424_NewRelicMonitoring' || implementationSwitch == 'CS_PreloadSettings_AdmClsListController' || implementationSwitch == 'RAI_PayrollExportReport_NoRegistrationRateQuicknote' || implementationSwitch == 'RAI_Report_SalesByService_Export_AddClientId' || implementationSwitch == 'CS_PreloadMainClass' || implementationSwitch == 'IPD_RemoveMarketingTabSubNav' || implementationSwitch == 'CS_PreloadAdmMainClass' || implementationSwitch == 'PublicApi_643148_GetActiveClientMembershipsOptimization' || implementationSwitch == 'ConnectApi_636654_AddExpireAndPassesToPaymentOptions' || implementationSwitch == 'PublicApi_643474_GetWaitlistEntriesOptimization' || implementationSwitch == 'RAI_Alerts_CCExpiration_FourDigitYear' || implementationSwitch == 'RAI_Report_AutopayDetails_CCExpMonth' || implementationSwitch == 'RAI_FixColumnTargetSelector_Bug644222' || implementationSwitch == 'clients_staff_642473_walkme_optimization' || implementationSwitch == 'CS_ProfileShowExpiredCardYear' || implementationSwitch == 'ConnectV2_635301_GetDspo404' || implementationSwitch == 'ConnectApi_645359_DisableAdminConsumerAgreementEndpoints' || implementationSwitch == 'InternalSoap_DisableIpRestrictions_630588' || implementationSwitch == 'Connect_DisableUserCheckSignInEndpoint_646348' || implementationSwitch == 'IJ_EarlyExpiringPOForMarch_Connect' || implementationSwitch == 'IJ_EarlyExpiringPOForMarch_Framework' || implementationSwitch == 'IPD_EnableMarketingGroupPermissions' || implementationSwitch == 'Identity_601668_DeprecateChangeEmailEndpoint' || implementationSwitch == 'RAI_Corp_SalesReport_TimeOut_Error' || implementationSwitch == 'IPA_554219_RemovePackagesOnDowngrade' || implementationSwitch == 'RAI_CorporateSales_AddQuickDates' || implementationSwitch == 'ConnectApi_647981_OnlineStoreAlwaysFalse' || implementationSwitch == 'GIT_626486_CreateSiteV1NewTransMogEndpoint' || implementationSwitch == 'PublicApi_648063_V6DeveloperStaffUser' || implementationSwitch == 'PW_648545_ButtonStyles' || implementationSwitch == 'ExternalServices_547935_InternalSoapClassCategories' || implementationSwitch == 'ExternalServices_560175_InternalSoapClassCategoryIds' || implementationSwitch == 'PublicApi_650240_GetContractResponseContextMessages' || implementationSwitch == 'SA_LaunchLinks_647930' || implementationSwitch == 'PublicApi_612308_AvailabilityForMultiCapacityAppts' || implementationSwitch == 'PublicApi_650668_SetHideCancelBasedOnIsCanceled' || implementationSwitch == 'RAI_Bug633308_DashboardAlerts_StaffPermission' || implementationSwitch == 'RAI_PayrollExportWithNoRegRate_CleanOutput' || implementationSwitch == 'SA_AddAmplitudeProperties_651039' || implementationSwitch == 'IJ_Payments_Form_Updates' || implementationSwitch == 'PublicApi_589180_FixGetBookableItemsSingleCapacityApptOverlap' || implementationSwitch == 'SA_637475_RoyaltyPagePhrasing' || implementationSwitch == 'IPD_DynamicPricingAgreementCleanup' || implementationSwitch == 'SOAP_API_592044_GetClientPurchaseHistoryAccountActivity' || implementationSwitch == 'Connect_RemoveUnusedGetConsumerStatuses_652743' || implementationSwitch == 'CS_ClearHideCancelOnClassUncancel' || implementationSwitch == 'RestApi_603391_UseCorrectNotificationPreference' || implementationSwitch == 'CS_SearchUpdates_AprWk4' || implementationSwitch == 'ConnectApi_651745_MaskStaffNames' || implementationSwitch == 'IPD_SetEssentialOwnerPermissions' || implementationSwitch == 'IPD_UltimateUpgradePitched_Set_In_Conversation' || implementationSwitch == 'ConnectApi_648249_AddRatingDataToClassVisits' || implementationSwitch == 'SA_653611_SupportCrossRegional' || implementationSwitch == 'IPA_DeprecateApiSourceV1' || implementationSwitch == 'SA_GiftCards_XTTGS' || implementationSwitch == 'ConnectApi_FavoriteLocationNotSyncing_644002' || implementationSwitch == 'CS_Search_CacheSettings' || implementationSwitch == 'RAI_WalkMe_CheckCorporateLevelLogin' || implementationSwitch == 'CS_SearchUpdates_MayWk3' || implementationSwitch == 'CS_SearchUpdates_MayWk4' || implementationSwitch == 'IPA_MultiOwnerBugFix' || implementationSwitch == 'RAI_SalesReport_Refactor_SetupUnitTest' || implementationSwitch == 'ConnectApi_V3_611774' || implementationSwitch == 'IPD_EnableMarketingSuiteForAllTiers' || implementationSwitch == 'RAI_Corp_SalesReport_ErrorLogging' || implementationSwitch == 'IPA_UpgradeDowngradeToolDeprecateSoloAndListing' || implementationSwitch == 'DTT_661801' || implementationSwitch == 'DTT_Su2_FF' || implementationSwitch == 'PublicApi_635492_GetContractsFixTotals' || implementationSwitch == 'RAI_Bug648130_Reports_UnableToSort' || implementationSwitch == 'DTT_purchase_res_FF' || implementationSwitch == 'PublicApi_246143_WelcomeEmailLocationPhrases' || implementationSwitch == 'PublicApi_663770_AddClientToClassCRSiteIteration' || implementationSwitch == 'StripeOnboardingTool' || implementationSwitch == 'CS_LocationReplacePhraseContractEmail' || implementationSwitch == 'SA_654394_Scripts_SupportCrossRegional' || implementationSwitch == 'PublicApi_665019_AddClientToClassCRProfileImport' || implementationSwitch == 'DTT_shop_checkout_FF' || implementationSwitch == 'CS_SearchUpdates_JuneWk1' || implementationSwitch == 'RAI_Corp_Bug661375_CashSalesReport' || implementationSwitch == 'DTT_MainShopOld_Staged_Removal' || implementationSwitch == 'Clients_412783_ApiCredentialsBySourcePermission' || implementationSwitch == 'DTT_main_info_FF' || implementationSwitch == 'RestApi_663711_ValidatingLogoUrls' || implementationSwitch == 'IJ_EU_GiftCardCopy' || implementationSwitch == 'Salon_AddMembershipRestrictionToServiceCategoriesRestCall' || implementationSwitch == 'SA_MktBanners_GeoIP' || implementationSwitch == 'RAI_CorpSalesQuickDate_ChangeYesterdayToToday' || implementationSwitch == 'CS_SearchUpdates_JuneWk3' || implementationSwitch == 'PublicApi_667229_UpdateClientCRMasterUpdate' || implementationSwitch == 'SA_GiftCards_XTTGS_Scripts')
+			return true;
+		return false;
+		}
+	
+
+    // Emit the AB tests right here.
+    //Parse ABTests from the session into an array
+    var abTests = ",5,7,8,6,1004,1001,1008,1009,1013,1006,1012,1015,1011,1017,1027,1026,1016,1025,1024,1029,1035,1033,1038,1040,1032,1044,1050,1052,1054,1055,1039,1030,1048,1037,".split(',');
+
+    window.ABTests = {};
+	
+    //Put the array of AB tests into a dictionary object
+    for(var i=0; i<abTests.length ; i++)
+    {
+        var item = abTests[i];
+        if(item!='' && item != ' ' && item != null)
+            window.ABTests[item] = true;
+    }
+	
+    function ABTestIsEnabled(abtest){
+        //Make sure 'abtest' is an integer
+        if(typeof abtest != 'number' || abtest % 1 != 0)
+            return false;
+        //Check if 'abtest' exists in the ABTest dictionary object
+        if(window.ABTests[abtest])
+            return true;
+        return false;
+    }
+</script>
+<script type="text/javascript">
+	function NavigationRedesignIsEnabled() {
+		return false;
+	}
+</script>
+<script type="text/javascript">
+	function SynchronousNavigationRedesignIsEnabled() {
+		if ('false' == 'false')
+			return false;
+
+		return ABTestIsEnabled(1030);
+	}
+</script>
+
+
+<script type="text/javascript">
+
+	// We need to output the REST user token stuff
+	window.UserToken = '';
+	window.UserRefreshToken = '';
+	window.UserTokenExpiration = '';
+	window.RestAPIUrl = 'https://api.mindbodyonline.com';
+	window.ConnectAPIUrl = 'https://connect.mindbodyonline.com';
+	window.SubscribersAPIUrl = 'https://subscriber.mindbodyonline.com';
+	window.PaymentsAPIUrl = 'https://payments.mindbodyonline.com';
+    window.TimeZoneOffsetMinGMT = -480;
+
+    window.sessionStorage.UserToken = '';
+	window.sessionStorage.UserRefreshToken = '';
+	window.sessionStorage.UserTokenExpiration = '';
+
+	var sign = window.TimeZoneOffsetMinGMT < 0 ? "-" : "+";
+	var hours = Math.floor(Math.abs(window.TimeZoneOffsetMinGMT / 60)); // full hours
+	var minutes = ((Math.abs(window.TimeZoneOffsetMinGMT / 60)) % 1) * 60; // Minutes
+
+	window.TimeZoneString = sign;
+	if (hours < 10) {
+		window.TimeZoneString += "0" + hours.toFixed(0);
+	} else {
+		window.TimeZoneString  += hours.toFixed(0);
+	}
+	if (minutes == 0) {
+		window.TimeZoneString += "00";
+	}
+	else {
+		// There is a bug here if you actually have a < 10 minute timezone offset.
+		// Hopefully that is only a thing from my waking nightmares....
+		window.TimeZoneString += minutes.toFixed(0);
+	}
+</script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/common/mb.url-helper_830177408.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/common/mb.sessionHelpers_2998060318.js"></script>
+    <script src="/hotwords/GetHotwordsFromKey?hash=RtBXtWgwnrkg9RwVj02Ugg=="></script>
+
+<script>
+    window.name = "parent"
+
+    var js_studioid = "791257";
+    var studioName = "Fulton Yoga Collective";
+    var mbo_scd = "1/24/2018";
+
+
+        var facebookGraphVersion = "v2.8";
+
+    mb.sessionHelpers.setResetSessionInformation(js_studioid, "Your session has expired, redirecting home.");
+
+</script>
+
+<style type="text/css">
+table.transForm { border: 0 !important; }
+/* * { margin: 0; padding: 0; } */
+#memoryticker{
+font: bold 11px Arial;
+color: #F78F1E;
+border:;
+padding: 3px;
+}
+#memoryticker a:link {color: #F78F1E; text-decoration: none;}
+#memoryticker a:active {color: #F78F1E; text-decoration: none;}
+#memoryticker a:visited {color: #F78F1E; text-decoration: none;}
+#memoryticker a:hover {color: #003F87; text-decoration: none;}
+
+.tinytableopacity22    {
+background: transparent;
+background:url("https://clients.mindbodyonline.com/asp/images/columnbg22.gif");
+}
+.tinytableopacity22 TD {
+filter:alpha(opacity=85);
+-moz-opacity:.85;
+opacity:.85;
+}
+
+
+
+
+#pageWrapper #wrapper-minhieght
+{
+	min-height: 0;
+}
+BODY #footer {
+	visibility: visible;
+}
+
+
+
+</style>
+<script type="text/javascript">
+function subForm() {
+	document.search2.submit();
+
+	document.frmLogon.requiredtxtUserName.focus();
+
+}
+
+
+
+function addToFavorites(sType) {
+	var favoritesURL = "https://clients.mindbodyonline.com/classic/ws?studio=FultonYogaCollective";
+	if (sType!=0) {
+		favoritesURL += "&sType=" + sType;
+	}
+	var favoritesName = "Fulton Yoga Collective Online";
+	if (window.sidebar) { // firefox
+		window.sidebar.addPanel(favoritesName, favoritesURL, "");
+	} else if(window.opera && window.print) { // opera
+		var elem = document.createElement('a');
+		elem.setAttribute('href',favoritesURL);
+		elem.setAttribute('title',favoritesName);
+		elem.setAttribute('rel','sidebar');
+		elem.click();
+	} else if(document.all) {	// ie
+		window.external.AddFavorite(favoritesURL, favoritesName);
+	}
+}
+
+
+
+function goTo(top_loc,tabID,qstrParam, botPage) {
+	var clientId = "";
+	if (document.getElementById("optSelectedClients") != null) {
+		if (document.getElementById("optSelectedClients").selectedIndex >= 0) {
+			clientId = "&fcltid=" + document.getElementById("optSelectedClients").options[document.getElementById("optSelectedClients").selectedIndex].value;
+		}
+	}
+	if (botPage!="" && botPage!=null) {
+		window.location = "/asp/adm/" + botPage + "?fl=true&tabID=" + tabID + "&qParam=" + qstrParam + clientId;
+	} else {
+	    if (top_loc == "class") {
+	        window.location = "/classic/admmainclass?fl=true&tabID=" + tabID + "&qParam=" + qstrParam + clientId;
+	    } else if (top_loc == "appts") {
+			
+					window.location = "/MainAppointments/Index?fl=true&tabID=" + tabID + "&qParam=" + qstrParam + clientId;
+				
+		} else {
+			window.location = "/asp/adm/main_" + top_loc + ".asp?fl=true&tabID=" + tabID + "&qParam=" + qstrParam + clientId;
+		}
+
+	}
+}
+
+
+
+function isPdf() {
+	return false;
+}
+
+	// To handle client-side dates, we need to include some JS. I've picked Moment.js to do the client-side date manipulation,
+	// but it needs some information like our time offset. All client-side date and time manipulation should be in UTC.
+	window.MomentJSDateFormatString = 'MM/DD/YYYY';
+
+	// UTCOffset is PST (-8) + Site Offset Time
+		window.UTCOffsetMinutes = -420;
+</script>
+
+<script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/hotwords_3550585358.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/site_3474071799.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/inc_login_content_683686002.js"></script>
+        <script id="cobrowsescript" type="text/javascript"
+                src="https://www.glancecdn.net/cobrowse/CobrowseJS.ashx?group=19668&site=production"
+                data-groupid="19668"
+                data-site="production"
+                data-inputevents='{"shift-13":"startSession"}'
+                charset="UTF-8">
+        </script>
+    <script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/cm_site_3598664861.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/plugins/jquery.tipsy_4036886293.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/mbpopover_3707701427.js"></script>
+
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"291331",ustr:"",originlat:"0",clientrtt:"97",ghostip:"23.50.233.41",ipv6:false,pct:"10",clientip:"108.223.6.66",requestid:"12b7224f",region:"34181",protocol:"",blver:14,akM:"b",akN:"ae",akTT:"O",akTX:"1",akTI:"12b7224f",ai:"198169",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
+<body class=" Enabled_SalonFiltersStyling Enabled_SalonRefreshApptSchedule Enabled_MAP_ElavonApplicationLightbox Enabled_Salon_W_RefactorAppointmentHTML Enabled_MAP_iDEALsupportForConsumerMode Enabled_DCA_MBNetworkDashboard Enabled_DCA_3rdPartyOpts Enabled_FTU_SPv2CSS Enabled_DCA_PartnerIcon Enabled_DCA_LatoUpdate Enabled_DCA_FOTGAEHSuite Enabled_BUN_PurchLogo Enabled_CCG_DPrice_VProp Enabled_CCG_Loc_Amenity Enabled_CCG_Temp_LocImg Enabled_SKI_NoCard637614 Enabled_5 Enabled_7 Enabled_8 Enabled_6 Enabled_1004 Enabled_1001 Enabled_1008 Enabled_1009 Enabled_1013 Enabled_1006 Enabled_1012 Enabled_1015 Enabled_1011 Enabled_1017 Enabled_1027 Enabled_1026 Enabled_1016 Enabled_1025 Enabled_1024 Enabled_1029 Enabled_1035 Enabled_1033 Enabled_1038 Enabled_1040 Enabled_1032 Enabled_1044 Enabled_1050 Enabled_1052 Enabled_1054 Enabled_1055 Enabled_1039 Enabled_1030 Enabled_1048 Enabled_1037">
+<div id="pageWrapper">
+
+<div id="fixedTop">
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/SimpleLightBox_2372168908.css"  /><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/plugins/jquery.SimpleLightBox_3997610299.js"></script>
+<style type="text/css">
+	.logo-table{color: #F78F1E; }
+	.logo-table a:hover{text-decoration:underline;}
+	.siteDeactivatedMsg
+	{
+		color:red;
+		font-size: 20px;
+		font-weight: bold;
+	}
+</style>
+<div id="topSectionBG">
+	<div id="topWrap">
+	<table id="top-section-table" cellspacing="0" style='max-width: 960px; margin: 0 auto;'>
+		<tr>
+			<td class="top-section-table-ends">
+				<div id="top-logo-container">
+					
+    <a href="javascript:gotoStudioSite('http://fultonyogacollective.com');">
+		<img id="studioLogoConsumer" style="max-width:200px; max-height:70px;" src="/studios/FultonYogaCollective/logo.gif?imageversion=26"  title="Click here to return to the Fulton Yoga Collective homepage." />
+	</a>
+
+				</div>
+			
+			</td>
+			<td>
+			
+				<div id="top-bb-container">
+			
+				</div>
+			
+
+			</td>
+			<td id="top-login-container-td" class="top-section-table-ends">
+				<div id="top-login-container">
+					<script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/googleTagManager_2652292322.js"></script> 
+    <script>
+            $(function() {
+                window.bindAmplitudeEvent();
+                //Add GTM script through javascript 
+               
+            });
+
+            displayLoginFailureOpts = {
+                pageColor: "#F78F1E",
+                DisplayPhraseSecurityverificationpending: "Security Verification Pending",
+                DisplayPhraseInvalidlogin: "Invalid Login",
+                DisplayPhraseLockoutnotice:"One more failed login attempt will lock this account out for 30 minutes.",
+                DisplayPhraseRestrictedip: "Restricted IP",
+                
+                SeeStudioTopErrorStr: "Log in using your username or <a href=\"/PasswordRecovery/\">reset your password</a>.",
+                SeeStudioBottomErrorStr: "<span style='color:#FF3333;margin-right:5px' id='LoginFailureSpan'>" +
+                                          "It looks like you have a duplicate account or that a family member has the same email address as you. Please contact "+
+                                          "Fulton Yoga Collective" +
+                                          " at " + "!5599219642" +
+                                          " to have your email or password changed.</span>"
+            
+            };
+        </script>
+        <div style="display:none;" id="loginpartialcss"></div>
+    <script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/loginpartial_922899783.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/mbs_1976715061.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/mb_2345106799.js"></script>
+
+<form id="frmLogonTop" name="frmLogonTop" method="post" onsubmit="return checkrequired(this)" action="/ASP/login_p.asp">
+
+	<input type="hidden" name="tg" value="" /> <input type="hidden" name="vt" value="" /> <input type="hidden" name="lvl" value="" /> <input type="hidden" name="stype" value="40" /> <input type="hidden" name="qParam" value="" /> <input type="hidden" name="view" value="" /> <input type="hidden" name="trn" value="0" /> <input type="hidden" name="page" value="" /> <input type="hidden" name="catid" value="" /> <input type="hidden" name="prodid" value="100" /> <input type="hidden" name="date" value="5/17/2018" /> <input type="hidden" name="classid" value="0" /> <input type="hidden" name="sSU" value="" /> <input type="hidden" name="optForwardingLink" value="" /> 
+
+	<table class="logo-table">
+		<tr>
+			<td style="padding: 2px; ">
+			    <table cellspacing="0" style="margin: 0 0 0 auto;">
+			        <tr>
+			            <td nowrap>
+							<div class="top-login-field-container">
+                                Email
+							</div>
+							<div>
+                                <input id="requiredtxtUserName" type="text" name="requiredtxtUserName" maxlength="100" autocomplete="off" spellcheck="false" value="" onkeydown="return mb.chkKey(this, event, function(){$('#btnLogin').click();});" style="padding-top: 1px; padding-bottom: 1px;">
+							</div>
+			            </td>
+			            <td nowrap>
+							<div class="top-login-field-container">
+									Password
+							</div>
+							<div>
+								<input id="requiredtxtPassword" onFocus="this.select();" type="password" name="requiredtxtPassword" maxlength="30" autocomplete="off" onkeydown="return mb.chkKey(this, event, function(){$('#btnLogin').click();});" style="padding-top: 1px; padding-bottom: 1px;">
+							</div>
+			            </td>
+			            <td style="vertical-align:bottom;">
+							<input id="btnLogin" type="button" class="loginButton" value="Log in" />
+			            </td>
+			        </tr>
+			     </table>
+			</td>
+		</tr>
+		<tr>
+			<td style="font-size: 11px; white-space: nowrap;">
+				<div class="top-login-field-container">
+                    <img id="loginFailureAlert" src="https://static.mindbodyonline.com/a/asp/adm/images/alert-red-16px.png" align="absbottom">
+<span style='color:#FF3333;margin-right:5px' id='LoginFailureSpan'></span>
+					<a href="/ASP/su1.asp" style="color: #DE811B " class="amplitude-event"
+                        data-amplitudeeventname="(CARP Workflow) - Click"
+                        data-amplitudeeventparams='{"Type": "Sign Up"}'>
+                        Create account
+					</a>&nbsp;
+                    |
+					<a href="/PasswordReset/" style="color: #DE811B " class="amplitude-event"
+                        data-amplitudeeventname="(CARP Workflow) - Click"
+                        data-amplitudeeventparams='{"Type": "Top Forgot Password"}'>
+                        Need password?
+					</a>&nbsp;
+                    
+				<span class="top-login-field-container">
+					Remember me&nbsp;<input type="checkbox" name="optRememberMe" />
+				</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+</form>
+
+				</div>
+				<div style="clear:both;"></div>
+			</td>
+		</tr>
+	</table>
+	</div>
+	
+<!---  3 -->
+
+
+	<div id="tab-scroll-l" class="tab-scroll-l">&nbsp;</div>
+	<div id="tab-scroll-r" class="tab-scroll-r">&nbsp;</div>
+	<div id="tab-bar" class="tab-bar">
+	<div id="tab-padding">
+	<div id="tab-bar-padding-cm">
+  
+		<table id="tab-table" class="tab-table"><tr>
+	
+
+		<td class="tab tab-nosel tabclass" id="tabTD7" onclick="document.location.href='/classic/mainclass?fl=true&tabID=7'">
+		<table class="tabItem"><tr>
+		
+				<td class="tab-l tab-l tab-l-firstTab"><div></div></td>
+				<td class="tab-c tab-c tab-c-firstTab"><a id="tabA7" >CLASSES</a></td>
+				<td class="tab-r tab-r tab-r-firstTab"><div></div></td>
+				
+		</tr></table>
+		</td>
+	
+
+		<td class="tab tab-nosel tabappts" id="tabTD102" onclick="document.location.href='/asp/main_appts.asp?fl=true&tabID=102'">
+		<table class="tabItem"><tr>
+		
+				<td class="tab-l tab-l tab-l-middleTab"><div></div></td>
+				<td class="tab-c tab-c tab-c-middleTab"><a id="tabA102" >APPOINTMENTS</a></td>
+				<td class="tab-r tab-r tab-r-middleTab"><div></div></td>
+				
+		</tr></table>
+		</td>
+	
+
+		<td class="tab tab-nosel tabinfo" id="tabTD2" onclick="document.location.href='/asp/main_info.asp?fl=true&tabID=2'">
+		<table class="tabItem"><tr>
+		
+				<td class="tab-l tab-l tab-l-middleTab"><div></div></td>
+				<td class="tab-c tab-c tab-c-middleTab"><a id="tabA2" >MY INFO</a></td>
+				<td class="tab-r tab-r tab-r-middleTab"><div></div></td>
+				
+		</tr></table>
+		</td>
+	
+
+		<td class="tab tab-sel tabshop" id="tabTD3" onclick="document.location.href='/asp/main_shop.asp?fl=true&tabID=3'">
+		<table class="tabItem"><tr>
+		
+				<td class="tab-l-sel tab-l-sel-lastTab"><div></div></td>
+				<td class="tab-c-sel tab-c-sel-lastTab"><a id="tabA3">ONLINE STORE</a></td>
+				<td class="tab-r-sel tab-r-sel-lastTab"><div></div></td>
+				
+		</tr></table>
+		</td>
+	
+		</tr></table>
+    </div>
+    </div>
+	</div>
+
+</div>
+
+	<div id="tabBottomBorder"></div>
+
+	<div class="menu">
+		
+		<div class="menu-right">
+			<a href="javascript:printWindow();" style="float: right; margin-top: 2px; margin-right: 17px;"><img src="https://static.mindbodyonline.com/a/asp/images/printer-20px.png" title="Click here to print"></a>
+		</div>
+		
+	</div>
+
+
+</div>
+<div id="fixedTopShim" ></div>
+
+
+<!-- begin client alerts -->
+<script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/inc_ajax_1873331058.js"></script>
+<!-- end client alerts  -->
+
+			<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/calendar_1955694519.css"  /><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/valcur_3043027889.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/calendar2_880895437.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/VCC2_2000074538.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/plugins/jquery.placeholder_3227239068.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/plugins/jquery.lightboxLib_2201529122.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/plugins/jquery.moreless_1606498978.js"></script><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/gallery_3343032092.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/SimpleLightBox_2372168908.css"  />
+
+<script type="text/javascript">
+function autoSubmitDateTo(dayWeekOrMonth, addOrSub) {
+	
+	var tmpDate;
+	
+	if (dayWeekOrMonth == true && dayWeekOrMonth != "month" ) {
+		if (addOrSub)	{
+			tmpDate = "5/18/2018";
+		} else {
+			tmpDate = "5/16/2018";
+		}
+	} else if (dayWeekOrMonth == false || dayWeekOrMonth == "week") {
+		if (addOrSub)	{
+			tmpDate = "5/24/2018";
+		} else {
+			tmpDate = "5/10/2018";
+		}
+	} else { //month
+		if (addOrSub)	{
+			tmpDate = "6/17/2018";
+		} else {
+			tmpDate = "4/17/2018";
+		}	
+	}
+	
+	document.search2.txtDate.value = tmpDate;
+	document.search2.pageNum.value = 1;
+	document.search2.submit();
+}
+function autoSubmitToToday() {
+	document.search2.txtDate.value = "6/23/2019";
+	document.search2.pageNum.value = 1;
+	document.search2.submit();
+}
+</script>
+<script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/main_shop_1367729311.js"></script>
+
+<script type="text/javascript">
+
+function donationUpdated() {
+        document.frmShop.frmDonationChanged.value = "true";
+        SelView(4);
+}
+
+function goToPage(pNum) {
+        document.frmShop.frmPageNum.value = pNum;
+        document.frmShop.lastSearch.value = "";
+        doSearch();
+}
+function addRetailItem(ndx, addMode, partnerID) {
+        if (document.getElementById("optProdGroup"+ndx)!=null) {
+                document.frmShop.frmProdID.value = document.getElementById("optProdGroup"+ndx).options[document.getElementById("optProdGroup"+ndx).selectedIndex].value;
+        } else if (addMode == 3) {
+                document.frmShop.frmProdID.value = ndx;
+                addMode = 2;
+        } else {
+                document.frmShop.frmProdID.value = document.getElementById("frmProdGroup"+ndx).value;
+        }
+        document.frmShop.frmPartnerID.value = partnerID;
+        document.frmShop.frmPageNum.value = "";
+        document.frmShop.lastSearch.value = "";
+        addToCart(addMode);
+}
+
+
+//END - JS For Retail Online Store
+
+function addToCart(addMode) {
+	//check for valid input on editable gift card
+	var $amount = $('input[name=requiredtxtCreditAmount]');
+	//if it exists, and it doesn't have a valid currency,
+	//set it's value back to form's starting value, and prevent form submission
+	if ($amount[0]){
+		if (!validateCurrency($amount[0])){
+			$amount.val('0')
+			return false;
+		}
+	}
+
+	if (document.getElementById("opt_ContractIAgree") != null && !document.getElementById("opt_ContractIAgree").checked) {
+			alert("Please check I AGREE to make your purchase.");
+	} else {
+
+	    
+
+		//If the user has chosen to send the gift card to the recipiant via email,
+		//change the necessary field names so that they will be verified not empty
+		//along with the other required fields in the function 'checkrequired'
+		var $emailCheckbox = $('#optSendGiftCardByEmail'),
+            $email1 = $('#egiftCardMail1'),
+            $email2 = $('#egiftCardMail2'),
+            $deliveryDate = $('#optGCDeliveryDate');
+
+		if ($emailCheckbox.is(':checked')) {
+			$email1.attr('name', 'requiredEm_RecipientEmail1');
+			$email2.attr('name', 'requiredEm_RecipientEmail2');
+			$deliveryDate.attr('name', 'requiredtxtDeliveryDate');
+		}
+		else {
+			$email1.attr('name', 'egiftCardMail1')
+			$email2.attr('name', 'egiftCardMail2')
+			$deliveryDate.attr('name', 'optGCDeliveryDate');
+		}
+
+		if (checkrequired(document.frmShop)) {
+			
+				document.frmShop.frmAddCart.value = addMode;
+				document.frmShop.submit();
+			
+		}
+	}
+}
+
+function CheckOut() {
+
+        document.frmShop.action = "su1.asp";
+
+        document.frmShop.submit();
+}
+
+function chkPromo(field, onfocus) {
+        if (onfocus && field.value=="PROMOTION CODE") {
+                field.value = "";
+        } else if (!onfocus && field.value=="") {
+                field.value = "PROMOTION CODE";
+        }
+}
+
+
+$(document).ready(function() {
+		// defined in siteLteIe7.less only important in IE7
+		$('div.wrapper').addClass("main_shop-cm-wrapper");
+
+        $('input[name=optSendGiftCardByEmail]').click(function () {
+
+            if ($(this).is(':checked')) {
+               $('.giftCardDeliveryInfo').show();
+            }
+            else {
+               $('.giftCardDeliveryInfo').hide();
+
+            }
+        }).triggerHandler('click');
+});
+
+
+</script>
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/inc_retail_links_2960833948.css"  /><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/main_shop_576535855.css"  />
+
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"291331",ustr:"",originlat:"0",clientrtt:"97",ghostip:"23.50.233.41",ipv6:false,pct:"10",clientip:"108.223.6.66",requestid:"12b7224f",region:"34181",protocol:"",blver:14,akM:"b",akN:"ae",akTT:"O",akTX:"1",akTI:"12b7224f",ai:"198169",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
+<body>
+
+<div class="wrapperTop">
+    <div class="wrapperTopInner">
+        <div class="pageTop">
+            <div class="pageTopLeft">
+                &nbsp; 
+            </div>
+            <div class="pageTopRight">
+                &nbsp; 
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="fixedHeader">
+    <div class="sub-tab-bar group">
+        <ul class="retailNav">
+               
+					<li>
+                        <a id="retailNavProductsLink" class="retailNavLink "  
+						href="/asp/main_shop.asp?pMode=3&tabID=3">Products</a>
+                    </li>
+				
+					<li><a class="retailNavLink " 
+						href="/asp/main_shop.asp?pMode=1&tabID=3">Services</a></li>
+				
+					<li><a class="retailNavLink retailNavLink-sel" 
+						href="/asp/main_shop.asp?pMode=0&tabID=3">Contracts</a></li>
+				
+					<li>
+                        
+                        <a class="retailNavLink " 
+							href="/asp/main_shop.asp?pMode=4&tabID=3">
+                            Shopping Cart
+                            <span id="shopCartNumItems">
+                            (0 items)
+                            </span>
+                        </a>
+                    </li>
+				
+
+        </ul>
+    </div>
+
+  </div>
+<script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/coffee_2229119875.js"></script><div id="wrapper-frame" style="position:relative;"><div id="wrapper-minheight" ><div id="wrapper-bottompad"><div style="display:block;height:0;clear:both;">&nbsp;</div><div class="wrapper"><div id="main-content">
+<div id="shoppingCart" class="group">
+
+<form id="frmShop" name="frmShop" action="main_shop.asp" method="post">
+
+<input type='hidden' name='CSRFToken' class='csrf-token' value='Ck6wLqsICRwMUG64dAh9'>
+    <input type="hidden" name="reSchedule" value="" />
+    <input type="hidden" name="origId" value="" />
+    <input type="hidden" name="frmMode" value="0">
+    <input type="hidden" name="frmrelClientID" value="">
+    <input type="hidden" name="frmLastMode" value="0">
+    <input type="hidden" name="frmSubmitted" value="791257">
+    <input type="hidden" name="frmAddCart" value="">
+    <input type="hidden" name="frmUnpaid" value="">
+    <input type="hidden" name="frmUnpaidRec" value="">
+    <input type="hidden" name="frmVD_Date" value="">
+    <input type="hidden" name="frmStupid" value="">
+    <input type="hidden" name="frmVD_ClassID" value="">
+    <input type="hidden" name="frmVD_CourseID" value="">
+    <input type="hidden" name="frmVD_LeadOrFollow" value="">
+    <input type="hidden" name="frmVD_Rec_EDate" value="">
+    <input type="hidden" name="frmVD_Rec_DayStr" value="">
+    <input type="hidden" name="frmVD_TrnID" value="">
+    <input type="hidden" name="frmVD_RTrnID" value="">
+    <input type="hidden" name="frmVD_STime" value="">
+    <input type="hidden" name="frmVD_ETime" value="">
+    <input type="hidden" name="frmVD_TG" value="">
+    <input type="hidden" name="frmVD_VT" value="">
+    <input type="hidden" name="frmVD_Loc" value="1">
+    <input type="hidden" name="frmVD_Notes" value="">
+    <input type="hidden" name="frmVD_WaitList" value="">
+    <input type="hidden" name="frmEnrollType" value="">
+    <input type="hidden" name="frmUsePmtPlan" value="">
+    <input type="hidden" name="frmEditMode" value="">
+    <input type="hidden" name="frmRegisterType" value="">
+    <input type="hidden" name="optEnrollDay1" value="">
+    <input type="hidden" name="optEnrollDay2" value="">
+    <input type="hidden" name="optEnrollDay3" value="">
+    <input type="hidden" name="optEnrollDay4" value="">
+    <input type="hidden" name="optEnrollDay5" value="">
+    <input type="hidden" name="optEnrollDay6" value="">
+    <input type="hidden" name="optEnrollDay7" value="">
+    <input type="hidden" name="txtRegStartDate" value="">
+
+    <input type="hidden" name="frmVD_recType" value="">
+    <input type="hidden" name="frmVD_recNum" value="">
+
+    <input type="hidden" name="frmProdID" value="">
+    <input type="hidden" name="frmPartnerID" value="">
+    <input type="hidden" name="frmPageNum" value="">
+    <input type="hidden" name="lastSearch" value="">
+    <input type="hidden" name="optReservedFor" value="">
+    <input type="hidden" name="stype" value="40" />
+        
+
+        <input type="hidden" name="optLoginAsGuest" value="" />
+
+    
+    <input type="hidden" name="optNumSessions" value="">
+    <input type="hidden" name="optClassSchEDate" value="12:00:00 AM">
+    <input type="hidden" name="frmDonationChanged" value="">
+
+    <div id="mainShop">
+        <div id="pageTitle">
+            <h1>
+            Contracts
+            </h1>
+            
+        </div>
+<style type="text/css">
+	.grayLine {
+		background-color:#CCC;
+	}
+	.siteColorLine {
+		background-color:#acacac;
+	}
+</style>
+
+<div id="leftPanel" class="group">
+	<div class="section group no-partners">
+		<div id="ContractsAndPackagesPanel">
+			<label for="requiredoptPurchaseItem">
+                Which Contract would you like?
+			</label>
+			<select name="requiredoptPurchaseItem" onchange="changeItem();">
+				<option value="0">
+					Select item
+				</option>
+
+            <option value="100" name="FYC Monthly Membership"  selected>
+                FYC Monthly Membership
+            </option>
+
+			</select> <!--requiredoptPurchaseItem-->
+<input type="hidden" name="notDateSpecificContract" value="True" />
+			<label for="requiredtxtStartDate">
+				When would you like to start?
+			</label>
+
+                <input onchange="document.frmShop.submit();" type="text" class="textSmall" id="requiredtxtStartDate" name="requiredtxtStartDate" value="6/23/2019" />
+			    <script type="text/javascript">
+				    var cal1 = new tcal({ 'formname': 'frmShop', 'controlname': 'requiredtxtStartDate' });
+				    cal1.a_tpl.yearscroll = true;
+			    </script>
+
+			<div id="description" class="userHTML">
+				<div>The FYC Monthly Membership includes our regular evening Yoga Classes, Yoga in the Park, Conscious Cinema Club and ArtHop.&nbsp;</div><div><br></div><div>This membership does not include special events, workshops and training courses.&nbsp;</div><div><br></div><div>This is a one year contract.</div>
+			</div>
+
+
+		<div id="feesSection">
+
+
+			<div class="main-shop-contract-fees-container">
+			<table class="main-shop-contract-fees-tbl" cellspacing="0">
+
+			<tr>
+				<td class="recurring-fees">
+
+				</td>
+				<td class="contract-desc-line">
+					<div class="contract-desc">One Month of Unlimited Yoga & Regular Events</div>
+
+				</td>
+				<td class="contract-item-amount">
+
+				</td>
+				<td class="contract-product-notes">
+
+				</td>
+			</tr>
+
+				<tr class="total-line">
+				<td colspan="2" class="right">
+					Total
+				</td>
+				<td colspan="1" class="contract-item-amount">
+					$25.00
+
+				</td>
+				<td>
+					
+				</td>
+				</tr>
+		</table>
+		</div> <!-- main-shop-contract-fees-container  -->
+			</div> <!--feesSection-->
+
+				<div id="contractInfoStr" style="color: #003F87;">
+					FYC Monthly Membership Start: 6/23/2019 - End: 6/23/2020 $25.00 per month.<br/ >
+				</div>
+
+				<h3>
+					Contract Agreement
+				</h3>
+				<iframe id="contractFrame" src="adm/adm_clt_contract_stored.asp?contractID=100&clientID=&sdate=6%2F23%2F2019&edate=6%2F23%2F2020" name="contractFrame" width="750" height="200" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
+				<input type="checkbox" name="opt_ContractIAgree" id="opt_ContractIAgree" />
+				<label for="opt_ContractIAgree" id="termAgreement">
+					I agree with the above terms
+				</label>
+
+
+			<div class="makePurchase">
+				<input onclick="addToCart(2);" class="makePurchaseButton" type="button" name="Button" value="Make Purchase" />
+			</div>
+
+		</div> <!--ContractsAndPackagesPanel-->
+	</div> <!-- .section -->
+</div> <!-- .leftPanel -->
+
+
+    <!--</div>--> <!-- .section -->
+</div> <!-- .shoppingCartPanel -->
+
+</form>
+</div>
+<link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/inc_login_content_792453183.css"  />
+<script type="text/javascript">
+    var localization = {
+        email: 'Please enter a valid email address'
+    };
+</script>
+<script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/plugins/jquery.validate-1.13.1_2309585723.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/knockout-3.2.0_4162953165.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/utils/mb.models.Validate-0.0.1_658503719.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/common/mb.jquery.validate.errorAsBanner_160877380.js"></script><script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/ConsumerModeCreateAccount_2495831720.js"></script>
+
+ <script type="text/javascript">
+    $(function() {
+        window.bindAmplitudeEvent();
+    });
+
+ function subSUForm(boolSubtype) {
+	if (boolSubtype==1) {
+		if (checkrequired(document.frmReg)) {
+			document.frmReg.lkupType.value = "name";
+			document.frmReg.submit();
+		}
+	} else if (boolSubtype==2) {
+		if (document.frmReg.txtCustomerID.value=="") {
+			alert("Please enter your Fulton Yoga Collective ID");
+			document.frmReg.txtCustomerID.focus();
+		} else {
+			document.frmReg.lkupType.value = "id";
+			document.frmReg.submit();
+		}
+	} else {	//required f/lname & ID
+		if (checkrequired(document.frmReg)) {
+			if (document.frmReg.txtCustomerID.value=="") {
+				alert("Please enter your Fulton Yoga Collective ID");
+				document.frmReg.txtCustomerID.focus();
+			} else {
+				document.frmReg.submit();
+			}
+		}
+	}
+}
+
+ // This function hides the generic login message and replaces with the specific one.
+
+function showSpecificLogin()
+{
+	mbfb.getFBUserInfo(function (user)
+	{
+		var notHW = "Not";
+		var $facebook = $('#FacebookHeader');
+		var logInAs = 'Log in as \x3cFACEBOOKNAME\x3e';
+		logInAs = logInAs.replace("<FACEBOOKNAME>", user.name);
+
+		// Need to create the text for the specific message
+		$('#SpecificMessage', $facebook).empty()
+			.append(mbfb.getFBUserImage())
+			.append($("<div id=\"LoginAs\"><div class=\"fb-lg-as-txt ellipsis\">" + logInAs + "</div><div class=\"fb-lg-as-txt fb-login-as-bttm ellipsis\"></div></div>"));
+		$("#LoginAs .fb-lg-as-txt").prop("title", logInAs);
+		$("#LoginAs .fb-lg-as-txt fb-login-as-bttm").prop("title", logInAs);
+
+		var notUser = 'Not \x3cFACEBOOKNAME\x3e?';
+		notUser = notUser.replace("<FACEBOOKNAME>", user.first_name);
+		$("#NotMeName").html(notUser);
+		$("#NotMeName").prop("title", notUser);
+
+
+		var $GenericMessage = $('#GenericMessage', $facebook);
+		$GenericMessage.fadeOut(400, function ()
+		{
+			$GenericMessage.hide();
+			$("#FacebookLoginButton").css("top", "14px");
+			$('#SpecificMessage', $facebook).show().css("display", "inline-block");
+			$('#fbHeaderRightContainer', $facebook).show().css("display", "inline-block");
+		});
+
+		//'Alternative' Login/VerifyStep Related
+		var $VerifyYourLoginFacebook = $('#VerifyYourLogin');
+		var $generalMessageVerify = $('#AlternativeLoginGenericMessage', $VerifyYourLoginFacebook);
+		$generalMessageVerify.empty()
+				.append(mbfb.getFBUserImage())
+				.append($("<span class=\"pp-c-lg-b ellipsis\">Before you can log in using Facebook...</span>"));
+
+	});
+}
+
+function facebookAutoLoginFromPortal()
+{
+
+
+}
+ </script>
+
+
+<script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/Facebook/mb.facebook_686521930.js"></script>
+<div id="fb-root"></div>
+<script type="text/javascript">
+	(function (d) {
+		var js, id = 'facebook-jssdk'; if (d.getElementById(id)) { return; }
+		js = d.createElement('script'); js.id = id; js.async = true;
+	    js.src = "//connect.facebook.net/en_US/sdk.js";
+		d.getElementsByTagName('head')[0].appendChild(js);
+	} (document));
+</script>
+
+<div id="LoginContent" class="LoginContent su1-specific-centering"
+	style="display: none;">
+	<div id="DefaultLogin">
+		<div id="TopInfo">
+			<div id="CloseButton"></div>
+			<h2 class="LoginHeader" style="display:none"><span id="BookingInfoText1" style=""></span> <span id="BookingInfoText2" style=""></span></h2>
+			<br />
+			<div style="clear:both"></div>
+		</div>
+		
+		<div id="FacebookHeader" class="FacebookLogin">
+			<span id="GenericMessage">
+				<img class="gen-m-fb-image" src="https://static.mindbodyonline.com/a/asp/images/facebooklogo.png" alt="" />
+				<span class="lg-w-fb-pp" title="Log in with Facebook">
+					Log in with Facebook
+				</span>
+			</span>
+			<div id="SpecificMessage">
+			</div>
+			<div id="fbHeaderRightContainer">
+				<a id="NotTroyLink" onclick="mbfb.logOutOfFacebook();"><span id="NotMeName">&nbsp;</span><span
+					class="not-me-q-mk">?</span></a>
+			</div>
+			<img id="FacebookLoginButton" src="https://static.mindbodyonline.com/a/asp/images/facebookloginbutton.png" alt="Click here to log in with Facebook!"
+				title="Click here to log in with Facebook!" class="amplitude-event"
+                data-amplitudeeventname="(CARP Workflow) - Click"
+                data-amplitudeeventparams='{"Type": "Facebook Login"}'/>
+			<img id="FacebookAjaxSpinner" src="https://static.mindbodyonline.com/a/asp/adm/images/ajax-loader-gray.gif" />
+		</div>
+		
+        <div class="js-bannerError" ></div>
+		<div id="LoginPanesGroup">
+				
+				<input type="hidden" name="PleaseCompleteAllFields" id="PleaseCompleteAllFields" value="You've provided incomplete information. Please try again, or contact us for help." />
+
+ 			<div class="LoginPane group" id="ExistingUserPane">
+				<form name="frmLogon"  method="Post" action="/ASP/login_p.asp">
+					<div class="LoginPaneInnerContent">
+						<div class="GreetingAndInstructionsGroup">
+							<h1 id="ExistingUsersHeader">Log In</h1>
+                            <div id="ExistingUserInstructions">Welcome back. Use your email and password to log in.</div>
+						</div>
+
+						<div class="InputsAndButtonsGroup">
+							<input class="" id="su1UserName" type="text" spellcheck="false" name="requiredtxtUserName" placeholder=" Email"
+								autocomplete="off"  maxlength="100"/><br />
+                            <input class="" id="su1Password" type="password" name="requiredtxtPassword" placeholder=" Password"
+								autocomplete="off" maxlength="30"/>
+
+
+							<div class="LoginErrorDiv" id="LoginError"></div>
+							<div class="LoginBottomGroup" id="ExistingUserLoginBottomGroup group">
+								
+
+							<input class="loginButton" type="button" value="Log in" name="btnSignUp2" id="btnSu1Login" />
+							
+                                <div style="width:100px; float:left; overflow-x: hidden" class="forgotPasswordPane">
+                                    <a id="forgotPassword" href="/PasswordReset/" class="amplitude-event"
+                                        data-amplitudeeventname="(CARP Workflow) - Click"
+                                        data-amplitudeeventparams='{"Type": "Forgot Password"}'>
+                                        Need new password?
+                                    </a>
+                                </div>
+                            
+
+
+							</div>
+						</div>
+
+					</div>
+					<input type="hidden" name="tg" value="" /> <input type="hidden" name="vt" value="" /> <input type="hidden" name="lvl" value="" /> <input type="hidden" name="stype" value="40" /> <input type="hidden" name="qParam" value="" /> <input type="hidden" name="view" value="" /> <input type="hidden" name="trn" value="0" /> <input type="hidden" name="page" value="" /> <input type="hidden" name="catid" value="" /> <input type="hidden" name="prodid" value="100" /> <input type="hidden" name="date" value="5/17/2018" /> <input type="hidden" name="classid" value="0" /> <input type="hidden" name="sSU" value="" /> <input type="hidden" name="optForwardingLink" value="" /> 
+					<input type="hidden" name="isAsync" value="false" />
+				</form>
+			</div>
+
+	
+					<div id="PaneDivider">or</div>
+				
+			<div class="LoginPane group" id="NewUserPane">
+				<input type="hidden" name="StudioName" id="hidStudioName" value="Fulton Yoga Collective"  />
+
+
+
+				<form name="frmReg" class="js-createAccountRegistrationForm" action="/ASP/su2.asp" method="post">
+					<div class="LoginPaneInnerContent">
+						<div class="GreetingAndInstructionsGroup">
+							<h1 id="NewUsersHeader">Create an Account</h1>
+                            <div id="NewUserInstructions">New here? Let&#8217;s get started with your email.</div>
+						</div>
+
+						<div class="InputsAndButtonsGroup">
+							<input type="hidden" name="lkupType" id="lkupType" value="name"/>
+                            <input class=" js-clientEmail validate-clientEmailAvailable" type="email" id="requiredtxtEmail_Address" autocomplete="off" spellcheck="false"
+								    name="requiredtxtEmail_Address" placeholder=" Email"
+								    maxlength="100" required/>
+						    <br />
+                            <div class="LoginErrorDiv js-createAccountValidationError" id="SignUpError"></div>
+
+							<div class="LoginBottomGroup">
+	
+                                <input id="btnNext" type="button" value=" Next &#155;"  name="btnNext" class="loginButton amplitude-event"
+                                    data-amplitudeeventname="(CARP Workflow) - Click"
+                                    data-amplitudeeventparams='{"Type": "Create Account - Next"}'/>
+							</div>
+						</div>
+
+						 <input type="hidden" name="optForwardingLink" id="optForwardingLink2" value="" />
+					</div>
+				</form>
+			</div>
+		
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="https://static.mindbodyonline.com/a/scripts/inc_fb_confirm_login_lb_560791917.js"></script><link rel="stylesheet" type="text/css" href="https://static.mindbodyonline.com/a/styles/inc_fb_confirm_login_lb_2167760290.css"  />
+
+<div id="FacebookConfirmation"  style="display: none;"  class="AlternateLoginContent" >
+
+	<div id="VerifyYourLogin" >
+        <div class="js-bannerError" ></div>
+		<div id="fbLoginPanesGroup" >
+			<div id="fbTopInfo">
+				<div id="fbCloseButton"> </div>
+				<div style="clear:both"></div>
+			</div>
+			
+			<input type="hidden" name="fbPleaseCompleteAllFields" id="fbPleaseCompleteAllFields" value="You've provided incomplete information. Please try again, or contact us for help." />
+
+ 			<div class="LoginPane group " id="fbExistingUserPane">
+				<div id="FacebookHeader" class="FacebookLoginAlternateHeader">
+					<span id="AlternativeLoginGenericMessage"><img src="https://static.mindbodyonline.com/a/asp/images/facebooklogo.png" alt="Facebook"/>Log in with Facebook</span>
+				</div>
+
+				<form name="frmFbLogon"  method="post" action="/asp/login_p.asp">
+					<input type="hidden" name="fbid" value="" />
+					<input type="hidden" name="fbAccessToken" value="" />
+                    <input type="hidden" name="token" value="0y2PGFtt5C">
+                    <div class="LoginPaneInnerContent">
+                        <div class="GreetingAndInstructionsGroup">
+                            
+                            <h1 id="greetingText">Verify Your Login</h1>
+                            <div id="instructionText">To finish connecting with Facebook, please enter the email and password you use at Fulton Yoga Collective.</div>
+                        </div>
+
+                        <div class="InputsAndButtonsGroup">
+                            <input class="" id="requiredtxtUserName" type="text" spellcheck="false" name="requiredtxtUserName" placeholder=" Email"
+                                autocomplete="off" maxlength="100" /><br />
+                            <input class="" id="requiredtxtPassword" type="password" name="requiredtxtPassword" placeholder=" Password"
+                                autocomplete="off" maxlength="15" />
+                            <div class="LoginErrorDiv" id="fbLoginError"></div>
+                            <div class="LoginBottomGroup" id="fbExistingUserLoginBottomGroup group">
+                                
+							<input class="loginButton site-action-button" type="button" value="Log in" name="btnFBVerifyLogin" id="btnFBVerifyLogin" />
+								
+                                    <div style="width:120px; float:left" class="forgotPasswordPane">
+                                        <a id="forgotPassword" href="/PasswordRecovery/" class="amplitude-event"
+                                            data-amplitudeeventname="(CARP Workflow) - Click"
+                                            data-amplitudeeventparams='{"Type": "Facebook Forgot Password"}'>
+                                                Need new password?
+                                        </a>
+                                    </div>
+                                
+
+								 <input type="hidden" name="optForwardingLink" id="optForwardingLink" value="" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		
+
+			<div  id="fbNewUserPane" class="LoginPane">
+    			<input type="hidden" name="StudioName" id="hidStudioName" value="Fulton Yoga Collective"  />
+				<form id="frmReg" name="frmReg" class="js-createAccountRegistrationForm" action="/ASP/su2.asp" method="post">
+					<input type="hidden" name="fbid" id="fbid" value=""  />
+					<input type="hidden" name="fbAccessToken" id="fbAccessToken" value=""  />
+					<input type="hidden" name="requiredtxtEmail_AddressFB" id="requiredtxtEmail_AddressFB" value="" />
+					<div class="LoginPaneInnerContent">
+						<div class="GreetingAndInstructionsGroup">
+							<h1 id="AlternativeLoginGreeting">Create an Account</h1> 
+						</div>
+
+						<div class="InputsAndButtonsGroup">
+							<input type="hidden" name="lkupType" id="lkupType" value="name"/>
+                            <input class=" js-clientEmail validate-clientEmailAvailable" type="email" id="requiredtxtEmail_Address" autocomplete="off" spellcheck="false"
+   								    name="requiredtxtEmail_Address" placeholder=" Email"
+								    maxlength="100" required/>
+						    <br />
+							<div class="LoginErrorDiv js-createAccountValidationError" id="fbSignUpError"></div>
+
+							<div class="LoginBottomGroup">
+							
+                                    <input id="btnFBVerifyLoginNext" type="button" value= Next&#155; name="btnFBVerifyLoginNext" class="loginButton site-action-button amplitude-event"
+                                        data-amplitudeeventname="(CARP Workflow) - Click"
+                                        data-amplitudeeventparams='{"Type": "Facebook Create Account - Next"}'/>
+							</div>
+						</div>
+
+						<input type="hidden" name="optForwardingLink" value="" />
+					</div>
+				</form>
+			</div>
+		
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+</div>  </div></div></div></div></div>
+</div><!-- pageWrapper -->
+
+
+<div id="footer" class="bt4">
+	<div id="ftLeft" class="frmLabel">
+		
+		<p>
+			<span> 6/23/2019 </span>
+			<span> 3:52:23 pm  </span>
+			<span> in </span>
+			<span> California </span>
+		</p>
+		<p>
+            
+                    <a href="https://www.mindbodyonline.com/privacy-policy" target="_mbswPrivacy" rel= "nofollow noopener noreferrer">Privacy Policy</a>
+            
+			<span>&copy;2019 MINDBODY Inc.</span>
+		</p>
+    </div>
+    <div id="ftRight">
+        <div id="subscriberFooterInfo">
+            <div class="footerStudioIdContainer hidden">
+                <input class="footerStudioIdInput" aria-autocompletetype="text" name="name" readonly value="https://clients.mindbodyonline.com/classic/ws?studioid=791257"/>
+                <button class="secondaryBtn neutralBtn js-studioIdCopyButton" data-clipboard-target=".footerStudioIdInput"><i class="icon-copy"></i></button>
+            </div>
+                <p><strong>Fulton Yoga Collective - 
+                    <a href="#" class="js-studioIdLink">
+                        Site ID: 791257
+                    </a></strong>
+                
+                        <p>1612 Fulton Street Suite 103, Fresno CA 93721</p>
+                    
+        </div>
+        
+                <a href="https://www.mindbodyonline.com/?ql=softwrfooter" target="_mbsw" rel="nofollow noopener noreferrer"><img src="https://static.mindbodyonline.com/a/images/mb-logo-footer.jpg" alt="MINDBODY Inc." style="border:0px; padding:0px 10px 0px 0px;"></a> 
+        	    
+    </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	loginFocus();	
+	makeContentScrollable(true, false, false);
+    
+	$(window).bind('GlobalMakeContentScrollable', function() {
+		makeContentScrollable(true, false, false);
+	});
+	$(window).bind('resize', triggerMakeContentScrollable);
+    
+	if (document.location.hash) {
+	document.location.hash = document.location.hash;
+	}
+});
+</script>
+
+<script type="text/javascript" id="d__inj" class="d__inj_delayed"> setTimeout(function(){ var d = document.createElement('script'); d.type = 'text/javascript';  d.defer = d.async = !0; d.src = '/mndbdydstl.js';  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);  }, 1500 ); </script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#uszfvatrderczzersxxtwrdfdcvvwxe{display:none!important}</style><script type="text/javascript" >var _cf = _cf || []; _cf.push(['_setFsp', true]); _cf.push(['_setBm', true]); _cf.push(['_setAu', '/assets/d99df62b1467a3d8fdda328ac392']);</script><script type="text/javascript"  src="/assets/d99df62b1467a3d8fdda328ac392"></script></body>
+</html>

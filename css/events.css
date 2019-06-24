@@ -105,6 +105,11 @@ a:hover{
 	color: yellowgreen;
 }
 
+.card:hover{
+	box-shadow: 5px 10px 18px #4d4d4d;
+  }
+ 
+
 a:active { 
 	background-color: yellowgreen;
   }
@@ -130,7 +135,7 @@ h1 {
 .blurb {
 	align-self: flex-end;
 	width: 800px;
-	padding: 100px;
+	padding: 80px;
 	margin-left: 50px;
 	color: white;
 }
