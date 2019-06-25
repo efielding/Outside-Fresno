@@ -4,10 +4,6 @@ function openNav(){
   console.log(openNav);
 }
 
-// display name
-var user = localStorage.getItem("name");
-var welcome = 'Welcome, ' + user + "!";
-document.getElementById("test").innerHTML = welcome;
 
 // weather 
 // variables for each element of api call and api key
@@ -57,6 +53,15 @@ formSubmit.addEventListener('click', function(event) {
     localStorage.setItem('email', emailSet);
     // grabbing name and calling div id to insert into div
     document.getElementById("test").innerHTML = localStorage.getItem("name");
+    var user = localStorage.getItem("name");
+    var welcome = 'Welcome, ' + user + "!";
+    document.getElementById("test").innerHTML = welcome;
 })
+
+// display name
+var user = localStorage.getItem("name");
+var welcome = 'Welcome, ' + user + "!";
+document.getElementById("test").innerHTML = welcome;
+
 
 // End of Log In
