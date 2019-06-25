@@ -64,4 +64,5 @@ var welcome = 'Welcome, ' + user + "!";
 document.getElementById("test").innerHTML = welcome;
 
 
+
 // End of Log In
