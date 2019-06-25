@@ -198,6 +198,32 @@ h1 {
 	margin-top: 5px;
 	color: white;
 }
+ 
+ .card-title {
+	height: 80px;
+	padding-top: 10px;
+ }
+
+
+.list-group-item {
+	height: 85px;
+	border: none;
+	border-top: 1px solid lightgray;
+}
+
+li.list-group-item.desc {
+	height: 200px;
+}
+
+.btn-secondary {
+   width: 100%;
+}
+
+.watch-list {
+   margin-top: 5px;
+   color: white;
+}
+
 
 /* mobile */
 @media screen and (max-width: 600px) {

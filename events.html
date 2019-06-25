@@ -15,138 +15,152 @@
 
 <body>
 
-    <!-- START HEADER -->
-    <header class="heading">
-        <nav class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button"
-                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                    src="img/logo.png" alt="logo"></a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
+  <!-- START HEADER -->
+  <header class="heading">
+    <nav class="dropdown show">
+      <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button" id="dropdownMenuLink"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/logo.png" alt="logo"></a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
 
-                <!-- the following content is inside the dropdown menu,and will only show when the dropdown is open -->
-                <div class="weather-container">
-                    <!--this container holds the current weather api data-->
-                    <h5>Current Weather</h5>
-                    <img id="icon" alt="">
-                    <p id="temp"></p>
-                    <p id="weather"></p>
-                </div>
-                <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
-                <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
-                <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
-                <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
-                <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
-                <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
-                <a class="dropdown-item" href="recipes.html" target="_blank"><img src="img/apple.png"></a>
-                <!--this iframe is the current fresno aqi-->
-                <iframe class="air"
-                    src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
-            </div>
-            <!--end of dropdwon content-->
-        </nav>
-        <div class="header_info">
-            <h1>Events</h1>
-            <h2 id="test"></h2>
+        <!-- the following content is inside the dropdown menu,and will only show when the dropdown is open -->
+        <div class="weather-container">
+          <!--this container holds the current weather api data-->
+          <h5>Current Weather</h5>
+          <img id="icon" alt="">
+          <p id="temp"></p>
+          <p id="weather"></p>
         </div>
-        <h4 class="blurb">Get outside and enjoy all the local events in your area within walking or riding distance. Support local entrepreneurs, bands, artists and many more throughout the year.  All are family events so feel free to bring everyone.
-        </h4>
+        <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
+        <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
+        <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
+        <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
+        <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
+        <a class="dropdown-item" href="recipes.html" target="_blank"><img src="img/apple.png"></a>
+        <!--this iframe is the current fresno aqi-->
+        <iframe class="air"
+          src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
+      </div>
+      <!--end of dropdwon content-->
+    </nav>
+    <div class="header_info">
+      <h1>Events</h1>
+      <h2 id="test"></h2>
+    </div>
+    <h4 class="blurb">Get outside and enjoy all the local events in your area within walking or riding distance. Support
+      local entrepreneurs, bands, artists and many more throughout the year. All are family events so feel free to bring
+      everyone.
+    </h4>
 
-    </header>
+  </header>
 
   <main id="main">
     <div class="card-columns">
 
       <div class="card bg-light">
         <div class="card-body text-center">
-          <img src="img/farmersmarket.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
-          <a href="https://www.facebook.com/RPFarmersMarket/" class="card-link"
-            target="_blank">
-            <h2>River Park Farmers Market</h2>
-          </a>
-          <h3>Every Tuesday 5 PM - 9 PM and Saturday 10 AM - 2 PM</h3>
-          <p>Chek out fresh seasonal produce, meats, and food at River Park Farmers Market. Locataed at 20 E Paseo del Centro
-            Fresno, California. Available each Tuesday from 5 PM - 9 PM and Saturday 10 AM - 2 PM</p>
+          <img class="card-img-top img-fluid mx-auto d-block" src="img/farmersmarket.jpg"
+            alt="image of a farmers market">
+          <h5 class="card-title bike-title">River Park Farmers Market</h5>
+          <ul>
+            <li class="list-group-item">Every Tuesday 5 PM - 9 PM and Saturday 10 AM - 2 PM</li>
+            <li class="list-group-item desc">Check out fresh seasonal produce, meats, and food at River Park Farmers
+              Market. Locataed at 20 E Paseo del Centro Fresno, California. Available each Tuesday from 5 PM - 9 PM and
+              Saturday 10 AM - 2 PM</li>
+            <a href="https://www.facebook.com/RPFarmersMarket/" class="btn btn-secondary" target="_blank">See More</a>
             <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                Watchlist</a>
-        </div>
-      </div> 
-      <div class="card bg-light">
-        <div class="card-body text-center">
-          <img src="img/yogaclass.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
-          <a href="https://www.fresno.gov/parks/activities-recreational-programs/" class="card-link" target="_blank">
-            <h2>Free Yoga - Shine Bright Saturday</h2>
-          </a>
-          <h3>Every Saturday at 9 AM - 10 AM</h3>
-          <p>1612 Fulton St #103, Fresno, CA 93721</p>
-          <p>Free yoga class offered every Saturday morning from 9 AM - 10 AM in downtown Fresno. Feel free to bring your friends and  family. First 15 people will have a free mat to practice on. Beginners are welcome. </p>
-            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                Watchlist</a>
-        </div>
-      </div>
-      <div class="card bg-light">
-        <div class="card-body text-center">
-          <img src="img/concerts.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
-          <a href="https://www.facebook.com/events/2171359726278396/" class="card-link" target="_blank">
-            <h2>Summer Concert Series</h2>
-          </a>
-          <h3>July 18th and August 1st 6 PM - 9 PM</h3>
-          <p>Sierra Vista Mall 1050 Shaw Ave, Clovis, California 93612</p>
-          <p>Our Summer Concert Series is back, and it is hotter than ever!</p>
-
-          <p>FREE concert open to all ages. Bring a blanket or chair and enjoy the music at the Sierra Vista Mall
-            Community Park in front of the Sierra Vista Cinemas 16 Movie Theater. Join us for a night of dancing,
-            giveaways, food, and drinks!</p>
-
-          <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
               Watchlist</a>
+          </ul>
         </div>
       </div>
 
       <div class="card bg-light">
         <div class="card-body text-center">
-          <img src="img/fresno-arthop.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
-          <a href="https://www.downtownfresno.org/things-to-do/events-calendar" class="card-link" target="_blank">
-            <h3>Downtown Fresno Events</h3>
-          </a>
-          <h2>Thursday, July 11, 2019 at 5 PM – 8 PM</h2>
-          <p>Fresno City Hall 2600 Fresno St, Fresno, California 93721</p>
-          <p>Come support Art Hop for the July event!</p>
+          <img class="card-img-top img-fluid mx-auto d-block" src="img/yogaclass.jpg" alt="image of a yoga class">
+          <h5 class="card-title bike-title">Free Yoga Class - Shine Bright Saturday</h5>
+          <ul>
+            <li class="list-group-item">Every Saturday at 9 AM - 10 AM</li>
+            <li class="list-group-item desc">Free yoga class offered every Saturday morning from 9 AM - 10 AM in
+              downtown Fresno. Feel free to bring your friends and family. First 15 people will have a free mat to
+              practice on. Beginners are welcome. Located at 1612 Fulton St #103, Fresno, CA 93721.</li>
+            <a href="https://www.fresno.gov/parks/activities-recreational-programs/" class="btn btn-secondary"
+              target="_blank">See More</a>
             <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                Watchlist</a>
-        </div>
-      </div>
-      <div class="card bg-light">
-        <div class="card-body text-center">
-          <img src="img/clovis-event.jpg" class="card-img-top img-fluid mx-auto d-block"
-            alt="Taking it to the sheets flyer">
-          <a href="http://oldtownclovis.org/events/" class="card-link" target="_blank">
-            <h2>Old Town Clovis Events</h2>
-          </a>
-          <h3 class="when">Saturday, September 21, 2019 at 10 AM – 5 PM</h3>
-          <div class="about">
-            <p>Come tour on-street parklets (new lounging areas) throughout Old Town, sample select food items from
-              local
-              restaurants, try out new specialty cocktails hand crafted by local bartenders, and enjoy live
-              entertainment
-              at the Centennial Plaza all day long.</p>
-          </div>
-          <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
               Watchlist</a>
+          </ul>
         </div>
       </div>
+
       <div class="card bg-light">
         <div class="card-body text-center">
-          <img src="img/rockclimbing.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
-          <a href="https://www.rei.com/events/9999/introduction-to-canyoneering/245080" class="card-link" target="_blank">
-            <h2>Introduction to Canyoneering</h2>
-          </a>
-          <h3>Monday, July 1, 2019 at 6:30 PM - 8 PM</h3>
-          <p>Bitwise Industries 700 Van Ness Ave, Fresno, California 93721</p>
-          <p>Learn the basics of canyoneering and focus on preparation and safety to make your next trip a success. Learn more about canyoneering specifics including: canyon rating systems, gear selection, and trip preparation.</p>
+          <img class="card-img-top img-fluid mx-auto d-block" src="img/concerts.jpg" alt="image of a concert">
+          <h5 class="card-title bike-title">Summer Concert Series</h5>
+          <ul>
+            <li class="list-group-item">July 18th and August 1st 6 PM - 9 PM</li>
+            <li class="list-group-item desc">Located at Sierra Vista Mall 1050 Shaw Ave, Clovis, California 93612. This
+              Summer Concert Series is back, and it is hotter than ever! FREE concert open to all ages. Bring a blanket
+              or chair and enjoy the music at the Sierra Vista Mall Community Park in front of the Sierra Vista Cinemas
+              16 Movie Theater. Join us for a night of dancing giveaways, food, and drinks!</li>
+            <a href="https://www.facebook.com/events/2171359726278396/" class="btn btn-secondary" target="_blank">See
+              More</a>
+            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+              Watchlist</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+      <div class="card-columns">
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <img class="card-img-top img-fluid mx-auto d-block" src="img/fresno-arthop.jpg"
+            alt="image of the fresno art hop flyer">
+          <h5 class="card-title bike-title">Downtown Fresno Events</h5>
+          <ul>
+            <li class="list-group-item">Thursday, July 11, 2019 at 5 PM – 8 PM</li>
+            <li class="list-group-item desc">Loated at Fresno City Hall 2600 Fresno St, Fresno, California 93721, come
+              support Art Hop for the July event!</li>
+            <a href="https://www.downtownfresno.org/things-to-do/events-calendar" class="btn btn-secondary"
+              target="_blank">See More</a>
+            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+              Watchlist</a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <img class="card-img-top img-fluid mx-auto d-block" src="img/clovis-event.jpg"
+            alt="image of the old town clovis events flyer">
+          <h5 class="card-title bike-title">Old Town Clovis Events</h5>
+          <ul>
+            <li class="list-group-item">Saturday, September 21, 2019 at 10 AM – 5 PM</li>
+            <li class="list-group-item desc">Come tour on-street parklets (new lounging areas) throughout Old Town, sample select food items from local restaurants, try out new specialty cocktails hand crafted by local bartenders, and enjoy live entertainment at the Centennial Plaza all day long.</li>
+            <a href="http://oldtownclovis.org/events/" class="btn btn-secondary"
+              target="_blank">See More</a>
+            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+              Watchlist</a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+          <div class="card-body text-center">
+            <img class="card-img-top img-fluid mx-auto d-block" src="img/rockclimbing.jpg"
+              alt="image of a person rock climbing">
+            <h5 class="card-title bike-title">Introduction to Canyoneering</h5>
+            <ul>
+              <li class="list-group-item">Monday, July 1, 2019 at 6:30 PM - 8 PM</li>
+              <li class="list-group-item desc">Learn the basics of canyoneering and focus on preparation and safety to make your next trip a success. Learn more about canyoneering specifics including: canyon rating systems, gear selection, and trip preparation. Will be taking place at Bitwise Industries - 700 Van Ness Ave, Fresno, California 93721</li>
+              <a href="https://www.rei.com/events/9999/introduction-to-canyoneering/245080" class="btn btn-secondary"
+                target="_blank">See More</a>
               <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                  Watchlist</a>
+                Watchlist</a>
+            </ul>
+          </div>
         </div>
-      </div>
+
 
     </div>
   </main>
