@@ -4,9 +4,9 @@ var user = localStorage.getItem("name");
 
 if (user != null){
 var welcome = 'Welcome '+ user + "!";
-develodocument.getElementById("test").innerHTML = welcome;
+document.getElementById("test").innerHTML = welcome;
 }else{
-  document.getElementById("test").innerHTML = 'Welcome';
+  document.getElementById("test").innerHTML = 'Welcome!';
 }
 // function that moves all content in main div to the right when the menu is open
 // then shows the menu

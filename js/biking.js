@@ -16,10 +16,15 @@ function closeNav() {
 // END OF MAIN NAV
 
 // LOG IN
-var user = localStorage.getItem("name");
-var welcome = 'Welcome, ' + user + "!";
-document.getElementById("test").innerHTML = welcome;
 
+var user = localStorage.getItem("name");
+
+if (user != null){
+var welcome = 'Welcome '+ user + "!";
+document.getElementById("test").innerHTML = welcome;
+}else{
+  document.getElementById("test").innerHTML = 'Welcome!';
+}
 // END OF LOG IN
 
 // START OF WATCH LIST
