@@ -5,6 +5,18 @@ function openNav(){
 }
 
 
+// display name
+
+var user = localStorage.getItem("name");
+
+if (user != null){
+var welcome = 'Welcome '+ user + "!";
+document.getElementById("test").innerHTML = welcome;
+document.getElementById('login').style.visibility = "hidden";
+}else{
+  document.getElementById("test").innerHTML = 'Welcome!';
+
+
 // weather 
 // variables for each element of api call and api key
 var api = 'https://api.openweathermap.org/data/2.5/weather?q='; // api endpoint
