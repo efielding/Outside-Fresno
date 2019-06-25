@@ -1,9 +1,10 @@
 
 
 var user = localStorage.getItem("name");
+
 if (user != null){
 var welcome = 'Welcome '+ user + "!";
-document.getElementById("test").innerHTML = welcome;
+develodocument.getElementById("test").innerHTML = welcome;
 }else{
   document.getElementById("test").innerHTML = 'Welcome';
 }
