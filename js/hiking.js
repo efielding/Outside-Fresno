@@ -1,3 +1,26 @@
+var user = localStorage.getItem("name");
+
+if (user != null){
+var welcome = 'Welcome '+ user + "!";
+document.getElementById("test").innerHTML = welcome;
+}else{
+  document.getElementById("test").innerHTML = 'Welcome!';
+}
+// function that moves all content in main div to the right when the menu is open
+// then shows the menu
+function openNav(){
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("menu").classList.toggle("show");
+}
+
+// Sets the left margin of the main div content to 0 
+// then hides the menu
+function closeNav() {
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("menu").classList.toggle("show");
+}
+
+// this is the code for the 'hiking project' api
 // apiKey 200468098-d3b92bb22cd80b7ec7b0b1c7d30741cd
 // lon: -119.78
 // lat: 36.74
@@ -11,9 +34,6 @@ var results = '&maxResults=50'; // #of results
 var apiKey = '&key=200468098-d3b92bb22cd80b7ec7b0b1c7d30741cd'; // apiKey
 var url = getTrails + latitude + longitude + distance + sort + results + apiKey; //concat variables to url
 console.log(url); // display url for test purposes
-
-
-
 
 var request = new XMLHttpRequest()
 
@@ -180,7 +200,9 @@ request.onload = function () {
 
 request.send()
 
-// variables for each element of api call and api key
+
+// //this is the code to add the current weather
+// // variables for each element of api call and api key
 var api = 'https://api.openweathermap.org/data/2.5/weather?q='; // api endpoint
 var city = 'Fresno';
 var apiKey = '&appid=fe9a422805a990c7b90f9de0efcc182b'; // api key assigned to account
@@ -189,6 +211,7 @@ var url = api + city + units + apiKey; // concatenate api elements into url
 console.log(url); // display url
 
 var request = new XMLHttpRequest()
+
 
 request.open('GET', url, true)
 request.onload = function() {

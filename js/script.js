@@ -1,18 +1,45 @@
-// let user = name => {
-//     window.localStorage.setItem('name');
-// }
-// name= 'emily';
-// console.log(user);
+// nav button
+function openNav(){
+  document.getElementById("main").style.marginLeft = "250px";
+  console.log(openNav);
+}
+
+// Log In
+
+// code for modal to grab name and email and save to local storage
+var formSubmit = document.getElementById('submit-info');
+formSubmit.addEventListener('click', function(event) {
+    event.preventDefault();
+    // grabbing name and email from the form in html
+    var nameSet = document.getElementById('name-input').value;
+    var emailSet = document.getElementById('email-input').value;
+    // saving to local storage and naming key
+    localStorage.setItem('name', nameSet);
+    localStorage.setItem('email', emailSet);
+    // grabbing name and calling div id to insert into div
+    document.getElementById("test").innerHTML = localStorage.getItem("name");
+    var user = localStorage.getItem("name");
+    var welcome = 'Welcome, ' + user + "!";
+    document.getElementById("test").innerHTML = welcome;
+})
+
+// display name
+var user = localStorage.getItem("name");
+var welcome = 'Welcome, ' + user + "!";
+document.getElementById("test").innerHTML = welcome;
 
 
-// window.localStorage.getItem('user');
-let user = name =>{
-console.log(localStorage.getItem('userFullName'));
-if (!localStorage.get('uname')){
-localStorage.setItem('uname', name);
-return name;
-}}
+// display name
 
+var user = localStorage.getItem("name");
+
+if (user != null){
+var welcome = 'Welcome '+ user + "!";
+document.getElementById("test").innerHTML = welcome;
+document.getElementById('login').style.visibility = "hidden";
+}else{
+  document.getElementById("test").innerHTML = 'Welcome!';
+}
 
 // weather 
 // variables for each element of api call and api key
@@ -44,5 +71,3 @@ request.onload = function() {
   document.getElementById('temp').innerHTML = formattedTemp + '°'; // display temperature as an int in #temp
 }
 request.send()
-
-// air index

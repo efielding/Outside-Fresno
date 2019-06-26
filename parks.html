@@ -1,100 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Parks</title>
-    </head>
 
-    <body>
-        <header class="column">
-            <div class="header">
-                <h1 class>Parks</h1>
-                <img  class="valley" src="img/valley.jpg" alt="pictue of the central valley">
-                <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Outside Fresno
-                </a>
-             
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="index.html">Home</a>
-                <a class="dropdown-item" href="#">Bike Routes</a>
-                <a class="dropdown-item" href="#">Parks</a>
-                <a class="dropdown-item" href="#">Hiking Trails</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/parks.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
+    <title>Parks</title>
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header class="heading">
+        <nav class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                    src="img/logo.png" alt="logo"></a>
+            <div id="menu" class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
+
+                <!-- the following content is inside the dropdown menu,and will only show when the dropdown is open -->
+                <div class="weather-container">
+                    <!--this container holds the current weather api data-->
+                    <h5>Current Weather</h5>
+                    <img id="icon" alt="">
+                    <p id="temp"></p>
+                    <p id="weather"></p>
                 </div>
-                </div>
-            <h2 class="events">Local Events</h2>
+                <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
+                <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
+                <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
+                <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
+                <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
+                <a class="dropdown-item" href="recipes.html" target="_blank"><img src="img/apple.png"></a>
+                <!--this iframe is the current fresno aqi-->
+                <iframe class="air"
+                    src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
             </div>
-        </header>
+            <!--end of dropdwon content-->
+        </nav>
+        <!--this holds the return from the user iput 'name' and a <p> introducing the page-->
+        <div class="header_info">
+            <h1>Parks</h1>
+            <h2 id="test"></h2>
+        </div>
+        <h4 class="blurb">Parks are the perfect place for a run, walk, or picnic! Check out some of our local parks and
+            plan your next visit!
+        </h4>
 
+    </header>
 
-
+    <div id="main">
         <div class="card-columns">
+
             <div class="card bg-light">
-            <div class="card-body text-center">
-            <img src="parksimg/5622077_GxKMe-Q1ZRLLFuGXWwujaaLu-T2OBtdpW_7Pra9Typs.jpg" class="card-img-top" alt="holmes-park">
-                <h2 class="card-title">Holmes Park</h2>
-                <p class="card-text">212 S 1st St, Fresno, CA 93702</p>
-                <a href="https://www.yelp.com/biz/holmes-playground-fresno" class="btn btn-primary">More Info for Holmes Park</a>
-            </div>
-            </div>
-            
-            <div class="card bg-light">
-            <div class="card-body text-center">
-            <img src="parksimg/010bdae74e037e6dd7d8f62329e77cb5.jpg" class="card-img-top" alt="kearney-park">
-                <h2 class="card-title">Kearney Park</h2>
-                <p class="card-text">901-909 Fresno St, Fresno, CA 93706</p>
-                <a href="https://www.yelp.com/biz/kearney-park-fresno" class="btn btn-primary">More Info for Kearney Park</a>
-            </div>
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block"
+                        src="parksimg/5622077_GxKMe-Q1ZRLLFuGXWwujaaLu-T2OBtdpW_7Pra9Typs.jpg" alt="holmes-park">
+                    <h5 class="card-title bike-title">Holmes Park</h5>
+                    <ul>
+                        <li class="list-group-item">212 S 1st Street, Frsno, CA 93702</li>
+                        <li class="list-group-item desc">A small park with a community center, there are many fun events
+                            year-round to attend!</li>
+                        <a href="https://www.yelp.com/biz/holmes-playground-fresno" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
             </div>
 
             <div class="card bg-light">
-            <div class="card-body text-center">
-            <img src="parksimg/poi_gallery_image-image-ac5a386e-29fc-4fe5-993f-5bc64d9c9d20.jpg" class="card-img-top" alt="radio-park">
-                <h2 class="card-title">Radio Park</h2>
-                <p class="card-text">2233 N First St, Fresno, CA 93703</p>
-                <a href="#" class="btn btn-primary">More Infor for Radio Park</a>
-            </div>
-            </div>
-
-            <div class="card bg-light">
-            <div class="card-body text-center">
-            <img src="parksimg/b0da9c2c4d67f0065af1cc920263fbd2.jpg" class="card-img-top" alt="roeding-park">
-                <h2 class="card-title">Roeding Park</h2>
-                <p class="card-text">890 W Belmont Ave, Fresno, CA 93728</p>
-                <a href="https://www.yelp.com/biz/roeding-park-fresno" class="btn btn-primary">More Info for Roeding Park</a>
-            </div>
-            </div>
-
-            <div class="card bg-light">
-            <div class="card-body text-center">
-            <img src="parksimg/cfiles7824.jpg" class="card-img-top" alt="romain-park">
-                <h2 class="card-title">Romain Park</h2>
-                <p class="card-text">745 N First St, Fresno, CA 93702</p>
-                <a href="https://www.yelp.com/biz/romain-playground-fresno" class="btn btn-primary">More Info for Romain Park</a>
-            </div>
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block"
+                        src="parksimg/010bdae74e037e6dd7d8f62329e77cb5.jpg" alt="kearney-park">
+                    <h5 class="card-title bike-title">Kearney Park</h5>
+                    <ul>
+                        <li class="list-group-item">901-909 Fresno St, Fresno, CA 93706</li>
+                        <li class="list-group-item desc">One of Fresno's most beautiful parks with the Kearney
+                            Historical Society French style mansion.</li>
+                        <a href="https://www.yelp.com/biz/kearney-park-fresno" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
             </div>
 
+
             <div class="card bg-light">
-            <div class="card-body text-center">
-            <img src="parksimg/woodward-regional-park.jpg" class="card-img-top" alt="woodward-park">
-                <h2 class="card-title">Woodward Park</h2>
-                <p class="card-text">7775 Friant Road, Fresno, California 93720</p>
-                <a href="https://www.yelp.com/biz/woodward-park-fresno" class="btn btn-primary">More Info for Woodward Park</a>
-            </div>
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block"
+                        src="parksimg/poi_gallery_image-image-ac5a386e-29fc-4fe5-993f-5bc64d9c9d20.jpg"
+                        alt="radio-park">
+                    <h5 class="card-title bike-title">Radio Park</h5>
+                    <ul>
+                        <li class="list-group-item">2233 N First Street, Fresno, CA 93703</li>
+                        <li class="list-group-item desc">On the corner of N First Street and E Clinton Ave, this
+                            playground will be sure deliver lots of family fun time.</li>
+                        <a href="https://www.facebook.com/pages/Radio-Park/131378423573718" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
             </div>
         </div>
 
+        <div class="card-columns">
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block"
+                        src="parksimg/b0da9c2c4d67f0065af1cc920263fbd2.jpg" alt="roeding-park">
+                    <h5 class="card-title bike-title">Roeding Park</h5>
+                    <ul>
+                        <li class="list-group-item">890 W Belmont Ave, Fresno, CA 93728</li>
+                        <li class="list-group-item desc">Don't miss the train and beautiful fountain while walking
+                            through Romain Park! Plan your next picnic here.</li>
+                        <a href="https://www.yelp.com/biz/roeding-park-fresno" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="parksimg/cfiles7824.jpg" alt="romain-park">
+                    <h5 class="card-title bike-title">Romain Park</h5>
+                    <ul>
+                        <li class="list-group-item">745 N First Street, Fresno, CA 93702</li>
+                        <li class="list-group-item desc">Check out Romain Park's skate park and try some new
+                            skateboarding moves! (If you dare)</li>
+                        <a href="https://www.yelp.com/biz/romain-playground-fresno" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="parksimg/woodward-regional-park.jpg"
+                        alt="woodward-park">
+                    <h5 class="card-title bike-title">Woodward Park</h5>
+                    <ul>
+                        <li class="list-group-item">7775 Friant Road, Fresno, CA 93720</li>
+                        <li class="list-group-item desc">Beautiful flowers cover this park in the Spring and it's
+                            definitely not worth missing.</li>
+                        <a href="https://www.yelp.com/biz/woodward-park-fresno" class="btn btn-secondary"
+                            target="_blank">See More</a>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- START OF FOOTER -->
+        <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+            </div>
+        </footer>
+    </div>
 
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-    </body>
+    <script src="sidenav/sidenav.js"></script>
+    <script src="js/park.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
 </html>

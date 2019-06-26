@@ -1,5 +1,8 @@
 /* The sidebar menu */
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -12,9 +15,12 @@
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
   }
   
+  span {
+      padding-left: 15px;
+  }
   /* The sidebar links */
   .sidebar a {
-    padding: 8px 8px 8px 32px;
+    padding: 40px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: white;
@@ -43,7 +49,6 @@
     background-color: grey;
     color: white;
     padding: 10px 15px;
-    margin-left: 20px;
     border: none;
   }
   
@@ -58,7 +63,12 @@
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+  @media screen and (min-height: 576px) {
+    .desc {height: 200px;}
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+  }
+
+  @media screen and (min-height: 701px) {
+    .desc {height: 250px;}
   }
