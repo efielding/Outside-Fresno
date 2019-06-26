@@ -121,6 +121,13 @@ h1 {
 	color: white;
 }
 
+/* Cards Content */
+
+#main {
+	transition: margin-left .5s; /* If you want a transition effect */
+	padding: 20px;
+}
+
 .card-columns {
 	margin: 60px;
 }
