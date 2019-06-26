@@ -1,5 +1,3 @@
-
-
 var user = localStorage.getItem("name");
 
 if (user != null){
