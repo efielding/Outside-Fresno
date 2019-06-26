@@ -51,7 +51,7 @@ function openNav(){
   request.onload = function() {
     // Begin accessing JSON data here
     var data = JSON.parse(this.response)
-    
+  
   
     var icon = 'https://openweathermap.org/img/w/' + data.weather[0].icon + 
       '.png'; // Url for icon and its place in the json obj

@@ -168,6 +168,18 @@ header {
 }
 
 /* END OF BODY */
+/* WISHLIST */
+
+
+.wishlist__hidden{
+  display:none;
+}
+.wishlist__show {
+  text-align: center;
+  display: block;
+}
+
+/* END WISHLIST */
 /* FOOTER */
 
 footer {

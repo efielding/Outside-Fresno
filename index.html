@@ -59,7 +59,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal" input type="submit"
-                                    value="submit" id="submit-info">Submit</button>
+                                    value="submit" id="submit-info" >Submit</button>
                             </div>
                         </div>
                     </div>
@@ -81,60 +81,617 @@
 
     <divs>
         <h3 class="welcome-intro">Welcome to Outside Fresno! Our goal with this website is to encourage our local
-            community to be active and make it <br>easy to do by having a one-stop-shop on popular trails, parks, and local
+            community to be active and make it <br>easy to do by having a one-stop-shop on popular trails, parks, and
+            local
             events!<br><br>
-            Please click on the buttons below to view hiking and biking trails, along with local parks and community events.</h3>
-    </div>
-    <!-- END OF INTRODUCTION -->
-
-    <!-- PAGE BUTTONS -->
-
-    <section>
-        <div class="buttons">
-            <a class="dropdown-item" href="biking.html" target="_blank"><button class="btn-lg g-hover"><img
-                        src="img/bike.png" alt=""></button></a>
-            <a class="dropdown-item" href="hiking.html" target="_blank"><button class="btn-lg g-hover"><img
-                        src="img/hiking.png" alt=""></button></a>
-            <a class="dropdown-item" href="parks.html" target="_blank"><button class="btn-lg g-hover"><img
-                        src="img/park.png" alt=""></button></a>
-            <a class="dropdown-item" href="events.html" target="_blank"><button class="btn-lg g-hover"><img
-                        src="img/event.png" alt=""></button></a>
+            Please click on the buttons below to view hiking and biking trails, along with local parks and community
+            events.</h3>
         </div>
-        <div class="pan-pic">
+        <!-- END OF INTRODUCTION -->
+
+        <!-- PAGE BUTTONS -->
+
+        <section>
+            <div class="buttons">
+                <a class="dropdown-item" href="biking.html" target="_blank"><button class="btn-lg g-hover"><img
+                            src="img/bike.png" alt=""></button></a>
+                <a class="dropdown-item" href="hiking.html" target="_blank"><button class="btn-lg g-hover"><img
+                            src="img/hiking.png" alt=""></button></a>
+                <a class="dropdown-item" href="parks.html" target="_blank"><button class="btn-lg g-hover"><img
+                            src="img/park.png" alt=""></button></a>
+                <a class="dropdown-item" href="events.html" target="_blank"><button class="btn-lg g-hover"><img
+                            src="img/event.png" alt=""></button></a>
+            </div>
+            <div class="pan-pic">
                 <img src="img/valley.jpg" alt="" class="valley">
             </div>
-    </section>
-    <!-- END OF PAGE BUTTONS -->
+        </section>
+        <!-- END OF PAGE BUTTONS -->
 
-    <!-- START OF FOOTER -->
-    <footer>
-        <div class="social-media">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
-                <span class="hidden-xs"></span></a>
+        <!-- WISHLIST -->
+        <section class="wishlist__hidden" id="wishlist">
+            <h2>Wishlist</h2>
 
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
-                <span class="hidden-xs"></span></a>
+            <!-- cards -->
+            <div class="card-columns">
 
-            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
-                <span class="hidden-xs"></span></a>
-        </div>
-    </footer>
+    <!-- events-->
 
-    <!-- END OF FOOTER -->
-    <!-- JAVASCRIPT LINKING -->
+                <div class="card bg-light" style="display: none" id="farmers_market">
+                    <div class="card-body text-center">
+                        <img src="img/farmersmarket.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
+                        <a href="https://www.facebook.com/RPFarmersMarket/" class="card-link" target="_blank">
+                            <h2>River Park Farmers Market</h2>
+                        </a>
+                        <h3>Every Tuesday 5 PM - 9 PM and Saturday 10 AM - 2 PM</h3>
+                        <p>Chek out fresh seasonal produce, meats, and food at River Park Farmers Market. Locataed at 20
+                            E Paseo del Centro
+                            Fresno, California. Available each Tuesday from 5 PM - 9 PM and Saturday 10 AM - 2 PM</p>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </div>
+                </div>
+                <div class="card bg-light" style="display: none" id="yoga">
+                    <div class="card-body text-center">
+                        <img src="img/yogaclass.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
+                        <a href="https://www.fresno.gov/parks/activities-recreational-programs/" class="card-link"
+                            target="_blank">
+                            <h2>Free Yoga - Shine Bright Saturday</h2>
+                        </a>
+                        <h3>Every Saturday at 9 AM - 10 AM</h3>
+                        <p>1612 Fulton St #103, Fresno, CA 93721</p>
+                        <p>Free yoga class offered every Saturday morning from 9 AM - 10 AM in downtown Fresno. Feel
+                            free to bring your friends and family. First 15 people will have a free mat to practice on.
+                            Beginners are welcome. </p>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </div>
+                </div>
+                <div class="card bg-light" style="display: none" id="concert">
+                    <div class="card-body text-center">
+                        <img src="img/concerts.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
+                        <a href="https://www.facebook.com/events/2171359726278396/" class="card-link" target="_blank">
+                            <h2>Summer Concert Series</h2>
+                        </a>
+                        <h3>July 18th and August 1st 6 PM - 9 PM</h3>
+                        <p>Sierra Vista Mall 1050 Shaw Ave, Clovis, California 93612</p>
+                        <p>Our Summer Concert Series is back, and it is hotter than ever!</p>
 
-    <script src="js/module.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
+                        <p>FREE concert open to all ages. Bring a blanket or chair and enjoy the music at the Sierra
+                            Vista Mall
+                            Community Park in front of the Sierra Vista Cinemas 16 Movie Theater. Join us for a night of
+                            dancing,
+                            giveaways, food, and drinks!</p>
+
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </div>
+                </div>
+
+                <div class="card bg-light" style="display: none" id="arthop">
+                    <div class="card-body text-center">
+                        <img src="img/fresno-arthop.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
+                        <a href="https://www.downtownfresno.org/things-to-do/events-calendar" class="card-link"
+                            target="_blank">
+                            <h3>Downtown Fresno Events</h3>
+                        </a>
+                        <h2>Thursday, July 11, 2019 at 5 PM – 8 PM</h2>
+                        <p>Fresno City Hall 2600 Fresno St, Fresno, California 93721</p>
+                        <p>Come support Art Hop for the July event!</p>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </div>
+                </div>
+                <div class="card bg-light" style="display: none" id="ot_event">
+                    <div class="card-body text-center">
+                        <img src="img/clovis-event.jpg" class="card-img-top img-fluid mx-auto d-block"
+                            alt="Taking it to the sheets flyer">
+                        <a href="http://oldtownclovis.org/events/" class="card-link" target="_blank">
+                            <h2>Old Town Clovis Events</h2>
+                        </a>
+                        <h3 class="when">Saturday, September 21, 2019 at 10 AM – 5 PM</h3>
+                        <div class="about">
+
+                            <p>Come tour on-street parklets (new lounging areas) throughout Old Town, sample select food
+                                items from
+                                local
+                                restaurants, try out new specialty cocktails hand crafted by local bartenders, and enjoy
+                                live
+                                entertainment
+                                at the Centennial Plaza all day long.</p>
+
+                        </div>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </div>
+                </div>
+                <div class="card bg-light" style="display: none" id="rockclimbing">
+                    <div class="card-body text-center">
+                        <img src="img/rockclimbing.jpg" class="card-img-top img-fluid mx-auto d-block" alt="#">
+                        <a href="https://www.rei.com/events/9999/introduction-to-canyoneering/245080" class="card-link"
+                            target="_blank">
+                            <h2>Introduction to Canyoneering</h2>
+                        </a>
+                        <h3>Monday, July 1, 2019 at 6:30 PM - 8 PM</h3>
+                        <p>Bitwise Industries 700 Van Ness Ave, Fresno, California 93721</p>
+                        <p>Learn the basics of canyoneering and focus on preparation and safety to make your next trip a
+                            success. Learn more about canyoneering specifics including: canyon rating systems, gear
+                            selection, and trip preparation.</p>
+                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                            Watchlist</a>
+                    </div>
+                </div>
+
+    <!-- biking -->   
+                <div class="card bg-light" style="display: none" id="ot_trail">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/biking1.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">{{favorite.description}}</h5>
+                        <ul>
+                            <li class="list-group-item">Clovis, CA</li>
+                            <li class="list-group-item desc">Length: 5.8 miles</li>
+                            <a href="https://www.traillink.com/trail/clovis-old-town-trail/" class="btn btn-secondary"
+                                target="_blank">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-light" style="display: none" id="millerton">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/biking2.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">Millerton (Out and Back)</h5>
+                        <ul>
+                            <li class="list-group-item">Clovis, CA</li>
+                            <li class="list-group-item desc">Length: 22.8miles </li>
+                            <a href="https://www.strava.com/local/us/fresno/cycling/routes/1392"
+                                class="btn btn-secondary" target="_blank">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-light" style="display: none" id="rolling_hills">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/biking3.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">Rolling Hills to Friant</h5>
+                        <ul>
+                            <li class="list-group-item">Madera, CA - Friant, CA</li>
+                            <li class="list-group-item desc">Length: 27.5miles </li>
+                            <a href="https://www.strava.com/local/us/fresno/cycling/routes/1393"
+                                class="btn btn-secondary" target="_blank">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="card bg-light" style="display: none" id="mill_loop">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/biking4.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">Millerton Loop</h5>
+                        <ul>
+                            <li class="list-group-item">Friant, CA</li>
+                            <li class="list-group-item desc">Length: 17.5miles </li>
+                            <a href="https://www.strava.com/local/us/fresno/cycling/routes/1399"
+                                class="btn btn-secondary" target="_blank">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-light" style="display: none" id="f_m_lake">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/biking5.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">Friant to Millerton Lake</h5>
+                        <ul>
+                            <li class="list-group-item">Friant, CA - Millerton Lake</li>
+                            <li class="list-group-item desc">Length: 27.4miles </li>
+                            <a href="https://www.strava.com/local/us/fresno/cycling/routes/1397"
+                                class="btn btn-secondary" target="_blank">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-light" style="display: none" id="auberry">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/biking6.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">Auberry Road (Out and Back)</h5>
+                        <ul>
+                            <li class="list-group-item">Clovis, CA</li>
+                            <li class="list-group-item desc">Length: 27.3miles </li>
+                            <a href="https://www.strava.com/local/us/fresno/cycling/routes/1398"
+                                class="btn btn-secondary" target="_blank">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light" style="display: none" id="belmont">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/biking7.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">Belmont Time Trial</h5>
+                        <ul>
+                            <li class="list-group-item">Belmont, CA</li>
+                            <li class="list-group-item desc">Length: 5 miles </li>
+                            <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&z=14&mid=19KsDtEr7wdziUD19oetkbsbTmuk&ll=36.751280517240204%2C-119.51131350000003"
+                                class="btn btn-secondary" target="_blank">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-light" style="display: none" id="shaver">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/biking9.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">Shaver Lake to Huntington</h5>
+                        <ul>
+                            <li class="list-group-item">Shaver Lake, CA</li>
+                            <li class="list-group-item desc">Length: 17.8 miles </li>
+                            <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&ll=37.204902%2C-119.23187300000001&spn=0.140826%2C0.417137&z=12&mid=1uuACGge5EYkTRTJjEmvNfmqD6xE"
+                                class="btn btn-secondary" target="_blank">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-light" style="display: none" id="pineflat">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/biking10.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">Auberry - Pine Flat Loop</h5>
+                        <ul>
+                            <li class="list-group-item">Gordon, CA</li>
+                            <li class="list-group-item desc">Length: 88.90 miles </li>
+                            <a href="https://www.google.com/maps/d/viewer?msa=0&ll=36.94180946404267%2C-119.510651&spn=0.30184%2C0.834274&mid=1Zgk7zdqsbas1IVyRAAPoA7d3ApU&z=10"
+                                class="btn btn-secondary" target="_blank">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+
+    <!-- trails -->            
+                <div class="card bg-light" style="display: none" id="trail">
+                    <div class="card-body text-center">
+                        <img id="trail-img" class="card-img-top" src="" alt="Card image cap">
+                        <h5 id="trail-name" class="card-title">Card title</h5>
+                        <ul class="list-group list-group-flush">
+                            <li id="trail-loc" class="list-group-item"></li>
+                            <li id="trail-desc" class="list-group-item desc"></li>
+                            <a href="" id="trail-url" class="btn btn-secondary">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <!--card index 1-->
+                <div class="card bg-light" style="display: none" id="trail1">
+                    <div class="card-body text-center">
+                        <img id="trail-img-1" class="card-img-top" src="" alt="Card image cap">
+                        <h5 id="trail-name-1" class="card-title">Card title</h5>
+                        <ul class="list-group list-group-flush">
+                            <li id="trail-loc-1" class="list-group-item"></li>
+                            <li id="trail-desc-1" class="list-group-item desc"></li>
+                            <a href="" id="trail-url-1" class="btn btn-secondary">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <!--card index 2-->
+                <div class="card bg-light" style="display: none" id="trail2">
+                    <div class="card-body text-center">
+                        <img id="trail-img-2" class="card-img-top" src="" alt="Card image cap">
+                        <h5 id="trail-name-2" class="card-title">Card title</h5>
+                        <ul class="list-group list-group-flush">
+                            <li id="trail-loc-2" class="list-group-item"></li>
+                            <li id="trail-desc-2" class="list-group-item desc"></li>
+                            <a href="" id="trail-url-2" class="btn btn-secondary">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <!--card index3-->
+                <div class="card bg-light" style="display: none" id="trail3">
+                    <div class="card-body text-center">
+                        <img id="trail-img-3" class="card-img-top" src="" alt="Card image cap">
+                        <h5 id="trail-name-3" class="card-title">Card title</h5>
+                        <ul class="list-group list-group-flush">
+                            <li id="trail-loc-3" class="list-group-item"></li>
+                            <li id="trail-desc-3" class="list-group-item desc"></li>
+                            <a href="" id="trail-url-3" class="btn btn-secondary">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <!--card index 4-->
+                <div class="card bg-light" style="display: none" id="trail4">
+                    <div class="card-body text-center">
+                        <img id="trail-img-4" class="card-img-top" src="" alt="Card image cap">
+                        <h5 id="trail-name-4" class="card-title">Card title</h5>
+                        <ul class="list-group list-group-flush">
+                            <li id="trail-loc-4" class="list-group-item"></li>
+                            <li id="trail-desc-4" class="list-group-item desc"></li>
+                            <a href="" id="trail-url-4" class="btn btn-secondary">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <!--card index 5-->
+                <div class="card bg-light" style="display: none" id="trail5">
+                    <div class="card-body text-center">
+                        <img id="trail-img-5" class="card-img-top" src="" alt="Card image cap">
+                        <h5 id="trail-name-5" class="card-title">Card title</h5>
+                        <ul class="list-group list-group-flush">
+                            <li id="trail-loc-5" class="list-group-item"></li>
+                            <li id="trail-desc-5" class="list-group-item desc"></li>
+                            <a href="" id="trail-url-5" class="btn btn-secondary">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <!--card index 6-->
+                <div class="card bg-light" style="display: none" id="trail6">
+                    <div class="card-body text-center">
+                        <img id="trail-img-6" class="card-img-top" src="" alt="Card image cap">
+                        <h5 id="trail-name-6" class="card-title">Card title</h5>
+                        <ul class="list-group list-group-flush">
+                            <li id="trail-loc-6" class="list-group-item"></li>
+                            <li id="trail-desc-6" class="list-group-item desc"></li>
+                            <a href="" id="trail-url-6" class="btn btn-secondary">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <!--card index 7-->
+                <div class="card bg-light" style="display: none" id="trail7">
+                    <div class="card-body text-center">
+                        <img id="trail-img-7" class="card-img-top" src="" alt="Card image cap">
+                        <h5 id="trail-name-7" class="card-title">Card title</h5>
+                        <ul class="list-group list-group-flush">
+                            <li id="trail-loc-7" class="list-group-item"></li>
+                            <li id="trail-desc-7" class="list-group-item desc"></li>
+                            <a href="" id="trail-url-7" class="btn btn-secondary">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <!--card index 8-->
+                <div class="card bg-light" style="display: none" id="trail8">
+                    <div class="card-body text-center">
+                        <img id="trail-img-8" class="card-img-top" src="" alt="Card image cap">
+                        <h5 id="trail-name-8" class="card-title">Card title</h5>
+                        <ul class="list-group list-group-flush">
+                            <li id="trail-loc-8" class="list-group-item"></li>
+                            <li id="trail-desc-8" class="list-group-item desc"></li>
+                            <a href="" id="trail-url-8" class="btn btn-secondary">See More</a>
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save
+                                to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+    <!-- recipes -->
+                <div class="card bg-light" style="display: none" id="pancakes">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/pancake1.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">Banana Pancakes</h5>
+                        <ul>
+                            <li class="list-group-item">1 banana, 1 egg, and oil for cooking</li>
+                            <li class="list-group-item desc">Mash the 1 banana until it is smooth as possible (a few lumps is okay). Add desired flavoring if available (vanilla extract, cinnamon, nutmeg, etc). Mix in egg with banana. Cook in a meduim heat pan and cook until golden brown, about a minute on each side. Enjoy!</li>
+                            <!-- <a href="https://www.thekitchn.com/how-to-make-2-ingredient-banana-pancakes-cooking-lessons-from-the-kitchn-218658" class="btn btn-secondary"
+                                target="_blank">See More</a> -->
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card bg-light" style="display: none" id="oats">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/oats.jpg"
+                            alt="image of overnight oats">
+                        <h5 class="card-title bike-title">Overnight Oats</h5>
+                        <ul>
+                            <li class="list-group-item">Oatmeal (any kind), milk (any kind), toppings</li>
+                            <li class="list-group-item desc">The trick with this recipe is to make the night before so it's ready in the morning. Perfect for a busy day! Cover 1/2 cup of oats into 1 cup milk and refridgerate overnight. Top with fruit, peanut butter, chocolate, or mix with protein powder for a well-balanced meal.</li>
+                            <!-- <a href="" class="btn btn-secondary"
+                                target="_blank">See More</a> -->
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card bg-light" style="display: none" id="toast">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/toast.jpg"
+                            alt="image of person on bike">
+                        <h5 class="card-title bike-title">Avocado and poached eggs Toast</h5>
+                        <ul>
+                            <li class="list-group-item">Toast, avocado, eggs</li>
+                            <li class="list-group-item desc">A simple and savory breakfast. Toast bread and place cut or mashed avocado on top of toast. Poach eggs by placing eggs into a pot of near boiling water (at least 4" deep) w/a half TSP of vinegar. Cook eggs for 3-4 minutes. Place poached egg on top of avocado toast. </li>
+                            <!-- <a href="https://downshiftology.com/recipes/poached-eggs/" class="btn btn-secondary"
+                                target="_blank">See More</a> -->
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light" style="display: none" id="salad">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/salad.jpg"
+                            alt="image of salad">
+                        <h5 class="card-title bike-title">Balanced Salad</h5>
+                        <ul>
+                            <li class="list-group-item">Greens, sweet potato, seeds, fruit, protein, vegetables</li>
+                            <li class="list-group-item desc">How to create a filling salad! Start with your carbs by using cut up potatoes or legumes. Follow up with your greens of choice (spinach, chard, cooked kale, argula, etc). Pick your protein of chicken, tofu, even beef or bacon! Top with pumpkin seeds, almonds, cashews etc for a crunch and fruit for some sweetness. Cookies veggies are also great!</li>
+                            <!-- <a href="https://www.strava.com/local/us/fresno/cycling/routes/1399" class="btn btn-secondary"
+                                target="_blank">See More</a> -->
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card bg-light" style="display: none" id="wrap">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/wrap1.jpg"
+                            alt="image of sandwich wrap">
+                        <h5 class="card-title bike-title">Spinach and Hummus Wrap</h5>
+                        <ul>
+                            <li class="list-group-item">tortilla, spinach, hummus, bell pepper, chicken or lunch meat</li>
+                            <li class="list-group-item desc">Start by cutting up bell peppers into slices, make sure they will fit into the tortilla. Spread a layer of hummus onto the tortilla and place spinach, bell pepper, and chicken or lunch meat on tortilla. Wrap. Done! </li>
+                            <!-- <a href="" class="btn btn-secondary"
+                                target="_blank">See More</a> -->
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card bg-light" style="display: none" id="icecream">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/icecream1.jpg"
+                            alt="image of banana ice ream">
+                        <h5 class="card-title bike-title">Banana Nice Cream</h5>
+                        <ul>
+                            <li class="list-group-item">Frozen banana and milk or water</li>
+                            <li class="list-group-item desc">Peel and cut up bananas into slices and place into freezer until completely hardened. Take the frozen bananas and place into a blender with a splash of milk or water. Blend until smooth. A healthy alternative to ice cream! </li>
+                            <!-- <a href="https://www.strava.com/local/us/fresno/cycling/routes/1398" class="btn btn-secondary"
+                                target="_blank">See More</a> -->
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light" style="display: none" id="sweetpotato">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/sweetp.jpg"
+                            alt="image of sweet potato">
+                        <h5 class="card-title bike-title">Stuffed Sweet Potato</h5>
+                        <ul>
+                            <li class="list-group-item">sweet potato, chickpeas, parsley for garnish</li>
+                            <li class="list-group-item desc">Set oven to 350 degrees. Cut sweet potato in halves and cover in oil and seasonings (salt, pepper, paprika, garlic powder). Season chickpeas as well. Place sweet potato and chickpeas in oven-safe pan and cook for around 20-25 minutes. Mash center of sweet potatoe a bit and place chickpeas on top of sweet potato. Garnish with parsley and ranch, if desired.</li>
+                            <!-- <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&z=14&mid=19KsDtEr7wdziUD19oetkbsbTmuk&ll=36.751280517240204%2C-119.51131350000003"
+                                class="btn btn-secondary" target="_blank">See More</a> -->
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card bg-light" style="display: none" id="kale">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/kale.jpg"
+                            alt="image of kale chips">
+                        <h5 class="card-title bike-title">Kale Chips</h5>
+                        <ul>
+                            <li class="list-group-item">Kale leaves, oil, nutritional yeast (for cheesy flavor)</li>
+                            <li class="list-group-item desc">Set oven to 350 degrees. Cut kale leaves into small bite sized pieces (no stem). Make sure kale pieces are dry. Lightly coat in oil and add seasoning of choice (garlic powder/salt/nutritional yeast). Bake for 10-15 minutes.</li>
+                            <!-- <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&ll=37.204902%2C-119.23187300000001&spn=0.140826%2C0.417137&z=12&mid=1uuACGge5EYkTRTJjEmvNfmqD6xE"
+                                class="btn btn-secondary" target="_blank">See More</a> -->
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="card bg-light" style="display: none" id="froyo">
+                    <div class="card-body text-center">
+                        <img class="card-img-top img-fluid mx-auto d-block" src="img/froyo.jpg"
+                            alt="image of frozen yogurt popsicles">
+                        <h5 class="card-title bike-title">Frozen Yogurt Popsicles</h5>
+                        <ul>
+                            <li class="list-group-item">Frozen yogurt, fruit</li>
+                            <li class="list-group-item desc">Take greek yogurt and place into popsicle molds. Cut up fruit if desired and place into popsicle molds with greek yogurt. Freeze overnight.</li>
+                            <!-- <a href="https://www.google.com/maps/d/viewer?msa=0&ll=36.94180946404267%2C-119.510651&spn=0.30184%2C0.834274&mid=1Zgk7zdqsbas1IVyRAAPoA7d3ApU&z=10"
+                                class="btn btn-secondary" target="_blank">See More</a> -->
+                            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                                Watchlist</a>
+                        </ul>
+                    </div>
+                </div>
+    
+    <!-- parks -->
+
+
+
+            </div>
+
+        </section>
+        <!-- END WISHLIST -->
+
+        <!-- START OF FOOTER -->
+        <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+            </div>
+        </footer>
+
+        <!-- END OF FOOTER -->
+        <!-- JAVASCRIPT LINKING -->
+
+        <script src="js/module.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
 
 </body>
 
