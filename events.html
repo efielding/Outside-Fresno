@@ -20,7 +20,7 @@
     <nav class="dropdown show">
       <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button" id="dropdownMenuLink"
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/logo.png" alt="logo"></a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
+      <div id="menu" class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
 
         <!-- the following content is inside the dropdown menu,and will only show when the dropdown is open -->
         <div class="weather-container">
@@ -111,45 +111,45 @@
       </div>
     </div>
 
-      <div class="card-columns">
+    <div class="card-columns">
 
-        <div class="card bg-light">
-          <div class="card-body text-center">
-            <img class="card-img-top img-fluid mx-auto d-block" src="img/fresno-arthop.jpg"
-              alt="image of the fresno art hop flyer">
-            <h5 class="card-title bike-title">Downtown Fresno Events</h5>
-            <ul>
-              <li class="list-group-item">Thursday, July 11, 2019 at 5 PM – 8 PM</li>
-              <li class="list-group-item desc">Loated at Fresno City Hall 2600 Fresno St, Fresno, California 93721, come
-                support Art Hop for the July event!</li>
-              <a href="https://www.downtownfresno.org/things-to-do/events-calendar" class="btn btn-secondary"
-                target="_blank">See More</a>
-              <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                Watchlist</a>
-            </ul>
-          </div>
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <img class="card-img-top img-fluid mx-auto d-block" src="img/fresno-arthop.jpg"
+            alt="image of the fresno art hop flyer">
+          <h5 class="card-title bike-title">Downtown Fresno Events</h5>
+          <ul>
+            <li class="list-group-item">Thursday, July 11, 2019 at 5 PM – 8 PM</li>
+            <li class="list-group-item desc">Loated at Fresno City Hall 2600 Fresno St, Fresno, California 93721, come
+              support Art Hop for the July event!</li>
+            <a href="https://www.downtownfresno.org/things-to-do/events-calendar" class="btn btn-secondary"
+              target="_blank">See More</a>
+            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+              Watchlist</a>
+          </ul>
         </div>
+      </div>
 
-        <div class="card bg-light">
-          <div class="card-body text-center">
-            <img class="card-img-top img-fluid mx-auto d-block" src="img/concerts.jpg" alt="image of a concert">
-            <h5 class="card-title bike-title">Summer Concert Series</h5>
-            <ul>
-              <li class="list-group-item">July 18th and August 1st 6 PM - 9 PM</li>
-              <li class="list-group-item desc">Located at Sierra Vista Mall 1050 Shaw Ave, Clovis, California 93612.
-                This
-                Summer Concert Series is back, and it is hotter than ever! FREE concert open to all ages. Bring a
-                blanket
-                or chair and enjoy the music at the Sierra Vista Mall Community Park in front of the Sierra Vista
-                Cinemas
-                16 Movie Theater. Join us for a night of dancing giveaways, food, and drinks!</li>
-              <a href="https://www.facebook.com/events/2171359726278396/" class="btn btn-secondary" target="_blank">See
-                More</a>
-              <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                Watchlist</a>
-            </ul>
-          </div>
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <img class="card-img-top img-fluid mx-auto d-block" src="img/concerts.jpg" alt="image of a concert">
+          <h5 class="card-title bike-title">Summer Concert Series</h5>
+          <ul>
+            <li class="list-group-item">July 18th and August 1st 6 PM - 9 PM</li>
+            <li class="list-group-item desc">Located at Sierra Vista Mall 1050 Shaw Ave, Clovis, California 93612.
+              This
+              Summer Concert Series is back, and it is hotter than ever! FREE concert open to all ages. Bring a
+              blanket
+              or chair and enjoy the music at the Sierra Vista Mall Community Park in front of the Sierra Vista
+              Cinemas
+              16 Movie Theater. Join us for a night of dancing giveaways, food, and drinks!</li>
+            <a href="https://www.facebook.com/events/2171359726278396/" class="btn btn-secondary" target="_blank">See
+              More</a>
+            <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+              Watchlist</a>
+          </ul>
         </div>
+      </div>
 
       <div class="card bg-light">
         <div class="card-body text-center">
@@ -188,7 +188,8 @@
 
 
 
-
+  <script src="js/event.js"></script>
+  <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -198,9 +199,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <!-- <script src="js/script.js"></script> -->
-  <script src="js/event.js"></script>
-  <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
+
 
 </body>
 
