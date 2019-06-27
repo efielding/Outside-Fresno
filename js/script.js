@@ -116,6 +116,13 @@ function checkIfLoggedIn(){
   }
 }
 
+// log out
+function logout() {
+  localStorage.removeItem('name');
+  localStorage.removeItem('email');
+  location.reload();
+}
+
 
 
 
