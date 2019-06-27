@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/parks.css">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <title>Parks</title>
-    </head>
 
-    <body>
-        <header class="column">
-            <div class="header">
-                <h1 class>Parks</h1>
-                <img  class="valley" src="img/valley.jpg" alt="pictue of the central valley">
-                
-            <h2 class="events">Local Events</h2>
-            </div>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/parks.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
+    <title>Parks</title>
+</head>
 
-        <div id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html" target="blank">Home</a>
-                <a href="parks.html" target="blank">Parks</a>
-                <a href="biking.html" target="blank">Bike Paths</a>
-                <a href="events.html" target="blank">Events</a>
+<body>
+    <!-- START HEADER -->
+    <header class="heading">
+        <nav class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" onclick="openNav()" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                    src="img/logo.png" alt="logo"></a>
+            <div id="menu" class="dropdown-menu" aria-labelledby="dropdownMenuLink" class="overflow-auto">
+
+                <!-- the following content is inside the dropdown menu,and will only show when the dropdown is open -->
+                <div class="weather-container">
+                    <!--this container holds the current weather api data-->
+                    <h5>Current Weather</h5>
+                    <img id="icon" alt="">
+                    <p id="temp"></p>
+                    <p id="weather"></p>
+                </div>
+                <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="dropdown-item" href="index.html" target="_blank"><img src="img/home.png"></a>
+                <a class="dropdown-item" href="biking.html" target="_blank"><img src="img/bike.png"></a>
+                <a class="dropdown-item" href="hiking.html" target="_blank"><img src="img/hiking.png"></a>
+                <a class="dropdown-item" href="parks.html" target="_blank"><img src="img/park.png"></a>
+                <a class="dropdown-item" href="events.html" target="_blank"><img src="img/event.png"></a>
+                <a class="dropdown-item" href="recipes.html" target="_blank"><img src="img/apple.png"></a>
+                <!--this iframe is the current fresno aqi-->
+                <iframe class="air"
+                    src="http://epa.gov/cgi-bin/schoolflagwidgetcurrentforecast.cgi?z=93728&n=OUTSIDE FRESNO"></iframe>
             </div>
-        
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <div id="main">
+            <!--end of dropdwon content-->
+        </nav>
+        <!--this holds the return from the user iput 'name' and a <p> introducing the page-->
+        <div class="header_info">
+            <h1>Parks</h1>
+            <h2 id="test"></h2>
+        </div>
+        <h4 class="blurb">Parks are the perfect place for a run, walk, or picnic! Check out some of our local parks and
+            plan your next visit!
+        </h4>
+
+    </header>
+
+    <div id="main">
+        <div class="card-columns">
+
+            </div>
+        </div>
 
         <div class="card-columns">
-            <div class="card bg-light"id="holmes">
-            <div class="card-body text-center">
-            <img src="parksimg/5622077_GxKMe-Q1ZRLLFuGXWwujaaLu-T2OBtdpW_7Pra9Typs.jpg" class="card-img-top" alt="holmes-park">
-                <h2 class="card-title">Holmes Park</h2>
-                <p class="card-text">212 S 1st St, Fresno, CA 93702</p>
-                <a href="https://www.yelp.com/biz/holmes-playground-fresno" onclick="favorite(event)" class="btn btn-primary">More Info for Holmes Park</a>
-            </div>
-            </div>
-            
-            <div class="card bg-light" id="kearney">
-            <div class="card-body text-center">
-            <img src="parksimg/010bdae74e037e6dd7d8f62329e77cb5.jpg" class="card-img-top" alt="kearney-park">
-                <h2 class="card-title">Kearney Park</h2>
-                <p class="card-text">901-909 Fresno St, Fresno, CA 93706</p>
-                <a href="https://www.yelp.com/biz/kearney-park-fresno" onclick="favorite(event)" class="btn btn-primary">More Info for Kearney Park</a>
-            </div>
-            </div>
 
-            <div class="card bg-light" id="radio">
-            <div class="card-body text-center">
-            <img src="parksimg/poi_gallery_image-image-ac5a386e-29fc-4fe5-993f-5bc64d9c9d20.jpg" class="card-img-top" alt="radio-park">
-                <h2 class="card-title">Radio Park</h2>
-                <p class="card-text">2233 N First St, Fresno, CA 93703</p>
-                <a href="#" onclick="favorite(event)" class="btn btn-primary">More Info for Radio Park</a>
-            </div>
-            </div>
 
             <div class="card bg-light" id="roeding">
             <div class="card-body text-center">
@@ -85,16 +89,37 @@
                 <a href="https://www.yelp.com/biz/woodward-park-fresno" onclick="favorite(event)" class="btn btn-primary">More Info for Woodward Park</a>
             </div>
             </div>
+
             </div>
         </div>
 
+        <!-- START OF FOOTER -->
+        <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+            </div>
+        </footer>
+    </div>
 
 
-        <script src="sidenav/sidenav.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-    </body>
+    <script src="sidenav/sidenav.js"></script>
+    <script src="js/park.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
 </html>

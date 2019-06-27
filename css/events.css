@@ -61,15 +61,14 @@ body {
 	top: 125%!important;
 }
 
-  .closebtn {
+.closebtn {
 	position: absolute;
 	top: 0;
 	right: 25px;
-	
 	font-size: 36px;
 	margin-left: 5px 0 5px 50px;
 	color: darkgray;
-  }
+}
 
 .weather-container {
 	text-align: center;
@@ -91,7 +90,7 @@ iframe {
 	margin: 0px 0px 20px 20px;
 }
 
-.dropdown-item{
+.dropdown-item {
   color:#fafafa;
   padding-bottom: 45px;
   text-align: center;
@@ -101,18 +100,17 @@ iframe {
 	color: yellowgreen;
 }
 
-a:hover{
+a:hover {
 	color: yellowgreen;
 }
 
-.card:hover{
+.card:hover {
 	box-shadow: 5px 10px 18px #4d4d4d;
-  }
+}
  
-
 a:active { 
 	background-color: yellowgreen;
-  }
+}
 
 .header_info {
 	display: flex;
@@ -148,25 +146,20 @@ h1 {
   padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-
 /* events page */
-.air{
+
+.air {
   height: 332px;;
   width: 250px;
   border: none;
 }
 
-.weather-container{
+.weather-container {
   padding: 46px;
 }
 
-  .events{
-    position: absolute;
+.events {
+	position: absolute;
     top: 70%;
     left: 58%;
     transform: translate(-50%, -50%);
@@ -176,15 +169,14 @@ h1 {
     padding: 10px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-  }
+	border-radius: 5px;
+}
 
-
-.card-columns{
+.card-columns {
     margin: 60px;
 }
 
-.card-img-top{
+.card-img-top {
     height: 300px;
     width: 331px;
     margin: auto;
@@ -199,34 +191,106 @@ h1 {
 	color: white;
 }
 
-/* mobile */
-@media screen and (max-width: 600px) {
-   
-    body{
-        width: 161vw;
-    }
+.card-title {
+	height: 80px;
+	padding-top: 10px;
+}
 
-    .column {
-        width: 100%;
-      }
 
-    .valley{
-        width: 100%;
-    }
-  }
+.list-group-item {
+	height: 85px;
+	border: none;
+	border-top: 1px solid lightgray;
+}
 
-  /* footer */
-  footer {
+li.list-group-item.desc {
+	height: 200px;
+}
+
+.btn-secondary {
+   width: 100%;
+}
+
+.watch-list {
+   margin-top: 5px;
+   color: white;
+}
+
+/* footer */
+
+footer {
     width: 100%;
     height: 100px;
     margin-right: 0;
-    margin-left: 0;
-  }
-  
-  .social-media {
-    margin-left: 45%;
-  }
-  
-  .fab {
-    color: #6C757D;
-  }
+	margin-left: 0;
+}
+
+.social-media {
+	margin-left: 45%;
+}
+
+.fab {
+	color: #6C757D;
+}
+
+/* mobile */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+}
+
+@media screen and (max-width: 700px) {
+	.card-columns {
+	   column-count: 2;
+	}
+ }
+
+@media (min-width: 500px) {
+   .card-columns {
+	   column-count: 2;
+   }
+   
+   .card-img-top {
+	   height: 100px;
+	   margin: auto;
+   }
+   
+   .desc {
+	   height: 120px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		width: 161vw;
+	}
+	
+	.column {
+		width: 100%;
+	}
+	
+	.valley {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 701px) {
+   .body {
+	   width: 161vw;
+   }
+   
+   .column {
+	   width: 100%;
+   }
+   
+   .card-columns {
+	   column-count: 3;
+   }
+   
+   .card-img-top {
+	   height: 300px;
+	   margin: auto;
+   }
+}

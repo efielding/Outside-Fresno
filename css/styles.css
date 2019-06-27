@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
 
 /* Colors */
+
 :root { 
   --green: #BCC77F;
   --ltgrey: #C6C9CD;
@@ -198,7 +199,72 @@ footer {
   margin-left: 45%;
 }
 
-.fa-3x {
+.fab {
   color: var(--dkgrey);
 }
- 
+
+/* MEDIA */
+
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+}
+
+ @media screen and (max-width: 700px) {
+	.card-columns {
+	   column-count: 2;
+	}
+ }
+
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+}
+
+ @media screen and (max-width: 600px) {
+	 body {
+		 width: 161vw;
+		}
+		
+		.column {
+			width: 100%;
+		}
+		
+		.valley{
+			width: 100%;
+		}
+	}
+	
+@media (min-width: 500px) {
+	.card-columns {
+		column-count: 2;
+	}
+	
+	.card-img-top {
+		height: 100px;
+		margin: auto;
+	}
+	
+	.desc {
+		height: 120px;
+	}
+}
+
+@media screen and (min-width: 701px) {
+	.body {
+		width: 161vw;
+	}
+	
+	.column {
+		width: 100%;
+	}
+	
+	.card-columns {
+		column-count: 3;
+	}
+	
+	.card-img-top {
+		height: 300px;
+		margin: auto;
+	}
+}

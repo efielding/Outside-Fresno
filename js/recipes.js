@@ -1,9 +1,41 @@
 // MAIN NAV
 // function that moves all content in main div to the right when the menu is open
 // then shows the menu
-function openNav(){
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("menu").classList.toggle("show");
+function openNav() {
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("menu").classList.toggle("show");
+}
+
+// Sets the left margin of the main div content to 0 
+// then hides the menu
+function closeNav() {
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("menu").classList.toggle("show");
+}
+
+// END OF MAIN NAV
+
+// LOG IN
+
+var user = localStorage.getItem("name");
+
+if (user != null){
+var welcome = 'Welcome '+ user + "!";
+document.getElementById("test").innerHTML = welcome;
+}else{
+  document.getElementById("test").innerHTML = 'Welcome!';
+}
+
+// END OF LOG IN
+
+// START OF WATCH LIST
+
+var savedList = document.getElementById("save");
+savedList.addEventListener('click', function () {
+  if (this.innerHTML == "Save to Watchlist") {
+    this.innerHTML = "Saved";
+  } else {
+    this.innerHTML = "Save to Watchlist";
   }
   
   // Sets the left margin of the main div content to 0 
@@ -66,3 +98,5 @@ function openNav(){
     document.getElementById('temp').innerHTML = formattedTemp + '°'; // Display temperature as an integer in #temperature
   }
   request.send()
+
+

@@ -16,6 +16,8 @@
     <header>
 
         <!-- START OF NAV -->
+
+        <!-- Dropright Button  -->
         <nav class="dropright">
             <a class="btn btn-secondary dropdown-toggle menu" onclick="openNav()" href="#" role="button"
                 id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
@@ -35,7 +37,9 @@
             <!-- LOG IN -->
             <div class="container">
                 <!-- Trigger the modal with a button -->
-                <button type="button"  id="log_btn" class="btn btn-info btn-md btn-color log-in" data-toggle="modal"
+
+
+                <button id="login" type="button" class="btn btn-info btn-md btn-color log-in" data-toggle="modal"
                     data-target="#myModal">Log
                     In</button>
 
@@ -71,7 +75,7 @@
 
 
 
-        <!-- Welcome sign -->
+        <!-- Welcome, NAME Sign -->
         <div id="test" class="name-container">
             <h1></h1>
         </div>
@@ -94,6 +98,7 @@
         <section>
             <div class="buttons">
                 <a class="dropdown-item" href="biking.html" target="_blank"><button class="btn-lg g-hover"><img
+
                             src="img/bike.png" alt=""></button></a>
                 <a class="dropdown-item" href="hiking.html" target="_blank"><button class="btn-lg g-hover"><img
                             src="img/hiking.png" alt=""></button></a>
@@ -104,9 +109,11 @@
             </div>
             <div class="pic__show" id="pic">
                 <img src="img/valley.jpg" alt="" class="valley">
+
             </div>
         </section>
         <!-- END OF PAGE BUTTONS -->
+
 
         <!-- WISHLIST -->
         <section class="wishlist__hidden" id="wishlist">
@@ -841,6 +848,37 @@
         localStorage.setItem(event.target.offsetParent.id,false);
         document.getElementById(event.target.offsetParent.id).style.display='none';
         };
+
+        <!-- START OF FOOTER -->
+        <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
+                    <span class="hidden-xs"></span></a>
+            </div>
+        </footer>
+
+        <!-- END OF FOOTER -->
+        <!-- JAVASCRIPT LINKING -->
+
+        <script src="js/script.js"></script>
+        <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+
 
         document.onload = checkFavorites();
         function checkFavorites(){

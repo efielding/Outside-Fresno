@@ -1,7 +1,7 @@
 // MAIN NAV
 // function that moves all content in main div to the right when the menu is open
 // then shows the menu
-function openNav(){
+function openNav() {
   document.getElementById("main").style.marginLeft = "250px";
   document.getElementById("menu").classList.toggle("show");
 }
@@ -16,7 +16,6 @@ function closeNav() {
 // END OF MAIN NAV
 
 // LOG IN
-
 var user = localStorage.getItem("name");
 
 if (user != null){
@@ -30,7 +29,7 @@ document.getElementById("test").innerHTML = welcome;
 // START OF WATCH LIST
 
 var savedList = document.getElementById("save");
-savedList.addEventListener('click', function() {
+savedList.addEventListener('click', function () {
   if (this.innerHTML == "Save to Watchlist") {
     this.innerHTML = "Saved";
   } else {
@@ -53,12 +52,12 @@ var request = new XMLHttpRequest()
 
 
 request.open('GET', url, true)
-request.onload = function() {
+request.onload = function () {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response)
-  
 
-  var icon = 'https://openweathermap.org/img/w/' + data.weather[0].icon + 
+
+  var icon = 'https://openweathermap.org/img/w/' + data.weather[0].icon +
     '.png'; // Url for icon and its place in the json obj
   var iconImage = document.getElementById('icon').src = icon; // Set the img on the #icon element
 
@@ -67,7 +66,7 @@ request.onload = function() {
 
   var temp = data.main.temp; // Grab temp data
   var formattedTemp = Math.round(temp); // Round temp up/down to integer
-    console.log(formattedTemp); // Display temperature as integer
+  console.log(formattedTemp); // Display temperature as integer
   document.getElementById('temp').innerHTML = formattedTemp + '°'; // Display temperature as an integer in #temperature
 }
 request.send()
