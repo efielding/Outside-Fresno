@@ -848,9 +848,10 @@
         localStorage.setItem(event.target.offsetParent.id,false);
         document.getElementById(event.target.offsetParent.id).style.display='none';
         };
+        </script>
 
-        <!-- START OF FOOTER -->
-        <footer>
+       <!-- START OF FOOTER -->
+        <!-- <footer>
             <div class="social-media">
                 <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i>
                     <span class="hidden-xs"></span></a>
@@ -861,10 +862,11 @@
                 <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i>
                     <span class="hidden-xs"></span></a>
             </div>
-        </footer>
+        </footer> -->
 
-        <!-- END OF FOOTER -->
-        <!-- JAVASCRIPT LINKING -->
+        <!-- END OF FOOTER
+        JAVASCRIPT LINKING -->
+
 
         <script src="js/script.js"></script>
         <script src="https://kit.fontawesome.com/888ccafea8.js"></script>
@@ -879,7 +881,7 @@
             crossorigin="anonymous"></script>
 
 
-
+<script>
         document.onload = checkFavorites();
         function checkFavorites(){
             this.posts.forEach(post =>{
@@ -888,9 +890,8 @@
                    console.log(post)
                 document.getElementById(post.id).style.display='inline-flex';
                }
-            });
-        };
-        
+            },
+            )};
         </script>
 </body>
 
