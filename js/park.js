@@ -70,3 +70,14 @@ request.onload = function () {
   document.getElementById('temp').innerHTML = formattedTemp + '°'; // Display temperature as an integer in #temperature
 }
 request.send()
+
+function favorite (event){
+      
+  console.log(event.target.offsetParent.id);
+  if (localStorage.getItem(event.target.offsetParent.id) === 'true'){
+    localStorage.setItem(event.target.offsetParent.id,false);
+  } else{
+    localStorage.setItem(event.target.offsetParent.id,true);
+  }
+  console.log(localStorage);
+};

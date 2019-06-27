@@ -1,4 +1,3 @@
-// nav button
 function openNav(){
   document.getElementById("main").style.marginLeft = "250px";
   console.log(openNav);
@@ -51,7 +50,7 @@ var units = '&units=imperial'; // express temps in farenheit
 var url = api + city + units + apiKey; // concatenate api elements into url 
 console.log(url); // display url
 
-var request = new XMLHttpRequest()
+let request = new XMLHttpRequest()
 
 request.open('GET', url, true)
 request.onload = function() {
@@ -104,7 +103,7 @@ formSubmit.addEventListener('click', function(event) {
 
 document.onload = checkIfLoggedIn();
 function checkIfLoggedIn(){
-  
+  console.log('checking if logged in')
   if (localStorage.getItem('name')){
     
     var setName = localStorage.getItem('name');
@@ -122,6 +121,7 @@ function checkIfLoggedIn(){
 
 // store id key
     function favorite (event){
+      
       console.log(event.target.offsetParent.id);
       if (localStorage.getItem(event.target.offsetParent.id) === 'true'){
         localStorage.setItem(event.target.offsetParent.id,false);
@@ -147,10 +147,10 @@ var apiKey = '&key=200468098-d3b92bb22cd80b7ec7b0b1c7d30741cd'; // apiKey
 var url = getTrails + latitude + longitude + distance + sort + results + apiKey; //concat variables to url
 console.log(url); // display url for test purposes
 
-var request = new XMLHttpRequest()
+var anotherRequest = new XMLHttpRequest()
 
-request.open('GET', url, true)
-request.onload = function () {
+anotherRequest.open('GET', url, true)
+anotherRequest.onload = function () {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response)
 
@@ -310,6 +310,6 @@ request.onload = function () {
 
 }
 
-request.send()
+anotherRequest.send()
 
 
