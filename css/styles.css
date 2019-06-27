@@ -147,10 +147,6 @@ header {
 /* END OF LOG-IN */
 /* START OF BODY */
 
-.pan-pic {
-  display: flex;
-  justify-content: center;
-}
 
 .valley {
   width: 80%;
@@ -170,6 +166,14 @@ header {
 /* END OF BODY */
 /* WISHLIST */
 
+.pic__show{
+  display: flex;
+  justify-content: center;
+}
+
+.pic__hidden{
+  display: none;
+}
 
 .wishlist__hidden{
   display:none;

@@ -57,80 +57,47 @@ formSubmit.addEventListener('click', function(event) {
     // grabbing name and calling div id to insert into div
     document.getElementById("test").innerHTML = localStorage.getItem("name");
     // show wishlist after submit
+    
     document.getElementById("wishlist").classList.remove("wishlist__hidden");
     document.getElementById("wishlist").classList.add("wishlist__show");
+
+    document.getElementById("pic").classList.remove("pic__show");
+    document.getElementById("pic").classList.add("pic__hidden");
 })
 
 
-// var user = localStorage.getItem("name");
-// ​
-// if (user != null){
-// var welcome = 'Welcome '+ user + "!";
-// document.getElementById("test").innerHTML = welcome;
-// document.getElementById('login').style.visibility = "hidden";
-// }else{
-//  document.getElementById("test").innerHTML = 'Welcome!';
-// }
-
 // End of Log In
 
-// favorites
+document.onload = checkIfLoggedIn();
+function checkIfLoggedIn(){
+  
+  if (localStorage.getItem('name')){
+    
+    var nameSet = localStorage.getItem('name');
+    document.getElementById("wishlist").classList.remove("wishlist__hidden");
+    document.getElementById("wishlist").classList.add("wishlist__show");
 
-  var favorites = [];
-    var posts = {
-      farmers_market: '#farmers-market',
-      yoga: '#yoga',
-      concert: '#concert',
-      arthop: '#arthop',
-      ot_event: '#ot_event',
-      rockclimbing: '#rockclimbing',
-      ot_trail: '#ot_trail',
-      rolling_hills: '#rolling_hills',
-      mill_loop: '#mill_loop',
-      f_m_lake: '#f_m_lake',
-      mauberry: '#auberry',
-      belmont: '#belmont',
-      shaver: '#shaver',
-      pineflat: '#pineflat',
-      trail: '#trail',
-      trail1: '#trail1',
-      trail2: '#trail2',
-      trail3: '#trail3',
-      trail4: '#trail4',
-      trail5: '#trail5',
-      trail6: '#trail6',
-      trail7: '#trail7',
-      trail8: '#trail8',
-      pancakes: '#pancakes',
-      oats: '#oats',
-      toast: '#toast',
-      salad: '#salad',
-      wrap: '#wrap',
-      icecream: '#icecream',
-      sweetpotato: '#sweetpotato',
-      kale: '#kale',
-      froyo: '#froyo',
-      millerton: '#millerton',
-      millerton: '#millerton',
-      millerton: '#millerton',
-      millerton: '#millerton',
-      millerton: '#millerton',
-      millerton: '#millerton',
-      millerton: '#millerton',
-      millerton: '#millerton',
-      millerton: '#millerton',
-
-    }
-
-  //   fetch('api.yourapi.com/'+user.id+'/favorites')
-  //     .then(response => {
-  //       favorites = response.data;
-  //     });
-  //     favorites.forEach(favorite => {
-  //       document.getElementById(posts[favorite]).style.display = 'block';
-  //     })
+    document.getElementById("pic").classList.remove("pic__show");
+    document.getElementById("pic").classList.add("pic__hidden");
+    document.getElementById("log_btn").innerHTML('Log out');
+    console.log(document.getElementById("log_btn"));
+  }
+}
 
 
+
+
+// store id key
+    function favorite (event){
+      console.log(event.target.offsetParent.id);
+      if (localStorage.getItem(event.target.offsetParent.id) === 'true'){
+        localStorage.setItem(event.target.offsetParent.id,false);
+      } else{
+        localStorage.setItem(event.target.offsetParent.id,true);
+      }
+      console.log(localStorage);
+    };
+    
 
 // this is the code for the 'hiking project' api
 // apiKey 200468098-d3b92bb22cd80b7ec7b0b1c7d30741cd
@@ -314,25 +281,3 @@ request.send()
 
 
 
-
-
-//       let html = '<div>';
-//       favorites.forEach(favorite => {
-//           html += `
-//           <div class="card bg-light">
-//                 <div class="card-body text-center">
-//                     <img class="card-img-top img-fluid mx-auto d-block" src="`+favorite.image_url+`"
-//                         alt="image of person on bike">
-//                     <h5 class="card-title bike-title">`+favorite.title+`</h5>
-//                     <ul>
-//                         <li class="list-group-item">`+favorite+`</li>
-//                         <li class="list-group-item desc">Length: 5 miles </li>
-//                         <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&z=14&mid=19KsDtEr7wdziUD19oetkbsbTmuk&ll=36.751280517240204%2C-119.51131350000003"
-//                             class="btn btn-secondary" target="_blank">See More</a>
-//                         <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-//                             Watchlist</a>
-//                     </ul>
-//                 </div>
-//             </div>
-// `;
-//       })

@@ -63,7 +63,7 @@
     <div id="main">
         <div class="card-columns">
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="pancakes">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/pancake1.jpg"
                         alt="image of person on bike">
@@ -73,13 +73,13 @@
                         <li class="list-group-item desc">Mash the 1 banana until it is smooth as possible (a few lumps is okay). Add desired flavoring if available (vanilla extract, cinnamon, nutmeg, etc). Mix in egg with banana. Cook in a meduim heat pan and cook until golden brown, about a minute on each side. Enjoy!</li>
                         <!-- <a href="https://www.thekitchn.com/how-to-make-2-ingredient-banana-pancakes-cooking-lessons-from-the-kitchn-218658" class="btn btn-secondary"
                             target="_blank">See More</a> -->
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="oats">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/oats.jpg"
                         alt="image of overnight oats">
@@ -89,13 +89,13 @@
                         <li class="list-group-item desc">The trick with this recipe is to make the night before so it's ready in the morning. Perfect for a busy day! Cover 1/2 cup of oats into 1 cup milk and refridgerate overnight. Top with fruit, peanut butter, chocolate, or mix with protein powder for a well-balanced meal.</li>
                         <!-- <a href="" class="btn btn-secondary"
                             target="_blank">See More</a> -->
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="toast">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/toast.jpg"
                         alt="image of person on bike">
@@ -105,7 +105,7 @@
                         <li class="list-group-item desc">A simple and savory breakfast. Toast bread and place cut or mashed avocado on top of toast. Poach eggs by placing eggs into a pot of near boiling water (at least 4" deep) w/a half TSP of vinegar. Cook eggs for 3-4 minutes. Place poached egg on top of avocado toast. </li>
                         <!-- <a href="https://downshiftology.com/recipes/poached-eggs/" class="btn btn-secondary"
                             target="_blank">See More</a> -->
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
@@ -113,7 +113,7 @@
         </div>
 
         <!-- COLUMN 2 -->
-        <div class="card-columns">
+        <div class="card-columns" id="salad">
             <div class="card bg-light">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/salad.jpg"
@@ -124,13 +124,13 @@
                         <li class="list-group-item desc">How to create a filling salad! Start with your carbs by using cut up potatoes or legumes. Follow up with your greens of choice (spinach, chard, cooked kale, argula, etc). Pick your protein of chicken, tofu, even beef or bacon! Top with pumpkin seeds, almonds, cashews etc for a crunch and fruit for some sweetness. Cookies veggies are also great!</li>
                         <!-- <a href="https://www.strava.com/local/us/fresno/cycling/routes/1399" class="btn btn-secondary"
                             target="_blank">See More</a> -->
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="wrap">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/wrap1.jpg"
                         alt="image of sandwich wrap">
@@ -140,13 +140,13 @@
                         <li class="list-group-item desc">Start by cutting up bell peppers into slices, make sure they will fit into the tortilla. Spread a layer of hummus onto the tortilla and place spinach, bell pepper, and chicken or lunch meat on tortilla. Wrap. Done! </li>
                         <!-- <a href="" class="btn btn-secondary"
                             target="_blank">See More</a> -->
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="icecream">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/icecream1.jpg"
                         alt="image of banana ice ream">
@@ -156,7 +156,7 @@
                         <li class="list-group-item desc">Peel and cut up bananas into slices and place into freezer until completely hardened. Take the frozen bananas and place into a blender with a splash of milk or water. Blend until smooth. A healthy alternative to ice cream! </li>
                         <!-- <a href="https://www.strava.com/local/us/fresno/cycling/routes/1398" class="btn btn-secondary"
                             target="_blank">See More</a> -->
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
@@ -167,7 +167,7 @@
 
         <div class="card-columns">
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="sweetpotato">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/sweetp.jpg"
                         alt="image of sweet potato">
@@ -177,13 +177,13 @@
                         <li class="list-group-item desc">Set oven to 350 degrees. Cut sweet potato in halves and cover in oil and seasonings (salt, pepper, paprika, garlic powder). Season chickpeas as well. Place sweet potato and chickpeas in oven-safe pan and cook for around 20-25 minutes. Mash center of sweet potatoe a bit and place chickpeas on top of sweet potato. Garnish with parsley and ranch, if desired.</li>
                         <!-- <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&z=14&mid=19KsDtEr7wdziUD19oetkbsbTmuk&ll=36.751280517240204%2C-119.51131350000003"
                             class="btn btn-secondary" target="_blank">See More</a> -->
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="kale">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/kale.jpg"
                         alt="image of kale chips">
@@ -193,13 +193,13 @@
                         <li class="list-group-item desc">Set oven to 350 degrees. Cut kale leaves into small bite sized pieces (no stem). Make sure kale pieces are dry. Lightly coat in oil and add seasoning of choice (garlic powder/salt/nutritional yeast). Bake for 10-15 minutes.</li>
                         <!-- <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&ll=37.204902%2C-119.23187300000001&spn=0.140826%2C0.417137&z=12&mid=1uuACGge5EYkTRTJjEmvNfmqD6xE"
                             class="btn btn-secondary" target="_blank">See More</a> -->
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="froyo">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/froyo.jpg"
                         alt="image of frozen yogurt popsicles">
@@ -209,7 +209,7 @@
                         <li class="list-group-item desc">Take greek yogurt and place into popsicle molds. Cut up fruit if desired and place into popsicle molds with greek yogurt. Freeze overnight.</li>
                         <!-- <a href="https://www.google.com/maps/d/viewer?msa=0&ll=36.94180946404267%2C-119.510651&spn=0.30184%2C0.834274&mid=1Zgk7zdqsbas1IVyRAAPoA7d3ApU&z=10"
                             class="btn btn-secondary" target="_blank">See More</a> -->
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
@@ -244,6 +244,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>    
     <script src="js/recipes.js"></script>
 </body>
 
