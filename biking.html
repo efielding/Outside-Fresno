@@ -66,23 +66,23 @@
     <div id="main">
         <div class="card-columns">
 
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <img class="card-img-top img-fluid mx-auto d-block" src="img/biking1.jpg"
-                        alt="image of person on bike">
-                    <h5 class="card-title bike-title">Clovis Old Town Trail</h5>
-                    <ul>
-                        <li class="list-group-item">Clovis, CA</li>
-                        <li class="list-group-item desc">Length: 5.8 miles</li>
-                        <a href="https://www.traillink.com/trail/clovis-old-town-trail/" class="btn btn-secondary"
-                            target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                            Watchlist</a>
-                    </ul>
-                </div>
+        <div class="card bg-light"id="ot_trail">
+            <div class="card-body text-center">
+                <img class="card-img-top img-fluid mx-auto d-block" src="img/biking1.jpg"
+                    alt="image of person on bike">
+                <h5 class="card-title bike-title">Clovis Old Town Trail</h5>
+                <ul>
+                    <li class="list-group-item">Clovis, CA</li>
+                    <li class="list-group-item desc">Length: 5.8 miles</li>
+                    <a href="https://www.traillink.com/trail/clovis-old-town-trail/" class="btn btn-secondary"
+                        target="_blank">See More</a>
+                    <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
+                        Watchlist</a>
+                </ul>
             </div>
+        </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="millerton">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/biking2.jpg"
                         alt="image of person on bike">
@@ -92,13 +92,13 @@
                         <li class="list-group-item desc">Length: 22.8miles </li>
                         <a href="https://www.strava.com/local/us/fresno/cycling/routes/1392" class="btn btn-secondary"
                             target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="rolling_hills">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/biking3.jpg"
                         alt="image of person on bike">
@@ -108,7 +108,7 @@
                         <li class="list-group-item desc">Length: 27.5miles </li>
                         <a href="https://www.strava.com/local/us/fresno/cycling/routes/1393" class="btn btn-secondary"
                             target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
@@ -116,7 +116,7 @@
         </div>
 
         <!-- COLUMN 2 -->
-        <div class="card-columns">
+        <div class="card-columns" id="mill_loop">
             <div class="card bg-light">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/biking4.jpg"
@@ -127,13 +127,13 @@
                         <li class="list-group-item desc">Length: 17.5miles </li>
                         <a href="https://www.strava.com/local/us/fresno/cycling/routes/1399" class="btn btn-secondary"
                             target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light"id="f_m_lake">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/biking5.jpg"
                         alt="image of person on bike">
@@ -143,13 +143,13 @@
                         <li class="list-group-item desc">Length: 27.4miles </li>
                         <a href="https://www.strava.com/local/us/fresno/cycling/routes/1397" class="btn btn-secondary"
                             target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="auberry">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/biking6.jpg"
                         alt="image of person on bike">
@@ -159,7 +159,7 @@
                         <li class="list-group-item desc">Length: 27.3miles </li>
                         <a href="https://www.strava.com/local/us/fresno/cycling/routes/1398" class="btn btn-secondary"
                             target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
@@ -170,7 +170,7 @@
 
         <div class="card-columns">
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="belmont">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/biking7.jpg"
                         alt="image of person on bike">
@@ -180,13 +180,13 @@
                         <li class="list-group-item desc">Length: 5 miles </li>
                         <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&z=14&mid=19KsDtEr7wdziUD19oetkbsbTmuk&ll=36.751280517240204%2C-119.51131350000003"
                             class="btn btn-secondary" target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="shaver">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/biking9.jpg"
                         alt="image of person on bike">
@@ -196,13 +196,13 @@
                         <li class="list-group-item desc">Length: 17.8 miles </li>
                         <a href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&ll=37.204902%2C-119.23187300000001&spn=0.140826%2C0.417137&z=12&mid=1uuACGge5EYkTRTJjEmvNfmqD6xE"
                             class="btn btn-secondary" target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-light" id="pineflat">
                 <div class="card-body text-center">
                     <img class="card-img-top img-fluid mx-auto d-block" src="img/biking10.jpg"
                         alt="image of person on bike">
@@ -212,7 +212,7 @@
                         <li class="list-group-item desc">Length: 88.90 miles </li>
                         <a href="https://www.google.com/maps/d/viewer?msa=0&ll=36.94180946404267%2C-119.510651&spn=0.30184%2C0.834274&mid=1Zgk7zdqsbas1IVyRAAPoA7d3ApU&z=10"
                             class="btn btn-secondary" target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
+                        <a id="save" class="btn btn-secondary watch-list" onclick="favorite(event)" target="_blank" style="color:white">Save to
                             Watchlist</a>
                     </ul>
                 </div>
@@ -249,6 +249,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <script src="js/script.js"></script>    
+    <script src="js/biking.js"></script>
 </body>
-
-</html>
