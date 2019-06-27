@@ -36,7 +36,7 @@ var user = localStorage.getItem("name");
 if (user != null){
 var welcome = 'Welcome '+ user + "!";
 document.getElementById("test").innerHTML = welcome;
-document.getElementById('login').style.display = "none";
+// document.getElementById('login').style.display = "none";
 
 }else{
   document.getElementById("test").innerHTML = 'Welcome!';
@@ -113,7 +113,6 @@ function checkIfLoggedIn(){
 
     document.getElementById("pic").classList.remove("pic__show");
     document.getElementById("pic").classList.add("pic__hidden");
-    document.getElementById('logout').style.display = "show";
     console.log(document.getElementById("log_btn"));
   }
 }
