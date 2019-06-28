@@ -56,4 +56,14 @@ function openNav() {
     console.log(openNav);
 }
 
-
+function favorite (event){
+      
+    console.log(event.target.offsetParent.id);
+    if (localStorage.getItem(event.target.offsetParent.id) === 'true'){
+      localStorage.setItem(event.target.offsetParent.id,false);
+    } else{
+      localStorage.setItem(event.target.offsetParent.id,true);
+    }
+    console.log(localStorage);
+  };
+  

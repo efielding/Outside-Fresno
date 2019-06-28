@@ -57,110 +57,48 @@
     <div id="main">
         <div class="card-columns">
 
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <img class="card-img-top img-fluid mx-auto d-block"
-                        src="parksimg/5622077_GxKMe-Q1ZRLLFuGXWwujaaLu-T2OBtdpW_7Pra9Typs.jpg" alt="holmes-park">
-                    <h5 class="card-title bike-title">Holmes Park</h5>
-                    <ul>
-                        <li class="list-group-item">212 S 1st Street, Frsno, CA 93702</li>
-                        <li class="list-group-item desc">A small park with a community center, there are many fun events
-                            year-round to attend!</li>
-                        <a href="https://www.yelp.com/biz/holmes-playground-fresno" class="btn btn-secondary"
-                            target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                            Watchlist</a>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <img class="card-img-top img-fluid mx-auto d-block"
-                        src="parksimg/010bdae74e037e6dd7d8f62329e77cb5.jpg" alt="kearney-park">
-                    <h5 class="card-title bike-title">Kearney Park</h5>
-                    <ul>
-                        <li class="list-group-item">901-909 Fresno St, Fresno, CA 93706</li>
-                        <li class="list-group-item desc">One of Fresno's most beautiful parks with the Kearney
-                            Historical Society French style mansion.</li>
-                        <a href="https://www.yelp.com/biz/kearney-park-fresno" class="btn btn-secondary"
-                            target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                            Watchlist</a>
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <img class="card-img-top img-fluid mx-auto d-block"
-                        src="parksimg/poi_gallery_image-image-ac5a386e-29fc-4fe5-993f-5bc64d9c9d20.jpg"
-                        alt="radio-park">
-                    <h5 class="card-title bike-title">Radio Park</h5>
-                    <ul>
-                        <li class="list-group-item">2233 N First Street, Fresno, CA 93703</li>
-                        <li class="list-group-item desc">On the corner of N First Street and E Clinton Ave, this
-                            playground will be sure deliver lots of family fun time.</li>
-                        <a href="https://www.facebook.com/pages/Radio-Park/131378423573718" class="btn btn-secondary"
-                            target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                            Watchlist</a>
-                    </ul>
-                </div>
             </div>
         </div>
 
         <div class="card-columns">
 
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <img class="card-img-top img-fluid mx-auto d-block"
-                        src="parksimg/b0da9c2c4d67f0065af1cc920263fbd2.jpg" alt="roeding-park">
-                    <h5 class="card-title bike-title">Roeding Park</h5>
-                    <ul>
-                        <li class="list-group-item">890 W Belmont Ave, Fresno, CA 93728</li>
-                        <li class="list-group-item desc">Don't miss the train and beautiful fountain while walking
-                            through Romain Park! Plan your next picnic here.</li>
-                        <a href="https://www.yelp.com/biz/roeding-park-fresno" class="btn btn-secondary"
-                            target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                            Watchlist</a>
-                    </ul>
-                </div>
+
+            <div class="card bg-light" id="roeding">
+            <div class="card-body text-center">
+            <img src="parksimg/b0da9c2c4d67f0065af1cc920263fbd2.jpg" class="card-img-top" alt="roeding-park">
+                <h2 class="card-title">Roeding Park</h2>
+                <p class="card-text">890 W Belmont Ave, Fresno, CA 93728</p>
+                <a href="https://www.yelp.com/biz/roeding-park-fresno" class="btn btn-primary">More Info for Roeding Park</a>
+                <a id="save" class="btn btn-secondary watch-list" onclick="removeFavorite(event)"
+                target="_blank" style="color:white">Save To
+                Watchlist</a>
+            </div>
             </div>
 
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <img class="card-img-top img-fluid mx-auto d-block" src="parksimg/cfiles7824.jpg" alt="romain-park">
-                    <h5 class="card-title bike-title">Romain Park</h5>
-                    <ul>
-                        <li class="list-group-item">745 N First Street, Fresno, CA 93702</li>
-                        <li class="list-group-item desc">Check out Romain Park's skate park and try some new
-                            skateboarding moves! (If you dare)</li>
-                        <a href="https://www.yelp.com/biz/romain-playground-fresno" class="btn btn-secondary"
-                            target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                            Watchlist</a>
-                    </ul>
-                </div>
+            <div class="card bg-light" id="romain">
+            <div class="card-body text-center">
+            <img src="parksimg/cfiles7824.jpg" class="card-img-top" alt="romain-park">
+                <h2 class="card-title">Romain Park</h2>
+                <p class="card-text">745 N First St, Fresno, CA 93702</p>
+                <a href="https://www.yelp.com/biz/romain-playground-fresno" class="btn btn-primary">More Info for Romain Park</a>
+                <a id="save" class="btn btn-secondary watch-list" onclick="removeFavorite(event)"
+                target="_blank" style="color:white">Save to
+                Watchlist</a>
+            </div>
             </div>
 
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <img class="card-img-top img-fluid mx-auto d-block" src="parksimg/woodward-regional-park.jpg"
-                        alt="woodward-park">
-                    <h5 class="card-title bike-title">Woodward Park</h5>
-                    <ul>
-                        <li class="list-group-item">7775 Friant Road, Fresno, CA 93720</li>
-                        <li class="list-group-item desc">Beautiful flowers cover this park in the Spring and it's
-                            definitely not worth missing.</li>
-                        <a href="https://www.yelp.com/biz/woodward-park-fresno" class="btn btn-secondary"
-                            target="_blank">See More</a>
-                        <a id="save" class="btn btn-secondary watch-list" target="_blank" style="color:white">Save to
-                            Watchlist</a>
-                    </ul>
-                </div>
+            <div class="card bg-light" id="woodward">
+            <div class="card-body text-center">
+            <img src="parksimg/woodward-regional-park.jpg" class="card-img-top" alt="woodward-park">
+                <h2 class="card-title">Woodward Park</h2>
+                <p class="card-text">7775 Friant Road, Fresno, California 93720</p>
+                <a href="https://www.yelp.com/biz/woodward-park-fresno"  class="btn btn-primary">More Info for Woodward Park</a>
+                <a id="save" class="btn btn-secondary watch-list" onclick="removeFavorite(event)"
+                target="_blank" style="color:white">Save to
+                Watchlist</a>
+            </div>
+            </div>
+
             </div>
         </div>
 
@@ -180,7 +118,7 @@
     </div>
 
 
-
+    <script src="js/script.js"></script>
     <script src="sidenav/sidenav.js"></script>
     <script src="js/park.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -192,5 +130,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 </html>

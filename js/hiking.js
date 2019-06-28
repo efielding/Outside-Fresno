@@ -232,3 +232,14 @@ request.onload = function() {
   document.getElementById('temp').innerHTML = formattedTemp + '°'; // display temperature as an int in #temp
 }
 request.send()
+
+function favorite (event){
+      
+  console.log(event.target.offsetParent.id);
+  if (localStorage.getItem(event.target.offsetParent.id) === 'true'){
+    localStorage.setItem(event.target.offsetParent.id,false);
+  } else{
+    localStorage.setItem(event.target.offsetParent.id,true);
+  }
+  console.log(localStorage);
+};
